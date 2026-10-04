@@ -75,7 +75,7 @@
   <div class="tool-card" id="combinerCard" data-mode="brand">
     <button class="sound-toggle" data-sound-toggle title="Toggle sound">🔊</button>
     <h2>Create your brand name</h2>
-    <p class="hint">Enter two words — try founder names, product words, or vibes like "swift" and "nest".</p>
+    <p class="hint">Enter two words — try founder names, product words, or vibes like "swift" and "nest". Pick a category for tailored twists.</p>
     <div class="alert" id="ncAlert"></div>
     <div class="name-inputs">
       <div class="field"><label for="n1">First word or name</label><input class="nc-name" id="n1" maxlength="24" placeholder="e.g. Nova" autocomplete="off"></div>
@@ -84,6 +84,21 @@
     <div class="tool-opts">
       <button class="chip-opt" data-len="short">Short &amp; sweet</button>
       <button class="chip-opt" data-len="long">Long &amp; dramatic</button>
+    </div>
+    <div class="field">
+      <label>What category is your brand? <span style="color:var(--mut);font-weight:400">(optional — tailors the name twists)</span></label>
+      <div class="tool-opts">
+        <button class="chip-opt" data-cat="tech">💻 Tech &amp; Apps</button>
+        <button class="chip-opt" data-cat="food">🍔 Food &amp; Drink</button>
+        <button class="chip-opt" data-cat="fashion">👗 Fashion &amp; Beauty</button>
+        <button class="chip-opt" data-cat="fitness">💪 Health &amp; Fitness</button>
+        <button class="chip-opt" data-cat="finance">💰 Finance</button>
+        <button class="chip-opt" data-cat="travel">✈️ Travel</button>
+        <button class="chip-opt" data-cat="home">🏠 Home &amp; Living</button>
+        <button class="chip-opt" data-cat="pets">🐾 Pets</button>
+        <button class="chip-opt" data-cat="edu">🎓 Education &amp; Kids</button>
+        <button class="chip-opt" data-cat="creative">🎨 Creative &amp; Design</button>
+      </div>
     </div>
     <button class="btn" id="ncGo">💼 Combine Brand Names</button>
     <div class="results" id="ncResults">

@@ -77,6 +77,20 @@ function styleTweaks(name,mode,opts){
   return n;
 }
 
+/* category-tailored suffixes for brand mode */
+const BRAND_CATS={
+  tech:['ly','ify','io','hub','lab','stack','sync','os'],
+  food:['ery','bite','fresh','oven','brew','table','dish','licious'],
+  fashion:['elle','ista','chic','luxe','wear','mode','haus','style'],
+  fitness:['fit','flex','pulse','core','peak','thrive','strong','body'],
+  finance:['pay','mint','wise','fund','vault','cash','ledger','capital'],
+  travel:['go','jet','trip','wander','escape','voyage','trail','roam'],
+  home:['nest','haven','dwell','cozy','casa','nook','habit','hearth'],
+  pets:['paws','tails','buddy','wags','furry','pup','whisk','paw'],
+  edu:['learn','wise','bright','mind','academy','tutor','kiddo','school'],
+  creative:['studio','works','lab','craft','pixel','muse','ink','pop']
+};
+
 function finalize(list,mode,opts){
   opts=opts||{};
   let res=dedupe(list).map(r=>({n:r.n,m:r.m,s:score(r.n)}));
@@ -84,8 +98,8 @@ function finalize(list,mode,opts){
   const extras=[];
   const base=res.slice(0,12);
   if(mode==='brand'){
-    const suf=['ly','ify','hub','ora','io','lab','wise','Nest'];
-    base.forEach(r=>{suf.slice(0,3).forEach(s=>extras.push({n:r.n+s,m:'brand-twist',s:score(r.n+s)-1}));});
+    const suf=(opts.cat&&BRAND_CATS[opts.cat])||['ly','ify','hub','ora','io','lab','wise','nest'];
+    base.forEach(r=>{suf.slice(0,4).forEach(s=>extras.push({n:r.n+s,m:'brand-twist',s:score(r.n+s)-1}));});
   }else if(mode==='nickname'){
     base.forEach(r=>{extras.push({n:r.n.replace(/[^a-z]/g,'').slice(0,5)+'y',m:'diminutive',s:2});extras.push({n:r.n.slice(0,3)+'ie',m:'diminutive',s:2});});
   }else if(mode==='pet'){
@@ -193,6 +207,7 @@ function wireTool(){
     const o={mode:mode,limit:24};
     const g=$('.chip-opt.on[data-gender]',card);if(g)o.gender=g.getAttribute('data-gender');
     const l=$('.chip-opt.on[data-len]',card);if(l)o.len=l.getAttribute('data-len');
+    const ct=$('.chip-opt.on[data-cat]',card);if(ct)o.cat=ct.getAttribute('data-cat');
     const y=$('#ncYear');if(y&&y.value)o.year=y.value;
     return o;
   }
@@ -218,9 +233,9 @@ function wireTool(){
   }
   $('#ncGo').addEventListener('click',doGenerate);
   inputs.forEach(i=>i.addEventListener('keydown',e=>{if(e.key==='Enter')doGenerate();}));
-  $$('.chip-opt[data-gender],.chip-opt[data-len]',card).forEach(c=>c.addEventListener('click',()=>{
-    $$('.chip-opt[data-gender]',card).forEach(x=>{if(x.hasAttribute('data-gender'))x.classList.remove('on');});
-    $$('.chip-opt[data-len]',card).forEach(x=>{if(x.hasAttribute('data-len'))x.classList.remove('on');});
+  $$('.chip-opt[data-gender],.chip-opt[data-len],.chip-opt[data-cat]',card).forEach(c=>c.addEventListener('click',()=>{
+    const attr=c.hasAttribute('data-gender')?'data-gender':(c.hasAttribute('data-len')?'data-len':'data-cat');
+    $$('.chip-opt['+attr+']',card).forEach(x=>x.classList.remove('on'));
     c.classList.add('on');Sfx.click();
   }));
   const sh=$('#ncShare');if(sh)sh.addEventListener('click',()=>{
