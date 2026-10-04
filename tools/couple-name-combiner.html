@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Couple Name Combiner — Blend Two Names into a Cute Couple Name</title>
+<meta name="description" content="Free couple name combiner: merge two first names into the perfect couple name. Brangelina-style blends with pronunciation, favorites & shareable links. No signup.">
+<link rel="canonical" href="https://yournamecombiner.com/tools/couple-name-combiner">
+<meta property="og:title" content="Couple Name Combiner — What's Your Brangelina?">
+<meta property="og:description" content="Blend two names into a cute couple name. Free, instant, no signup.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://yournamecombiner.com/tools/couple-name-combiner">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💑</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/style.css">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebApplication","name":"Couple Name Combiner","url":"https://yournamecombiner.com/tools/couple-name-combiner","applicationCategory":"LifestyleApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+{"@type":"Question","name":"What is a couple name?","acceptedAnswer":{"@type":"Answer","text":"A couple name is a playful blend of two partners' names — like Brangelina (Brad + Angelina) or Bennifer (Ben + Jennifer). It's a fun way to celebrate a relationship."}},
+{"@type":"Question","name":"How do you combine two names for a couple?","acceptedAnswer":{"@type":"Answer","text":"Enter both first names in the combiner above. It tries every split point — half-blends, syllable mixes, overlap merges — and ranks the results by how natural they sound."}},
+{"@type":"Question","name":"What are some famous couple name examples?","acceptedAnswer":{"@type":"Answer","text":"Brangelina (Brad Pitt + Angelina Jolie), Bennifer (Ben Affleck + Jennifer Lopez), TomKat (Tom Cruise + Katie Holmes), Kimye (Kim Kardashian + Kanye West) and Kravis (Kourtney Kardashian + Travis Barker)."}},
+{"@type":"Question","name":"Can I use our couple name on Instagram?","acceptedAnswer":{"@type":"Answer","text":"Absolutely — couple names make great joint-account handles. Generate a few favorites, then check our username generator for handle-ready versions."}},
+{"@type":"Question","name":"Is the couple name combiner free?","acceptedAnswer":{"@type":"Answer","text":"Yes, completely free with no signup and unlimited generations."}},
+{"@type":"Question","name":"Can I save and share our couple name?","acceptedAnswer":{"@type":"Answer","text":"Yes — star your favorites to save them in your browser, download the list, or copy the share link to send the exact results to your partner."}}
+]}
+</script>
+</head>
+<body>
+<header class="site">
+  <div class="wrap nav">
+    <a class="logo" href="/">💜 Your<b>Name</b>Combiner</a>
+    <nav class="nav-links">
+      <a href="/tools/couple-name-combiner">Couples</a>
+      <a href="/tools/baby-name-combiner">Baby</a>
+      <a href="/tools/brand-name-combiner">Brand</a>
+      <a href="/blog">Blog</a>
+      <a class="cta" href="#combiner">Combine Names</a>
+    </nav>
+  </div>
+</header>
+
+<div class="hero">
+  <div class="float-hearts"></div>
+  <div class="wrap">
+    <p class="breadcrumb"><a href="/" style="color:#e9d5ff">Home</a> · <span style="color:#c4b5fd">Couple Name Combiner</span></p>
+    <h1>💑 Couple Name Combiner</h1>
+    <p class="sub">What's your Brangelina? Blend two first names into a cute couple name — perfect for Instagram bios, wedding hashtags and anniversary surprises.</p>
+  </div>
+</div>
+
+<main class="wrap" id="combiner">
+  <div class="tool-card" id="combinerCard" data-mode="couple">
+    <button class="sound-toggle" data-sound-toggle title="Toggle sound">🔊</button>
+    <h2>Find your couple name</h2>
+    <p class="hint">Enter both first names — try each order for totally different vibes.</p>
+    <div class="alert" id="ncAlert"></div>
+    <div class="name-inputs">
+      <div class="field"><label for="n1">Your name</label><input class="nc-name" id="n1" maxlength="24" placeholder="e.g. Emma" autocomplete="off"></div>
+      <div class="field"><label for="n2">Partner's name</label><input class="nc-name" id="n2" maxlength="24" placeholder="e.g. Liam" autocomplete="off"></div>
+    </div>
+    <div class="tool-opts">
+      <button class="chip-opt" data-len="short">Short &amp; sweet</button>
+      <button class="chip-opt" data-len="long">Long &amp; dramatic</button>
+    </div>
+    <button class="btn" id="ncGo">💑 Combine Our Names</button>
+    <div class="results" id="ncResults">
+      <div class="top-pick" id="topPick"></div>
+      <div class="results-head"><h3>Couple name ideas <span style="color:var(--mut);font-weight:400" id="ncCount"></span></h3></div>
+      <div class="name-grid" id="ncGrid"></div>
+      <div class="share-row">
+        <input id="shareLink" readonly style="flex:1;min-width:200px;padding:12px 14px;border:2px solid var(--line);border-radius:12px;font-size:.85rem" aria-label="Shareable link">
+        <button class="btn ghost" id="ncShare">Copy share link</button>
+      </div>
+    </div>
+  </div>
+
+  <section class="block">
+    <h2>How to make a <span class="u">couple name</span></h2>
+    <div class="steps">
+      <div class="step"><div><h4>Enter both first names</h4><p>Type your name and your partner's name above. Nicknames work great too — try "Sam" instead of "Samantha" for different blends.</p></div></div>
+      <div class="step"><div><h4>Generate the blends</h4><p>Hit combine and browse dozens of Brangelina-style options, ranked from silkiest to silliest.</p></div></div>
+      <div class="step"><div><h4>Star, hear &amp; share</h4><p>Tap 🔊 to hear each name aloud, ⭐ to save favorites, then copy the share link to vote on a winner together.</p></div></div>
+    </div>
+  </section>
+
+  <section class="block">
+    <h2>Famous couple names, <span class="u">decoded</span></h2>
+    <p>The best celebrity couple names follow the same blending patterns our combiner uses. Notice how each one keeps the catchiest syllable of each name:</p>
+    <table class="example-table">
+      <tr><th>Couple</th><th>Blend</th><th>Why it works</th></tr>
+      <tr><td>Brad + Angelina</td><td><b>Brangelina</b></td><td>Strong "Br" start + flowing "gelina" ending</td></tr>
+      <tr><td>Ben + Jennifer</td><td><b>Bennifer</b></td><td>Punchy first syllables fused at the "n"</td></tr>
+      <tr><td>Tom + Katie</td><td><b>TomKat</b></td><td>Short, snappy, unforgettable</td></tr>
+      <tr><td>Kim + Kanye</td><td><b>Kimye</b></td><td>Alliteration makes it stick</td></tr>
+      <tr><td>Kourtney + Travis</td><td><b>Kravis</b></td><td>Unexpected middle-slice blend</td></tr>
+    </table>
+    <p>Want the full story? Read our <a href="/blog/celebrity-couple-names">50 most iconic celebrity couple names</a> roundup.</p>
+  </section>
+
+  <section class="block">
+    <h2>More ways to <span class="u">play</span></h2>
+    <div class="rel-grid">
+      <a class="rel-card" href="/tools/ship-name-generator"><span class="k">Fandom</span><h4>🚢 Ship Name Generator</h4><p>For OTPs, besties and fictional pairings.</p></a>
+      <a class="rel-card" href="/tools/wedding-hashtag-generator"><span class="k">Wedding</span><h4>💍 Wedding Hashtag Generator</h4><p>Turn your couple name into a hashtag.</p></a>
+      <a class="rel-card" href="/tools/baby-name-combiner"><span class="k">Family</span><h4>👶 Baby Name Combiner</h4><p>Blend your names into a baby name.</p></a>
+      <a class="rel-card" href="/blog/what-is-a-ship-name"><span class="k">Blog</span><h4>What Is a Ship Name?</h4><p>The complete guide to ship-name culture.</p></a>
+    </div>
+  </section>
+
+  <section class="block">
+    <h2>Frequently asked <span class="u">questions</span></h2>
+    <div class="faq">
+      <details class="faq-item"><summary>What is a couple name?</summary><div class="a">A couple name is a playful blend of two partners' names — like Brangelina (Brad + Angelina) or Bennifer (Ben + Jennifer). It's a fun way to celebrate a relationship.</div></details>
+      <details class="faq-item"><summary>How do you combine two names for a couple?</summary><div class="a">Enter both first names in the combiner above. It tries every split point — half-blends, syllable mixes, overlap merges — and ranks the results by how natural they sound.</div></details>
+      <details class="faq-item"><summary>What are some famous couple name examples?</summary><div class="a">Brangelina (Brad Pitt + Angelina Jolie), Bennifer (Ben Affleck + Jennifer Lopez), TomKat (Tom Cruise + Katie Holmes), Kimye (Kim Kardashian + Kanye West) and Kravis (Kourtney Kardashian + Travis Barker).</div></details>
+      <details class="faq-item"><summary>Can I use our couple name on Instagram?</summary><div class="a">Absolutely — couple names make great joint-account handles. Generate a few favorites, then check our <a href="/tools/username-generator">username generator</a> for handle-ready versions.</div></details>
+      <details class="faq-item"><summary>Is the couple name combiner free?</summary><div class="a">Yes, completely free with no signup and unlimited generations.</div></details>
+      <details class="faq-item"><summary>Can I save and share our couple name?</summary><div class="a">Yes — star your favorites to save them in your browser, download the list, or copy the share link to send the exact results to your partner.</div></details>
+    </div>
+  </section>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <div class="foot-brand">💜 Your<b>Name</b>Combiner</div>
+        <p style="font-size:.9rem">Free name-blending tools for couples, babies, brands and beyond. Made with 💜 for name lovers everywhere.</p>
+      </div>
+      <div>
+        <h4>Popular tools</h4>
+        <a href="/tools/couple-name-combiner">Couple Name Combiner</a>
+        <a href="/tools/baby-name-combiner">Baby Name Combiner</a>
+        <a href="/tools/ship-name-generator">Ship Name Generator</a>
+        <a href="/tools/brand-name-combiner">Brand Name Combiner</a>
+      </div>
+      <div>
+        <h4>More tools</h4>
+        <a href="/tools/nickname-generator">Nickname Generator</a>
+        <a href="/tools/wedding-hashtag-generator">Wedding Hashtag Generator</a>
+        <a href="/tools/pet-name-combiner">Pet Name Combiner</a>
+        <a href="/tools/username-generator">Username Generator</a>
+      </div>
+      <div>
+        <h4>From the blog</h4>
+        <a href="/blog/what-is-a-ship-name">What Is a Ship Name?</a>
+        <a href="/blog/how-to-combine-two-names">How to Combine Two Names</a>
+        <a href="/blog/celebrity-couple-names">Celebrity Couple Names</a>
+        <a href="/blog">All Posts</a>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© <span data-year>2026</span> YourNameCombiner.com — All rights reserved.</span>
+      <nav class="foot-links" aria-label="Footer"><a href="/blog">Blog</a><a href="/about">About</a><a href="/privacy-policy">Privacy</a><a href="/terms-of-service">Terms</a></nav>
+    </div>
+  </div>
+</footer>
+
+<button class="fav-fab" id="favFab">⭐ Favorites (<span id="favCount">0</span>)</button>
+<div class="scrim" id="scrim"></div>
+<aside class="drawer" id="favDrawer" aria-label="Favorite names">
+  <div class="drawer-head"><h3>⭐ My Favorite Blends</h3><button class="icon-btn" id="favClose">✕</button></div>
+  <div class="drawer-body" id="favBody"></div>
+  <div class="drawer-foot"><button class="btn ghost" id="favDownload" style="flex:1">Download</button><button class="btn ghost" id="favClear" style="flex:1">Clear all</button></div>
+</aside>
+
+<script src="/assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ship Name Generator — Create the Perfect Ship Name for Any Pairing</title>
+<meta name="description" content="Free ship name generator: create the perfect ship name for any pairing — characters, celebs, besties or your crush. Instant results, no signup, unlimited tries.">
+<link rel="canonical" href="https://yournamecombiner.com/tools/ship-name-generator">
+<meta property="og:title" content="Ship Name Generator — Name Your OTP">
+<meta property="og:description" content="Create the perfect ship name for any pairing. Free, instant, no signup.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://yournamecombiner.com/tools/ship-name-generator">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚢</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/style.css">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebApplication","name":"Ship Name Generator","url":"https://yournamecombiner.com/tools/ship-name-generator","applicationCategory":"LifestyleApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+{"@type":"Question","name":"What is a ship name?","acceptedAnswer":{"@type":"Answer","text":"A ship name is a blended name for a romantic pairing — real or fictional — created by fusing the two people's names. Fans use ship names for favorite TV couples, book characters, celebrities and even their best friends."}},
+{"@type":"Question","name":"How do you make a ship name?","acceptedAnswer":{"@type":"Answer","text":"Take the catchiest syllable from each name and fuse them together. Enter both names in the generator above and it will try every split point — front-half fusions, syllable splices and overlap merges — then rank the results."}},
+{"@type":"Question","name":"What are good ship name ideas for best friends?","acceptedAnswer":{"@type":"Answer","text":"Friendship ship names work the same way as romantic ones. Try blending first syllables (Maya + Zoe = Mazo) or using a shared inside joke as one of the inputs for a personal touch."}},
+{"@type":"Question","name":"Can I make a ship name for real people?","acceptedAnswer":{"@type":"Answer","text":"Yes — people ship real celebrities and couples all the time, from Brangelina to Bennifer. For private individuals, keep it lighthearted and make sure everyone involved is comfortable with it."}},
+{"@type":"Question","name":"What is the difference between a ship name and a couple name?","acceptedAnswer":{"@type":"Answer","text":"They use the same blending technique. Ship name comes from fandom culture and usually refers to fictional or celebrity pairings, while couple name is more often used for real-life partners."}},
+{"@type":"Question","name":"Is the ship name generator free?","acceptedAnswer":{"@type":"Answer","text":"Yes, completely free with no signup and unlimited generations."}}
+]}
+</script>
+</head>
+<body>
+<header class="site">
+  <div class="wrap nav">
+    <a class="logo" href="/">💜 Your<b>Name</b>Combiner</a>
+    <nav class="nav-links">
+      <a href="/tools/couple-name-combiner">Couples</a>
+      <a href="/tools/baby-name-combiner">Baby</a>
+      <a href="/tools/brand-name-combiner">Brand</a>
+      <a href="/blog">Blog</a>
+      <a class="cta" href="#combiner">Combine Names</a>
+    </nav>
+  </div>
+</header>
+
+<div class="hero">
+  <div class="float-hearts"></div>
+  <div class="wrap">
+    <p class="breadcrumb"><a href="/" style="color:#e9d5ff">Home</a> · <span style="color:#c4b5fd">Ship Name Generator</span></p>
+    <h1>🚢 Ship Name Generator</h1>
+    <p class="sub">Name your OTP. Create the perfect ship name for any pairing — characters, celebrities, best friends, or you and your crush.</p>
+  </div>
+</div>
+
+<main class="wrap" id="combiner">
+  <div class="tool-card" id="combinerCard" data-mode="ship">
+    <button class="sound-toggle" data-sound-toggle title="Toggle sound">🔊</button>
+    <h2>Create your ship name</h2>
+    <p class="hint">Enter two names — swap the order to explore every pairing.</p>
+    <div class="alert" id="ncAlert"></div>
+    <div class="name-inputs">
+      <div class="field"><label for="n1">First name</label><input class="nc-name" id="n1" maxlength="24" placeholder="e.g. Aria" autocomplete="off"></div>
+      <div class="field"><label for="n2">Second name</label><input class="nc-name" id="n2" maxlength="24" placeholder="e.g. Kai" autocomplete="off"></div>
+    </div>
+    <div class="tool-opts">
+      <button class="chip-opt" data-len="short">Short &amp; sweet</button>
+      <button class="chip-opt" data-len="long">Long &amp; dramatic</button>
+    </div>
+    <button class="btn" id="ncGo">🚢 Generate Ship Names</button>
+    <div class="results" id="ncResults">
+      <div class="top-pick" id="topPick"></div>
+      <div class="results-head"><h3>Ship name ideas <span style="color:var(--mut);font-weight:400" id="ncCount"></span></h3></div>
+      <div class="name-grid" id="ncGrid"></div>
+      <div class="share-row">
+        <input id="shareLink" readonly style="flex:1;min-width:200px;padding:12px 14px;border:2px solid var(--line);border-radius:12px;font-size:.85rem" aria-label="Shareable link">
+        <button class="btn ghost" id="ncShare">Copy share link</button>
+      </div>
+    </div>
+  </div>
+
+  <section class="block">
+    <h2>How to make a <span class="u">ship name</span></h2>
+    <div class="steps">
+      <div class="step"><div><h4>Pick your pairing</h4><p>Type the two names you want to ship — characters from your favorite show, two celebrities, best friends, anyone.</p></div></div>
+      <div class="step"><div><h4>Generate the blends</h4><p>Hit generate and browse dozens of ship-name options, ranked from silkiest to silliest.</p></div></div>
+      <div class="step"><div><h4>Say it out loud</h4><p>The best ship names roll off the tongue. Tap 🔊 to hear each one, ⭐ your favorites, then share the link.</p></div></div>
+    </div>
+  </section>
+
+  <section class="block">
+    <h2>Ship name <span class="u">examples</span></h2>
+    <p>Great ship names keep the catchiest syllable of each name. Here is how the classic blending patterns work:</p>
+    <table class="example-table">
+      <tr><th>Pairing</th><th>Ship name</th><th>Pattern</th></tr>
+      <tr><td>Aria + Kai</td><td><b>Kaia</b></td><td>Front-half fusion — takes the start of each name</td></tr>
+      <tr><td>Luna + Rex</td><td><b>Lurex</b></td><td>Syllable splice — first syllable + last syllable</td></tr>
+      <tr><td>Milo + Ivy</td><td><b>Mivy</b></td><td>Overlap merge — names share a middle sound</td></tr>
+      <tr><td>Nova + Finn</td><td><b>Novinn</b></td><td>Double-letter blend — smooths the join with a repeated sound</td></tr>
+    </table>
+    <p>Curious where ship culture came from? Read <a href="/blog/what-is-a-ship-name">what is a ship name</a> for the full story.</p>
+  </section>
+
+  <section class="block">
+    <h2>More ways to <span class="u">play</span></h2>
+    <div class="rel-grid">
+      <a class="rel-card" href="/tools/couple-name-combiner"><span class="k">Romance</span><h4>💑 Couple Name Combiner</h4><p>Brangelina-style blends for real-life partners.</p></a>
+      <a class="rel-card" href="/tools/nickname-generator"><span class="k">Fun</span><h4>😎 Nickname Generator</h4><p>Turn any name into the perfect nickname.</p></a>
+      <a class="rel-card" href="/tools/username-generator"><span class="k">Social</span><h4>🎮 Username Generator</h4><p>Make your ship name a handle.</p></a>
+      <a class="rel-card" href="/blog/celebrity-couple-names"><span class="k">Blog</span><h4>Celebrity Couple Names</h4><p>The most iconic ship names ever.</p></a>
+    </div>
+  </section>
+
+  <section class="block">
+    <h2>Frequently asked <span class="u">questions</span></h2>
+    <div class="faq">
+      <details class="faq-item"><summary>What is a ship name?</summary><div class="a">A ship name is a blended name for a romantic pairing — real or fictional — created by fusing the two people's names. Fans use ship names for favorite TV couples, book characters, celebrities and even their best friends.</div></details>
+      <details class="faq-item"><summary>How do you make a ship name?</summary><div class="a">Take the catchiest syllable from each name and fuse them together. Enter both names in the generator above and it will try every split point — front-half fusions, syllable splices and overlap merges — then rank the results.</div></details>
+      <details class="faq-item"><summary>What are good ship name ideas for best friends?</summary><div class="a">Friendship ship names work the same way as romantic ones. Try blending first syllables (Maya + Zoe = Mazo) or using a shared inside joke as one of the inputs for a personal touch.</div></details>
+      <details class="faq-item"><summary>Can I make a ship name for real people?</summary><div class="a">Yes — people ship real celebrities and couples all the time, from Brangelina to Bennifer. For private individuals, keep it lighthearted and make sure everyone involved is comfortable with it.</div></details>
+      <details class="faq-item"><summary>What is the difference between a ship name and a couple name?</summary><div class="a">They use the same blending technique. Ship name comes from fandom culture and usually refers to fictional or celebrity pairings, while couple name is more often used for real-life partners.</div></details>
+      <details class="faq-item"><summary>Is the ship name generator free?</summary><div class="a">Yes, completely free with no signup and unlimited generations.</div></details>
+    </div>
+  </section>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <div class="foot-brand">💜 Your<b>Name</b>Combiner</div>
+        <p style="font-size:.9rem">Free name-blending tools for couples, babies, brands and beyond. Made with 💜 for name lovers everywhere.</p>
+      </div>
+      <div>
+        <h4>Popular tools</h4>
+        <a href="/tools/couple-name-combiner">Couple Name Combiner</a>
+        <a href="/tools/baby-name-combiner">Baby Name Combiner</a>
+        <a href="/tools/ship-name-generator">Ship Name Generator</a>
+        <a href="/tools/brand-name-combiner">Brand Name Combiner</a>
+      </div>
+      <div>
+        <h4>More tools</h4>
+        <a href="/tools/nickname-generator">Nickname Generator</a>
+        <a href="/tools/wedding-hashtag-generator">Wedding Hashtag Generator</a>
+        <a href="/tools/pet-name-combiner">Pet Name Combiner</a>
+        <a href="/tools/username-generator">Username Generator</a>
+      </div>
+      <div>
+        <h4>From the blog</h4>
+        <a href="/blog/what-is-a-ship-name">What Is a Ship Name?</a>
+        <a href="/blog/how-to-combine-two-names">How to Combine Two Names</a>
+        <a href="/blog/celebrity-couple-names">Celebrity Couple Names</a>
+        <a href="/blog">All Posts</a>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© <span data-year>2026</span> YourNameCombiner.com — All rights reserved.</span>
+      <nav class="foot-links" aria-label="Footer"><a href="/blog">Blog</a><a href="/about">About</a><a href="/privacy-policy">Privacy</a><a href="/terms-of-service">Terms</a></nav>
+    </div>
+  </div>
+</footer>
+
+<button class="fav-fab" id="favFab">⭐ Favorites (<span id="favCount">0</span>)</button>
+<div class="scrim" id="scrim"></div>
+<aside class="drawer" id="favDrawer" aria-label="Favorite names">
+  <div class="drawer-head"><h3>⭐ My Favorite Blends</h3><button class="icon-btn" id="favClose">✕</button></div>
+  <div class="drawer-body" id="favBody"></div>
+  <div class="drawer-foot"><button class="btn ghost" id="favDownload" style="flex:1">Download</button><button class="btn ghost" id="favClear" style="flex:1">Clear all</button></div>
+</aside>
+
+<script src="/assets/js/main.js"></script>
+</body>
+</html>

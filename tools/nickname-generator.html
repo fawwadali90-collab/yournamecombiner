@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nickname Generator — Turn Any Name into a Nickname</title>
+<meta name="description" content="Free nickname generator: turn any name into a nickname — cute, funny or cool. Add a vibe word for personalized results. Instant, no signup, unlimited tries.">
+<link rel="canonical" href="https://yournamecombiner.com/tools/nickname-generator">
+<meta property="og:title" content="Nickname Generator — Find Your Perfect Nickname">
+<meta property="og:description" content="Turn any name into a cute, funny or cool nickname. Free, instant, no signup.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://yournamecombiner.com/tools/nickname-generator">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>😎</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/style.css">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebApplication","name":"Nickname Generator","url":"https://yournamecombiner.com/tools/nickname-generator","applicationCategory":"LifestyleApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+{"@type":"Question","name":"How does a nickname generator work?","acceptedAnswer":{"@type":"Answer","text":"Enter a name and the generator applies classic nickname patterns — shortening, adding -y or -ie endings, doubling the first syllable, or fusing the name with your vibe word. Add a vibe word like bear or star for more personal results."}},
+{"@type":"Question","name":"What are some cute nickname ideas?","acceptedAnswer":{"@type":"Answer","text":"Cute nicknames usually shorten the name and add soft endings: Sammy, Ellie, Coco, Milo. Try the generator with a sweet vibe word like honey or bunny for adorable options."}},
+{"@type":"Question","name":"What are some funny nicknames?","acceptedAnswer":{"@type":"Answer","text":"Funny nicknames exaggerate a trait or rhyme with the name. Enter your name plus a silly vibe word — like noodle or pickle — and browse the playful results."}},
+{"@type":"Question","name":"What are some cool nicknames?","acceptedAnswer":{"@type":"Answer","text":"Cool nicknames are short and punchy: Ace, Rex, Jax, Neo. The generator creates sharp one and two-syllable options that sound confident."}},
+{"@type":"Question","name":"How do I pick a nickname that sticks?","acceptedAnswer":{"@type":"Answer","text":"The best nicknames are easy to say, suit the person's personality, and feel natural after a few uses. Shortlist three favorites, try them out loud with friends, and see which one gets adopted."}},
+{"@type":"Question","name":"Is the nickname generator free?","acceptedAnswer":{"@type":"Answer","text":"Yes, completely free with no signup and unlimited generations."}}
+]}
+</script>
+</head>
+<body>
+<header class="site">
+  <div class="wrap nav">
+    <a class="logo" href="/">💜 Your<b>Name</b>Combiner</a>
+    <nav class="nav-links">
+      <a href="/tools/couple-name-combiner">Couples</a>
+      <a href="/tools/baby-name-combiner">Baby</a>
+      <a href="/tools/brand-name-combiner">Brand</a>
+      <a href="/blog">Blog</a>
+      <a class="cta" href="#combiner">Combine Names</a>
+    </nav>
+  </div>
+</header>
+
+<div class="hero">
+  <div class="float-hearts"></div>
+  <div class="wrap">
+    <p class="breadcrumb"><a href="/" style="color:#e9d5ff">Home</a> · <span style="color:#c4b5fd">Nickname Generator</span></p>
+    <h1>😎 Nickname Generator</h1>
+    <p class="sub">Turn any name into the perfect nickname — cute, funny or cool. Add a vibe word for results with personality.</p>
+  </div>
+</div>
+
+<main class="wrap" id="combiner">
+  <div class="tool-card" id="combinerCard" data-mode="nickname" data-min="1">
+    <button class="sound-toggle" data-sound-toggle title="Toggle sound">🔊</button>
+    <h2>Find your nickname</h2>
+    <p class="hint">Enter a name — the vibe word is optional but makes results way more personal.</p>
+    <div class="alert" id="ncAlert"></div>
+    <div class="name-inputs">
+      <div class="field"><label for="n1">Name</label><input class="nc-name" id="n1" maxlength="24" placeholder="e.g. Samantha" autocomplete="off"></div>
+      <div class="field"><label for="n2">Vibe word (optional)</label><input class="nc-name" id="n2" maxlength="24" placeholder="e.g. bear, star…" autocomplete="off"></div>
+    </div>
+    <div class="tool-opts">
+      <button class="chip-opt" data-len="short">Short &amp; sweet</button>
+      <button class="chip-opt" data-len="long">Long &amp; dramatic</button>
+    </div>
+    <button class="btn" id="ncGo">😎 Generate Nicknames</button>
+    <div class="results" id="ncResults">
+      <div class="top-pick" id="topPick"></div>
+      <div class="results-head"><h3>Nickname ideas <span style="color:var(--mut);font-weight:400" id="ncCount"></span></h3></div>
+      <div class="name-grid" id="ncGrid"></div>
+      <div class="share-row">
+        <input id="shareLink" readonly style="flex:1;min-width:200px;padding:12px 14px;border:2px solid var(--line);border-radius:12px;font-size:.85rem" aria-label="Shareable link">
+        <button class="btn ghost" id="ncShare">Copy share link</button>
+      </div>
+    </div>
+  </div>
+
+  <section class="block">
+    <h2>Classic nickname <span class="u">patterns</span></h2>
+    <div class="steps">
+      <div class="step"><div><h4>Shorten it</h4><p>Cut the name down to its punchiest syllable: Samantha becomes Sam, Alexander becomes Alex.</p></div></div>
+      <div class="step"><div><h4>Add a soft ending</h4><p>Tack on -y, -ie or -o for instant warmth: Sammy, Ellie, Coco.</p></div></div>
+      <div class="step"><div><h4>Fuse a vibe word</h4><p>Blend the name with a personality word — Robert + star becomes Robstar. Try it above.</p></div></div>
+    </div>
+  </section>
+
+  <section class="block">
+    <h2>Nickname <span class="u">examples</span></h2>
+    <p>Every great nickname follows a pattern. Here are the most popular ones in action:</p>
+    <table class="example-table">
+      <tr><th>Name + vibe</th><th>Nickname</th><th>Pattern</th></tr>
+      <tr><td>Samantha</td><td><b>Sammy</b></td><td>Shorten + add -y</td></tr>
+      <tr><td>Robert + star</td><td><b>Robstar</b></td><td>Name + vibe word fusion</td></tr>
+      <tr><td>Jennifer</td><td><b>Jen-Jen</b></td><td>Doubled first syllable</td></tr>
+      <tr><td>Marcus + chief</td><td><b>Chief Marc</b></td><td>Title-style nickname</td></tr>
+    </table>
+    <p>Looking for couple nicknames too? Try our <a href="/tools/couple-name-combiner">couple name combiner</a>.</p>
+  </section>
+
+  <section class="block">
+    <h2>More ways to <span class="u">play</span></h2>
+    <div class="rel-grid">
+      <a class="rel-card" href="/tools/username-generator"><span class="k">Social</span><h4>🎮 Username Generator</h4><p>Turn your nickname into a handle.</p></a>
+      <a class="rel-card" href="/tools/pet-name-combiner"><span class="k">Pets</span><h4>🐾 Pet Name Combiner</h4><p>Cute names for furry friends.</p></a>
+      <a class="rel-card" href="/tools/fantasy-name-combiner"><span class="k">Fantasy</span><h4>🐉 Fantasy Name Combiner</h4><p>Epic names for characters.</p></a>
+      <a class="rel-card" href="/blog/cute-nicknames-guide"><span class="k">Blog</span><h4>Cute Nicknames Guide</h4><p>Nicknames for every personality.</p></a>
+    </div>
+  </section>
+
+  <section class="block">
+    <h2>Frequently asked <span class="u">questions</span></h2>
+    <div class="faq">
+      <details class="faq-item"><summary>How does a nickname generator work?</summary><div class="a">Enter a name and the generator applies classic nickname patterns — shortening, adding -y or -ie endings, doubling the first syllable, or fusing the name with your vibe word. Add a vibe word like bear or star for more personal results.</div></details>
+      <details class="faq-item"><summary>What are some cute nickname ideas?</summary><div class="a">Cute nicknames usually shorten the name and add soft endings: Sammy, Ellie, Coco, Milo. Try the generator with a sweet vibe word like honey or bunny for adorable options.</div></details>
+      <details class="faq-item"><summary>What are some funny nicknames?</summary><div class="a">Funny nicknames exaggerate a trait or rhyme with the name. Enter your name plus a silly vibe word — like noodle or pickle — and browse the playful results.</div></details>
+      <details class="faq-item"><summary>What are some cool nicknames?</summary><div class="a">Cool nicknames are short and punchy: Ace, Rex, Jax, Neo. The generator creates sharp one and two-syllable options that sound confident.</div></details>
+      <details class="faq-item"><summary>How do I pick a nickname that sticks?</summary><div class="a">The best nicknames are easy to say, suit the person's personality, and feel natural after a few uses. Shortlist three favorites, try them out loud with friends, and see which one gets adopted.</div></details>
+      <details class="faq-item"><summary>Is the nickname generator free?</summary><div class="a">Yes, completely free with no signup and unlimited generations.</div></details>
+    </div>
+  </section>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <div class="foot-brand">💜 Your<b>Name</b>Combiner</div>
+        <p style="font-size:.9rem">Free name-blending tools for couples, babies, brands and beyond. Made with 💜 for name lovers everywhere.</p>
+      </div>
+      <div>
+        <h4>Popular tools</h4>
+        <a href="/tools/couple-name-combiner">Couple Name Combiner</a>
+        <a href="/tools/baby-name-combiner">Baby Name Combiner</a>
+        <a href="/tools/ship-name-generator">Ship Name Generator</a>
+        <a href="/tools/brand-name-combiner">Brand Name Combiner</a>
+      </div>
+      <div>
+        <h4>More tools</h4>
+        <a href="/tools/nickname-generator">Nickname Generator</a>
+        <a href="/tools/wedding-hashtag-generator">Wedding Hashtag Generator</a>
+        <a href="/tools/pet-name-combiner">Pet Name Combiner</a>
+        <a href="/tools/username-generator">Username Generator</a>
+      </div>
+      <div>
+        <h4>From the blog</h4>
+        <a href="/blog/what-is-a-ship-name">What Is a Ship Name?</a>
+        <a href="/blog/how-to-combine-two-names">How to Combine Two Names</a>
+        <a href="/blog/celebrity-couple-names">Celebrity Couple Names</a>
+        <a href="/blog">All Posts</a>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© <span data-year>2026</span> YourNameCombiner.com — All rights reserved.</span>
+      <nav class="foot-links" aria-label="Footer"><a href="/blog">Blog</a><a href="/about">About</a><a href="/privacy-policy">Privacy</a><a href="/terms-of-service">Terms</a></nav>
+    </div>
+  </div>
+</footer>
+
+<button class="fav-fab" id="favFab">⭐ Favorites (<span id="favCount">0</span>)</button>
+<div class="scrim" id="scrim"></div>
+<aside class="drawer" id="favDrawer" aria-label="Favorite names">
+  <div class="drawer-head"><h3>⭐ My Favorite Blends</h3><button class="icon-btn" id="favClose">✕</button></div>
+  <div class="drawer-body" id="favBody"></div>
+  <div class="drawer-foot"><button class="btn ghost" id="favDownload" style="flex:1">Download</button><button class="btn ghost" id="favClear" style="flex:1">Clear all</button></div>
+</aside>
+
+<script src="/assets/js/main.js"></script>
+</body>
+</html>

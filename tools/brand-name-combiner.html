@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Brand Name Combiner — Merge Words into a Business Name</title>
+<meta name="description" content="Free brand name combiner: merge words and founder names into a catchy business name. Instant, unlimited, no signup. Check domain availability before deciding.">
+<link rel="canonical" href="https://yournamecombiner.com/tools/brand-name-combiner">
+<meta property="og:title" content="Brand Name Combiner — Name Your Business">
+<meta property="og:description" content="Merge words into a catchy business name. Free, instant, no signup.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://yournamecombiner.com/tools/brand-name-combiner">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💼</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/style.css">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebApplication","name":"Brand Name Combiner","url":"https://yournamecombiner.com/tools/brand-name-combiner","applicationCategory":"BusinessApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+{"@type":"Question","name":"What is a brand name combiner?","acceptedAnswer":{"@type":"Answer","text":"A brand name combiner merges two words or founder names into a single catchy business name. It is a fast way to brainstorm startup names, product names and shop names that feel original."}},
+{"@type":"Question","name":"How do I pick a good business name?","acceptedAnswer":{"@type":"Answer","text":"Aim for short, easy to spell and easy to say. Generate a long list of blends, then shortlist the ones that hint at what you do and sound confident when spoken aloud."}},
+{"@type":"Question","name":"Should I check domain availability?","acceptedAnswer":{"@type":"Answer","text":"Yes — before you fall in love with a name, check whether the matching domain and social handles are available. A great name you cannot own online will only cause headaches later."}},
+{"@type":"Question","name":"What makes a blended brand name work?","acceptedAnswer":{"@type":"Answer","text":"The best blends keep the strongest sound of each word, avoid awkward consonant pileups, and stay under three syllables. If strangers can spell it after hearing it once, you have a winner."}},
+{"@type":"Question","name":"Can I trademark a blended name?","acceptedAnswer":{"@type":"Answer","text":"Invented words are often easier to protect than descriptive ones, but trademark rules vary by country. Treat the combiner as a brainstorming tool and consult a trademark professional before filing anything."}},
+{"@type":"Question","name":"Is the brand name combiner free?","acceptedAnswer":{"@type":"Answer","text":"Yes, completely free with no signup and unlimited generations."}}
+]}
+</script>
+</head>
+<body>
+<header class="site">
+  <div class="wrap nav">
+    <a class="logo" href="/">💜 Your<b>Name</b>Combiner</a>
+    <nav class="nav-links">
+      <a href="/tools/couple-name-combiner">Couples</a>
+      <a href="/tools/baby-name-combiner">Baby</a>
+      <a href="/tools/brand-name-combiner">Brand</a>
+      <a href="/blog">Blog</a>
+      <a class="cta" href="#combiner">Combine Names</a>
+    </nav>
+  </div>
+</header>
+
+<div class="hero">
+  <div class="float-hearts"></div>
+  <div class="wrap">
+    <p class="breadcrumb"><a href="/" style="color:#e9d5ff">Home</a> · <span style="color:#c4b5fd">Brand Name Combiner</span></p>
+    <h1>💼 Brand Name Combiner</h1>
+    <p class="sub">Merge words and founder names into a business name worth building on — startup-ready blends in one click.</p>
+  </div>
+</div>
+
+<main class="wrap" id="combiner">
+  <div class="tool-card" id="combinerCard" data-mode="brand">
+    <button class="sound-toggle" data-sound-toggle title="Toggle sound">🔊</button>
+    <h2>Create your brand name</h2>
+    <p class="hint">Enter two words — try founder names, product words, or vibes like "swift" and "nest".</p>
+    <div class="alert" id="ncAlert"></div>
+    <div class="name-inputs">
+      <div class="field"><label for="n1">First word or name</label><input class="nc-name" id="n1" maxlength="24" placeholder="e.g. Nova" autocomplete="off"></div>
+      <div class="field"><label for="n2">Second word or name</label><input class="nc-name" id="n2" maxlength="24" placeholder="e.g. Bake" autocomplete="off"></div>
+    </div>
+    <div class="tool-opts">
+      <button class="chip-opt" data-len="short">Short &amp; sweet</button>
+      <button class="chip-opt" data-len="long">Long &amp; dramatic</button>
+    </div>
+    <button class="btn" id="ncGo">💼 Combine Brand Names</button>
+    <div class="results" id="ncResults">
+      <div class="top-pick" id="topPick"></div>
+      <div class="results-head"><h3>Brand name ideas <span style="color:var(--mut);font-weight:400" id="ncCount"></span></h3></div>
+      <div class="name-grid" id="ncGrid"></div>
+      <div class="share-row">
+        <input id="shareLink" readonly style="flex:1;min-width:200px;padding:12px 14px;border:2px solid var(--line);border-radius:12px;font-size:.85rem" aria-label="Shareable link">
+        <button class="btn ghost" id="ncShare">Copy share link</button>
+      </div>
+    </div>
+  </div>
+
+  <section class="block">
+    <h2>Naming tips for <span class="u">founders</span></h2>
+    <div class="steps">
+      <div class="step"><div><h4>Blend, don't describe</h4><p>Invented blends beat literal descriptions. "Novake" is ownable; "Best Bakery Supplies" is not.</p></div></div>
+      <div class="step"><div><h4>The radio test</h4><p>Say each favorite out loud. If a stranger could spell it after hearing it once, it passes.</p></div></div>
+      <div class="step"><div><h4>Check before you commit</h4><p>Before deciding, check domain availability, social handles and trademark databases in your country.</p></div></div>
+    </div>
+  </section>
+
+  <section class="block">
+    <h2>Brand blend <span class="u">examples</span></h2>
+    <p>Strong brand blends keep the punchiest syllable of each word and stay easy to say:</p>
+    <table class="example-table">
+      <tr><th>Words</th><th>Blend</th><th>Why it works</th></tr>
+      <tr><td>Nova + Bake</td><td><b>Novake</b></td><td>Fresh "Nov" start, warm bakery ending</td></tr>
+      <tr><td>Peak + Brew</td><td><b>Prew</b></td><td>Ultra-short, confident, memorable</td></tr>
+      <tr><td>Lumen + Cart</td><td><b>Lumart</b></td><td>Glowing first syllable, crisp finish</td></tr>
+      <tr><td>Drift + Box</td><td><b>Drifbox</b></td><td>Smooth flow, hints at delivery</td></tr>
+    </table>
+    <p>Need a bigger brainstorm? Read our <a href="/blog/brand-name-ideas">brand name ideas</a> guide.</p>
+  </section>
+
+  <section class="block">
+    <h2>More ways to <span class="u">create</span></h2>
+    <div class="rel-grid">
+      <a class="rel-card" href="/tools/username-generator"><span class="k">Social</span><h4>🎮 Username Generator</h4><p>Matching handles for your new brand.</p></a>
+      <a class="rel-card" href="/tools/word-combiner"><span class="k">Words</span><h4>🔤 Word Combiner</h4><p>Invent portmanteaus from any two words.</p></a>
+      <a class="rel-card" href="/tools/nickname-generator"><span class="k">Fun</span><h4>😎 Nickname Generator</h4><p>Short, catchy names for products.</p></a>
+      <a class="rel-card" href="/blog/how-to-combine-two-names"><span class="k">Blog</span><h4>How to Combine Two Names</h4><p>Blending techniques explained.</p></a>
+    </div>
+  </section>
+
+  <section class="block">
+    <h2>Frequently asked <span class="u">questions</span></h2>
+    <div class="faq">
+      <details class="faq-item"><summary>What is a brand name combiner?</summary><div class="a">A brand name combiner merges two words or founder names into a single catchy business name. It is a fast way to brainstorm startup names, product names and shop names that feel original.</div></details>
+      <details class="faq-item"><summary>How do I pick a good business name?</summary><div class="a">Aim for short, easy to spell and easy to say. Generate a long list of blends, then shortlist the ones that hint at what you do and sound confident when spoken aloud.</div></details>
+      <details class="faq-item"><summary>Should I check domain availability?</summary><div class="a">Yes — before you fall in love with a name, check whether the matching domain and social handles are available. A great name you cannot own online will only cause headaches later.</div></details>
+      <details class="faq-item"><summary>What makes a blended brand name work?</summary><div class="a">The best blends keep the strongest sound of each word, avoid awkward consonant pileups, and stay under three syllables. If strangers can spell it after hearing it once, you have a winner.</div></details>
+      <details class="faq-item"><summary>Can I trademark a blended name?</summary><div class="a">Invented words are often easier to protect than descriptive ones, but trademark rules vary by country. Treat the combiner as a brainstorming tool and consult a trademark professional before filing anything.</div></details>
+      <details class="faq-item"><summary>Is the brand name combiner free?</summary><div class="a">Yes, completely free with no signup and unlimited generations.</div></details>
+    </div>
+  </section>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <div class="foot-brand">💜 Your<b>Name</b>Combiner</div>
+        <p style="font-size:.9rem">Free name-blending tools for couples, babies, brands and beyond. Made with 💜 for name lovers everywhere.</p>
+      </div>
+      <div>
+        <h4>Popular tools</h4>
+        <a href="/tools/couple-name-combiner">Couple Name Combiner</a>
+        <a href="/tools/baby-name-combiner">Baby Name Combiner</a>
+        <a href="/tools/ship-name-generator">Ship Name Generator</a>
+        <a href="/tools/brand-name-combiner">Brand Name Combiner</a>
+      </div>
+      <div>
+        <h4>More tools</h4>
+        <a href="/tools/nickname-generator">Nickname Generator</a>
+        <a href="/tools/wedding-hashtag-generator">Wedding Hashtag Generator</a>
+        <a href="/tools/pet-name-combiner">Pet Name Combiner</a>
+        <a href="/tools/username-generator">Username Generator</a>
+      </div>
+      <div>
+        <h4>From the blog</h4>
+        <a href="/blog/what-is-a-ship-name">What Is a Ship Name?</a>
+        <a href="/blog/how-to-combine-two-names">How to Combine Two Names</a>
+        <a href="/blog/celebrity-couple-names">Celebrity Couple Names</a>
+        <a href="/blog">All Posts</a>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© <span data-year>2026</span> YourNameCombiner.com — All rights reserved.</span>
+      <nav class="foot-links" aria-label="Footer"><a href="/blog">Blog</a><a href="/about">About</a><a href="/privacy-policy">Privacy</a><a href="/terms-of-service">Terms</a></nav>
+    </div>
+  </div>
+</footer>
+
+<button class="fav-fab" id="favFab">⭐ Favorites (<span id="favCount">0</span>)</button>
+<div class="scrim" id="scrim"></div>
+<aside class="drawer" id="favDrawer" aria-label="Favorite names">
+  <div class="drawer-head"><h3>⭐ My Favorite Blends</h3><button class="icon-btn" id="favClose">✕</button></div>
+  <div class="drawer-body" id="favBody"></div>
+  <div class="drawer-foot"><button class="btn ghost" id="favDownload" style="flex:1">Download</button><button class="btn ghost" id="favClear" style="flex:1">Clear all</button></div>
+</aside>
+
+<script src="/assets/js/main.js"></script>
+</body>
+</html>

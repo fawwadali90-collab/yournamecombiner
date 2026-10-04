@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Baby Name Combiner — Blend Mom &amp; Dad's Names into a Baby Name</title>
+<meta name="description" content="Free baby name combiner: blend mom and dad's names into a beautiful, unique baby name. Filter by boy or girl, save favorites, and share. No signup needed.">
+<link rel="canonical" href="https://yournamecombiner.com/tools/baby-name-combiner">
+<meta property="og:title" content="Baby Name Combiner — Blend Mom &amp; Dad's Names">
+<meta property="og:description" content="Blend mom and dad's names into a unique baby name. Free, instant, no signup.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://yournamecombiner.com/tools/baby-name-combiner">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👶</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/style.css">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebApplication","name":"Baby Name Combiner","url":"https://yournamecombiner.com/tools/baby-name-combiner","applicationCategory":"LifestyleApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+{"@type":"Question","name":"Is it okay to make up a baby name?","acceptedAnswer":{"@type":"Answer","text":"Absolutely — invented and blended names are more popular than ever. Just make sure the name is easy to spell and pronounce, and check that the initials do not spell anything awkward."}},
+{"@type":"Question","name":"How do you combine mom and dad's names for a baby?","acceptedAnswer":{"@type":"Answer","text":"Enter both parents' first names above and the combiner will blend them in every possible way — front-half fusions, syllable mixes and overlap merges — so you can browse dozens of unique options."}},
+{"@type":"Question","name":"How do I choose the right blended baby name?","acceptedAnswer":{"@type":"Answer","text":"Say each favorite out loud, write it down, and test it with the last name. The best blended names sound natural, are easy to spell, and feel right when you imagine calling them across a playground."}},
+{"@type":"Question","name":"Can I filter baby name blends by gender?","acceptedAnswer":{"@type":"Answer","text":"Yes — use the girl or boy chips above the generate button and the results will be tuned toward names with that feel. You can also try both to compare."}},
+{"@type":"Question","name":"Should a blended baby name work in two cultures?","acceptedAnswer":{"@type":"Answer","text":"If your family spans two languages or cultures, test each favorite in both. A blend that sounds lovely in one language can be tricky to pronounce in another, so try saying it the way grandparents would."}},
+{"@type":"Question","name":"Is the baby name combiner free?","acceptedAnswer":{"@type":"Answer","text":"Yes, completely free with no signup and unlimited generations."}}
+]}
+</script>
+</head>
+<body>
+<header class="site">
+  <div class="wrap nav">
+    <a class="logo" href="/">💜 Your<b>Name</b>Combiner</a>
+    <nav class="nav-links">
+      <a href="/tools/couple-name-combiner">Couples</a>
+      <a href="/tools/baby-name-combiner">Baby</a>
+      <a href="/tools/brand-name-combiner">Brand</a>
+      <a href="/blog">Blog</a>
+      <a class="cta" href="#combiner">Combine Names</a>
+    </nav>
+  </div>
+</header>
+
+<div class="hero">
+  <div class="float-hearts"></div>
+  <div class="wrap">
+    <p class="breadcrumb"><a href="/" style="color:#e9d5ff">Home</a> · <span style="color:#c4b5fd">Baby Name Combiner</span></p>
+    <h1>👶 Baby Name Combiner</h1>
+    <p class="sub">Blend mom and dad's names into a one-of-a-kind baby name — a name that is truly yours, from day one.</p>
+  </div>
+</div>
+
+<main class="wrap" id="combiner">
+  <div class="tool-card" id="combinerCard" data-mode="baby" data-min="2">
+    <button class="sound-toggle" data-sound-toggle title="Toggle sound">🔊</button>
+    <h2>Create a blended baby name</h2>
+    <p class="hint">Enter both parents' first names — try each order for different results.</p>
+    <div class="alert" id="ncAlert"></div>
+    <div class="name-inputs">
+      <div class="field"><label for="n1">Mom's name</label><input class="nc-name" id="n1" maxlength="24" placeholder="e.g. Sofia" autocomplete="off"></div>
+      <div class="field"><label for="n2">Dad's name</label><input class="nc-name" id="n2" maxlength="24" placeholder="e.g. Daniel" autocomplete="off"></div>
+    </div>
+    <div class="tool-opts">
+      <button class="chip-opt" data-gender="girl">👧 Girl</button>
+      <button class="chip-opt" data-gender="boy">👦 Boy</button>
+      <button class="chip-opt" data-len="short">Short &amp; sweet</button>
+      <button class="chip-opt" data-len="long">Long &amp; dramatic</button>
+    </div>
+    <button class="btn" id="ncGo">👶 Combine Baby Names</button>
+    <div class="results" id="ncResults">
+      <div class="top-pick" id="topPick"></div>
+      <div class="results-head"><h3>Baby name ideas <span style="color:var(--mut);font-weight:400" id="ncCount"></span></h3></div>
+      <div class="name-grid" id="ncGrid"></div>
+      <div class="share-row">
+        <input id="shareLink" readonly style="flex:1;min-width:200px;padding:12px 14px;border:2px solid var(--line);border-radius:12px;font-size:.85rem" aria-label="Shareable link">
+        <button class="btn ghost" id="ncShare">Copy share link</button>
+      </div>
+    </div>
+  </div>
+
+  <section class="block">
+    <h2>Tips for a <span class="u">perfect blend</span></h2>
+    <div class="steps">
+      <div class="step"><div><h4>Say it out loud</h4><p>A name lives in the voice, not on paper. Say each favorite three times fast — if it trips you up, move on.</p></div></div>
+      <div class="step"><div><h4>Check the initials</h4><p>Write the full name with your last name. Make sure the initials don't spell anything unfortunate.</p></div></div>
+      <div class="step"><div><h4>Sleep on it</h4><p>⭐ your shortlist, share the link with family, and revisit tomorrow. The right name still feels right.</p></div></div>
+    </div>
+  </section>
+
+  <section class="block">
+    <h2>Blended baby name <span class="u">examples</span></h2>
+    <p>The sweetest blends usually keep the strongest syllable of each parent's name. Here is how it works:</p>
+    <table class="example-table">
+      <tr><th>Parents</th><th>Blend</th><th>Why it works</th></tr>
+      <tr><td>Emma + Liam</td><td><b>Emliam</b></td><td>Soft "Em" start with a strong finish</td></tr>
+      <tr><td>Olivia + Noah</td><td><b>Novia</b></td><td>Romantic sound, easy to pronounce</td></tr>
+      <tr><td>Ava + Ethan</td><td><b>Avan</b></td><td>Short, modern, works for any gender</td></tr>
+      <tr><td>Mia + Lucas</td><td><b>Milas</b></td><td>Playful rhythm with a gentle ending</td></tr>
+    </table>
+    <p>Want more inspiration? Browse our <a href="/blog/baby-name-blends">baby name blends</a> guide.</p>
+  </section>
+
+  <section class="block">
+    <h2>More ways to <span class="u">play</span></h2>
+    <div class="rel-grid">
+      <a class="rel-card" href="/tools/couple-name-combiner"><span class="k">Romance</span><h4>💑 Couple Name Combiner</h4><p>Blend your names as a couple first.</p></a>
+      <a class="rel-card" href="/tools/nickname-generator"><span class="k">Fun</span><h4>😎 Nickname Generator</h4><p>Cute nicknames for your little one.</p></a>
+      <a class="rel-card" href="/tools/last-name-combiner"><span class="k">Family</span><h4>💒 Last Name Combiner</h4><p>Blend or hyphenate family surnames.</p></a>
+      <a class="rel-card" href="/blog/how-to-combine-two-names"><span class="k">Blog</span><h4>How to Combine Two Names</h4><p>Blending techniques explained.</p></a>
+    </div>
+  </section>
+
+  <section class="block">
+    <h2>Frequently asked <span class="u">questions</span></h2>
+    <div class="faq">
+      <details class="faq-item"><summary>Is it okay to make up a baby name?</summary><div class="a">Absolutely — invented and blended names are more popular than ever. Just make sure the name is easy to spell and pronounce, and check that the initials do not spell anything awkward.</div></details>
+      <details class="faq-item"><summary>How do you combine mom and dad's names for a baby?</summary><div class="a">Enter both parents' first names above and the combiner will blend them in every possible way — front-half fusions, syllable mixes and overlap merges — so you can browse dozens of unique options.</div></details>
+      <details class="faq-item"><summary>How do I choose the right blended baby name?</summary><div class="a">Say each favorite out loud, write it down, and test it with the last name. The best blended names sound natural, are easy to spell, and feel right when you imagine calling them across a playground.</div></details>
+      <details class="faq-item"><summary>Can I filter baby name blends by gender?</summary><div class="a">Yes — use the girl or boy chips above the generate button and the results will be tuned toward names with that feel. You can also try both to compare.</div></details>
+      <details class="faq-item"><summary>Should a blended baby name work in two cultures?</summary><div class="a">If your family spans two languages or cultures, test each favorite in both. A blend that sounds lovely in one language can be tricky to pronounce in another, so try saying it the way grandparents would.</div></details>
+      <details class="faq-item"><summary>Is the baby name combiner free?</summary><div class="a">Yes, completely free with no signup and unlimited generations.</div></details>
+    </div>
+  </section>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <div class="foot-brand">💜 Your<b>Name</b>Combiner</div>
+        <p style="font-size:.9rem">Free name-blending tools for couples, babies, brands and beyond. Made with 💜 for name lovers everywhere.</p>
+      </div>
+      <div>
+        <h4>Popular tools</h4>
+        <a href="/tools/couple-name-combiner">Couple Name Combiner</a>
+        <a href="/tools/baby-name-combiner">Baby Name Combiner</a>
+        <a href="/tools/ship-name-generator">Ship Name Generator</a>
+        <a href="/tools/brand-name-combiner">Brand Name Combiner</a>
+      </div>
+      <div>
+        <h4>More tools</h4>
+        <a href="/tools/nickname-generator">Nickname Generator</a>
+        <a href="/tools/wedding-hashtag-generator">Wedding Hashtag Generator</a>
+        <a href="/tools/pet-name-combiner">Pet Name Combiner</a>
+        <a href="/tools/username-generator">Username Generator</a>
+      </div>
+      <div>
+        <h4>From the blog</h4>
+        <a href="/blog/what-is-a-ship-name">What Is a Ship Name?</a>
+        <a href="/blog/how-to-combine-two-names">How to Combine Two Names</a>
+        <a href="/blog/celebrity-couple-names">Celebrity Couple Names</a>
+        <a href="/blog">All Posts</a>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© <span data-year>2026</span> YourNameCombiner.com — All rights reserved.</span>
+      <nav class="foot-links" aria-label="Footer"><a href="/blog">Blog</a><a href="/about">About</a><a href="/privacy-policy">Privacy</a><a href="/terms-of-service">Terms</a></nav>
+    </div>
+  </div>
+</footer>
+
+<button class="fav-fab" id="favFab">⭐ Favorites (<span id="favCount">0</span>)</button>
+<div class="scrim" id="scrim"></div>
+<aside class="drawer" id="favDrawer" aria-label="Favorite names">
+  <div class="drawer-head"><h3>⭐ My Favorite Blends</h3><button class="icon-btn" id="favClose">✕</button></div>
+  <div class="drawer-body" id="favBody"></div>
+  <div class="drawer-foot"><button class="btn ghost" id="favDownload" style="flex:1">Download</button><button class="btn ghost" id="favClear" style="flex:1">Clear all</button></div>
+</aside>
+
+<script src="/assets/js/main.js"></script>
+</body>
+</html>

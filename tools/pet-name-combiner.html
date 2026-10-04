@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pet Name Combiner — Cute Blended Names for Dogs, Cats &amp; More</title>
+<meta name="description" content="Free pet name combiner: blend names into cute, funny names for dogs, cats and more. Mix your name with your pet's for adorable results. Instant, no signup.">
+<link rel="canonical" href="https://yournamecombiner.com/tools/pet-name-combiner">
+<meta property="og:title" content="Pet Name Combiner — Cute Names for Pets">
+<meta property="og:description" content="Blend names into cute, funny pet names for dogs, cats and more. Free, instant, no signup.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://yournamecombiner.com/tools/pet-name-combiner">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🐾</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/style.css">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebApplication","name":"Pet Name Combiner","url":"https://yournamecombiner.com/tools/pet-name-combiner","applicationCategory":"LifestyleApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+{"@type":"Question","name":"What are good blended pet names?","acceptedAnswer":{"@type":"Answer","text":"Good blended pet names are short, cheerful and easy to call out: Bisco (Biscuit + Coco), Mipper (Milo + Pepper), Lubear (Luna + Bear). Two syllables with a clear vowel sound work best."}},
+{"@type":"Question","name":"Can I combine my name with my pet's name?","acceptedAnswer":{"@type":"Answer","text":"Yes — enter your name and your pet's name above to create a matching pair. It is a fun way to give rescues a fresh start or name a new litter with a family theme."}},
+{"@type":"Question","name":"What are funny pet name ideas?","acceptedAnswer":{"@type":"Answer","text":"Funny pet names pair a grand title with a tiny animal, or blend food words: Sir Barksalot, Biscuit, Waffles. Try the combiner with a silly second word for playful results."}},
+{"@type":"Question","name":"Should dog names be two syllables?","acceptedAnswer":{"@type":"Answer","text":"Many trainers recommend one or two syllables with a hard consonant, since short names are easier for dogs to recognize. Test your favorite blend by calling it out loud a few times."}},
+{"@type":"Question","name":"Do blended names work for cats too?","acceptedAnswer":{"@type":"Answer","text":"Absolutely. Cats respond well to names ending in an ee sound, like Mimi or Ziggy. Filter for short and sweet blends for the most cat-friendly options."}},
+{"@type":"Question","name":"Is the pet name combiner free?","acceptedAnswer":{"@type":"Answer","text":"Yes, completely free with no signup and unlimited generations."}}
+]}
+</script>
+</head>
+<body>
+<header class="site">
+  <div class="wrap nav">
+    <a class="logo" href="/">💜 Your<b>Name</b>Combiner</a>
+    <nav class="nav-links">
+      <a href="/tools/couple-name-combiner">Couples</a>
+      <a href="/tools/baby-name-combiner">Baby</a>
+      <a href="/tools/brand-name-combiner">Brand</a>
+      <a href="/blog">Blog</a>
+      <a class="cta" href="#combiner">Combine Names</a>
+    </nav>
+  </div>
+</header>
+
+<div class="hero">
+  <div class="float-hearts"></div>
+  <div class="wrap">
+    <p class="breadcrumb"><a href="/" style="color:#e9d5ff">Home</a> · <span style="color:#c4b5fd">Pet Name Combiner</span></p>
+    <h1>🐾 Pet Name Combiner</h1>
+    <p class="sub">Cute blended names for dogs, cats and every furry friend — mix your name with theirs for an instant match.</p>
+  </div>
+</div>
+
+<main class="wrap" id="combiner">
+  <div class="tool-card" id="combinerCard" data-mode="pet" data-min="1">
+    <button class="sound-toggle" data-sound-toggle title="Toggle sound">🔊</button>
+    <h2>Create a pet name</h2>
+    <p class="hint">Enter your pet's name — the second word is optional but adds flavor.</p>
+    <div class="alert" id="ncAlert"></div>
+    <div class="name-inputs">
+      <div class="field"><label for="n1">Pet's name or your name</label><input class="nc-name" id="n1" maxlength="24" placeholder="e.g. Milo" autocomplete="off"></div>
+      <div class="field"><label for="n2">Second name or word (optional)</label><input class="nc-name" id="n2" maxlength="24" placeholder="e.g. Pepper" autocomplete="off"></div>
+    </div>
+    <div class="tool-opts">
+      <button class="chip-opt" data-len="short">Short &amp; sweet</button>
+      <button class="chip-opt" data-len="long">Long &amp; dramatic</button>
+    </div>
+    <button class="btn" id="ncGo">🐾 Combine Pet Names</button>
+    <div class="results" id="ncResults">
+      <div class="top-pick" id="topPick"></div>
+      <div class="results-head"><h3>Pet name ideas <span style="color:var(--mut);font-weight:400" id="ncCount"></span></h3></div>
+      <div class="name-grid" id="ncGrid"></div>
+      <div class="share-row">
+        <input id="shareLink" readonly style="flex:1;min-width:200px;padding:12px 14px;border:2px solid var(--line);border-radius:12px;font-size:.85rem" aria-label="Shareable link">
+        <button class="btn ghost" id="ncShare">Copy share link</button>
+      </div>
+    </div>
+  </div>
+
+  <section class="block">
+    <h2>Cute vs funny: <span class="u">pick your vibe</span></h2>
+    <div class="steps">
+      <div class="step"><div><h4>Go cute</h4><p>Blend two sweet words for maximum adorableness — think Biscuit + Coco = Bisco.</p></div></div>
+      <div class="step"><div><h4>Go funny</h4><p>Pair a grand word with a tiny pet, or blend food words. Comedy gold for group chats.</p></div></div>
+      <div class="step"><div><h4>Call it out</h4><p>Shout your favorite across the room. If it makes you smile and your pet perks up, it is the one.</p></div></div>
+    </div>
+  </section>
+
+  <section class="block">
+    <h2>Blended pet name <span class="u">examples</span></h2>
+    <p>The best pet names are short, bouncy and fun to say:</p>
+    <table class="example-table">
+      <tr><th>Names</th><th>Blend</th><th>Vibe</th></tr>
+      <tr><td>Biscuit + Coco</td><td><b>Bisco</b></td><td>Cute — sweet and snackable</td></tr>
+      <tr><td>Milo + Pepper</td><td><b>Mipper</b></td><td>Playful — zippy two-syllable call</td></tr>
+      <tr><td>Luna + Bear</td><td><b>Lubear</b></td><td>Cuddly — soft start, strong finish</td></tr>
+      <tr><td>Ruby + Dash</td><td><b>Rubash</b></td><td>Spunky — full of energy</td></tr>
+    </table>
+    <p>More inspiration in our <a href="/blog/pet-name-ideas">pet name ideas</a> guide.</p>
+  </section>
+
+  <section class="block">
+    <h2>More ways to <span class="u">play</span></h2>
+    <div class="rel-grid">
+      <a class="rel-card" href="/tools/nickname-generator"><span class="k">Fun</span><h4>😎 Nickname Generator</h4><p>Nicknames for pets and people.</p></a>
+      <a class="rel-card" href="/tools/baby-name-combiner"><span class="k">Family</span><h4>👶 Baby Name Combiner</h4><p>Blend parent names for babies.</p></a>
+      <a class="rel-card" href="/tools/username-generator"><span class="k">Social</span><h4>🎮 Username Generator</h4><p>A handle for your pet's account.</p></a>
+      <a class="rel-card" href="/blog/how-to-combine-two-names"><span class="k">Blog</span><h4>How to Combine Two Names</h4><p>Blending techniques explained.</p></a>
+    </div>
+  </section>
+
+  <section class="block">
+    <h2>Frequently asked <span class="u">questions</span></h2>
+    <div class="faq">
+      <details class="faq-item"><summary>What are good blended pet names?</summary><div class="a">Good blended pet names are short, cheerful and easy to call out: Bisco (Biscuit + Coco), Mipper (Milo + Pepper), Lubear (Luna + Bear). Two syllables with a clear vowel sound work best.</div></details>
+      <details class="faq-item"><summary>Can I combine my name with my pet's name?</summary><div class="a">Yes — enter your name and your pet's name above to create a matching pair. It is a fun way to give rescues a fresh start or name a new litter with a family theme.</div></details>
+      <details class="faq-item"><summary>What are funny pet name ideas?</summary><div class="a">Funny pet names pair a grand title with a tiny animal, or blend food words: Sir Barksalot, Biscuit, Waffles. Try the combiner with a silly second word for playful results.</div></details>
+      <details class="faq-item"><summary>Should dog names be two syllables?</summary><div class="a">Many trainers recommend one or two syllables with a hard consonant, since short names are easier for dogs to recognize. Test your favorite blend by calling it out loud a few times.</div></details>
+      <details class="faq-item"><summary>Do blended names work for cats too?</summary><div class="a">Absolutely. Cats respond well to names ending in an ee sound, like Mimi or Ziggy. Filter for short and sweet blends for the most cat-friendly options.</div></details>
+      <details class="faq-item"><summary>Is the pet name combiner free?</summary><div class="a">Yes, completely free with no signup and unlimited generations.</div></details>
+    </div>
+  </section>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <div class="foot-brand">💜 Your<b>Name</b>Combiner</div>
+        <p style="font-size:.9rem">Free name-blending tools for couples, babies, brands and beyond. Made with 💜 for name lovers everywhere.</p>
+      </div>
+      <div>
+        <h4>Popular tools</h4>
+        <a href="/tools/couple-name-combiner">Couple Name Combiner</a>
+        <a href="/tools/baby-name-combiner">Baby Name Combiner</a>
+        <a href="/tools/ship-name-generator">Ship Name Generator</a>
+        <a href="/tools/brand-name-combiner">Brand Name Combiner</a>
+      </div>
+      <div>
+        <h4>More tools</h4>
+        <a href="/tools/nickname-generator">Nickname Generator</a>
+        <a href="/tools/wedding-hashtag-generator">Wedding Hashtag Generator</a>
+        <a href="/tools/pet-name-combiner">Pet Name Combiner</a>
+        <a href="/tools/username-generator">Username Generator</a>
+      </div>
+      <div>
+        <h4>From the blog</h4>
+        <a href="/blog/what-is-a-ship-name">What Is a Ship Name?</a>
+        <a href="/blog/how-to-combine-two-names">How to Combine Two Names</a>
+        <a href="/blog/celebrity-couple-names">Celebrity Couple Names</a>
+        <a href="/blog">All Posts</a>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© <span data-year>2026</span> YourNameCombiner.com — All rights reserved.</span>
+      <nav class="foot-links" aria-label="Footer"><a href="/blog">Blog</a><a href="/about">About</a><a href="/privacy-policy">Privacy</a><a href="/terms-of-service">Terms</a></nav>
+    </div>
+  </div>
+</footer>
+
+<button class="fav-fab" id="favFab">⭐ Favorites (<span id="favCount">0</span>)</button>
+<div class="scrim" id="scrim"></div>
+<aside class="drawer" id="favDrawer" aria-label="Favorite names">
+  <div class="drawer-head"><h3>⭐ My Favorite Blends</h3><button class="icon-btn" id="favClose">✕</button></div>
+  <div class="drawer-body" id="favBody"></div>
+  <div class="drawer-foot"><button class="btn ghost" id="favDownload" style="flex:1">Download</button><button class="btn ghost" id="favClear" style="flex:1">Clear all</button></div>
+</aside>
+
+<script src="/assets/js/main.js"></script>
+</body>
+</html>
