@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Username Generator — Cool Handles from Any Name</title>
+<meta name="description" content="Free username generator: turn any name into cool, unique handles for Instagram, TikTok, gaming and more. Add a keyword for personalized ideas. No signup needed.">
+<link rel="canonical" href="https://yournamecombiner.com/tools/username-generator">
+<meta property="og:title" content="Username Generator — Cool Handles from Any Name">
+<meta property="og:description" content="Turn any name into cool, unique handles. Free, instant, no signup.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://yournamecombiner.com/tools/username-generator">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎮</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/style.css">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebApplication","name":"Username Generator","url":"https://yournamecombiner.com/tools/username-generator","applicationCategory":"SocialNetworkingApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+{"@type":"Question","name":"What makes a good username?","acceptedAnswer":{"@type":"Answer","text":"A good username is short, memorable and easy to spell. Combine your name with a keyword you love, keep it under 15 characters when possible, and avoid long strings of random numbers."}},
+{"@type":"Question","name":"How do I get a unique username?","acceptedAnswer":{"@type":"Answer","text":"Fuse your name with a keyword, hobby or favorite word instead of tacking on numbers. The generator above creates blended handles that stand out — then check availability on the platform you want."}},
+{"@type":"Question","name":"Should I use my real name in a username?","acceptedAnswer":{"@type":"Answer","text":"For personal brands it helps people find you, but for gaming or anonymous accounts a blended handle offers more privacy. Think about who you want to be discoverable by before deciding."}},
+{"@type":"Question","name":"What should I do if my username is taken?","acceptedAnswer":{"@type":"Answer","text":"Try a blend instead of adding numbers: swap the word order, fuse your name with a keyword, or add a short prefix like the or real. The generator creates dozens of alternatives in one click."}},
+{"@type":"Question","name":"Can I use the same username everywhere?","acceptedAnswer":{"@type":"Answer","text":"Using one consistent handle across platforms makes you easier to find and looks professional. Generate a favorite, then check it on each platform before committing."}},
+{"@type":"Question","name":"Is the username generator free?","acceptedAnswer":{"@type":"Answer","text":"Yes, completely free with no signup and unlimited generations."}}
+]}
+</script>
+</head>
+<body>
+<header class="site">
+  <div class="wrap nav">
+    <a class="logo" href="/">💜 Your<b>Name</b>Combiner</a>
+    <nav class="nav-links">
+      <a href="/tools/couple-name-combiner">Couples</a>
+      <a href="/tools/baby-name-combiner">Baby</a>
+      <a href="/tools/brand-name-combiner">Brand</a>
+      <a href="/blog">Blog</a>
+      <a class="cta" href="#combiner">Combine Names</a>
+    </nav>
+  </div>
+</header>
+
+<div class="hero">
+  <div class="float-hearts"></div>
+  <div class="wrap">
+    <p class="breadcrumb"><a href="/" style="color:#e9d5ff">Home</a> · <span style="color:#c4b5fd">Username Generator</span></p>
+    <h1>🎮 Username Generator</h1>
+    <p class="sub">Cool handles from any name — for Instagram, TikTok, gaming and everywhere else you need to stand out.</p>
+  </div>
+</div>
+
+<main class="wrap" id="combiner">
+  <div class="tool-card" id="combinerCard" data-mode="username" data-min="1">
+    <button class="sound-toggle" data-sound-toggle title="Toggle sound">🔊</button>
+    <h2>Create your username</h2>
+    <p class="hint">Enter your name — the keyword is optional but unlocks way cooler handles.</p>
+    <div class="alert" id="ncAlert"></div>
+    <div class="name-inputs">
+      <div class="field"><label for="n1">Your name</label><input class="nc-name" id="n1" maxlength="24" placeholder="e.g. Maya" autocomplete="off"></div>
+      <div class="field"><label for="n2">Keyword (optional)</label><input class="nc-name" id="n2" maxlength="24" placeholder="e.g. gamer, pixel…" autocomplete="off"></div>
+    </div>
+    <div class="tool-opts">
+      <button class="chip-opt" data-len="short">Short &amp; sweet</button>
+      <button class="chip-opt" data-len="long">Long &amp; dramatic</button>
+    </div>
+    <button class="btn" id="ncGo">🎮 Generate Usernames</button>
+    <div class="results" id="ncResults">
+      <div class="top-pick" id="topPick"></div>
+      <div class="results-head"><h3>Username ideas <span style="color:var(--mut);font-weight:400" id="ncCount"></span></h3></div>
+      <div class="name-grid" id="ncGrid"></div>
+      <div class="share-row">
+        <input id="shareLink" readonly style="flex:1;min-width:200px;padding:12px 14px;border:2px solid var(--line);border-radius:12px;font-size:.85rem" aria-label="Shareable link">
+        <button class="btn ghost" id="ncShare">Copy share link</button>
+      </div>
+    </div>
+  </div>
+
+  <section class="block">
+    <h2>Handle <span class="u">formulas</span> that work</h2>
+    <div class="steps">
+      <div class="step"><div><h4>Name + keyword</h4><p>Fuse what you love with who you are: Maya + gamer becomes MayaPlays. Instant personality.</p></div></div>
+      <div class="step"><div><h4>Keep it short</h4><p>Under 15 characters is the sweet spot — easier to remember, tag and type.</p></div></div>
+      <div class="step"><div><h4>Check availability</h4><p>Search your favorite on each platform before you commit. One handle everywhere beats five variations.</p></div></div>
+    </div>
+  </section>
+
+  <section class="block">
+    <h2>Username <span class="u">examples</span></h2>
+    <p>Blended handles beat "name + random numbers" every time:</p>
+    <table class="example-table">
+      <tr><th>Name + keyword</th><th>Handle</th><th>Why it works</th></tr>
+      <tr><td>Maya + gamer</td><td><b>MayaPlays</b></td><td>Clear, friendly, says what she does</td></tr>
+      <tr><td>Leo + pixel</td><td><b>PixelLeo</b></td><td>Keyword-first style feels creative</td></tr>
+      <tr><td>Ava + wander</td><td><b>WanderAva</b></td><td>Evokes travel content instantly</td></tr>
+      <tr><td>Sam + beats</td><td><b>SamOnBeats</b></td><td>Rhythmic and easy to remember</td></tr>
+    </table>
+    <p>Naming a couple account? Start with our <a href="/tools/couple-name-combiner">couple name combiner</a>.</p>
+  </section>
+
+  <section class="block">
+    <h2>More ways to <span class="u">create</span></h2>
+    <div class="rel-grid">
+      <a class="rel-card" href="/tools/nickname-generator"><span class="k">Fun</span><h4>😎 Nickname Generator</h4><p>Nicknames that make great handles.</p></a>
+      <a class="rel-card" href="/tools/brand-name-combiner"><span class="k">Business</span><h4>💼 Brand Name Combiner</h4><p>Names for your business account.</p></a>
+      <a class="rel-card" href="/tools/ship-name-generator"><span class="k">Fandom</span><h4>🚢 Ship Name Generator</h4><p>Fandom handles for your OTP.</p></a>
+      <a class="rel-card" href="/blog/how-to-combine-two-names"><span class="k">Blog</span><h4>How to Combine Two Names</h4><p>Blending techniques explained.</p></a>
+    </div>
+  </section>
+
+  <section class="block">
+    <h2>Frequently asked <span class="u">questions</span></h2>
+    <div class="faq">
+      <details class="faq-item"><summary>What makes a good username?</summary><div class="a">A good username is short, memorable and easy to spell. Combine your name with a keyword you love, keep it under 15 characters when possible, and avoid long strings of random numbers.</div></details>
+      <details class="faq-item"><summary>How do I get a unique username?</summary><div class="a">Fuse your name with a keyword, hobby or favorite word instead of tacking on numbers. The generator above creates blended handles that stand out — then check availability on the platform you want.</div></details>
+      <details class="faq-item"><summary>Should I use my real name in a username?</summary><div class="a">For personal brands it helps people find you, but for gaming or anonymous accounts a blended handle offers more privacy. Think about who you want to be discoverable by before deciding.</div></details>
+      <details class="faq-item"><summary>What should I do if my username is taken?</summary><div class="a">Try a blend instead of adding numbers: swap the word order, fuse your name with a keyword, or add a short prefix like the or real. The generator creates dozens of alternatives in one click.</div></details>
+      <details class="faq-item"><summary>Can I use the same username everywhere?</summary><div class="a">Using one consistent handle across platforms makes you easier to find and looks professional. Generate a favorite, then check it on each platform before committing.</div></details>
+      <details class="faq-item"><summary>Is the username generator free?</summary><div class="a">Yes, completely free with no signup and unlimited generations.</div></details>
+    </div>
+  </section>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <div class="foot-brand">💜 Your<b>Name</b>Combiner</div>
+        <p style="font-size:.9rem">Free name-blending tools for couples, babies, brands and beyond. Made with 💜 for name lovers everywhere.</p>
+      </div>
+      <div>
+        <h4>Popular tools</h4>
+        <a href="/tools/couple-name-combiner">Couple Name Combiner</a>
+        <a href="/tools/baby-name-combiner">Baby Name Combiner</a>
+        <a href="/tools/ship-name-generator">Ship Name Generator</a>
+        <a href="/tools/brand-name-combiner">Brand Name Combiner</a>
+      </div>
+      <div>
+        <h4>More tools</h4>
+        <a href="/tools/nickname-generator">Nickname Generator</a>
+        <a href="/tools/wedding-hashtag-generator">Wedding Hashtag Generator</a>
+        <a href="/tools/pet-name-combiner">Pet Name Combiner</a>
+        <a href="/tools/username-generator">Username Generator</a>
+      </div>
+      <div>
+        <h4>From the blog</h4>
+        <a href="/blog/what-is-a-ship-name">What Is a Ship Name?</a>
+        <a href="/blog/how-to-combine-two-names">How to Combine Two Names</a>
+        <a href="/blog/celebrity-couple-names">Celebrity Couple Names</a>
+        <a href="/blog">All Posts</a>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© <span data-year>2026</span> YourNameCombiner.com — All rights reserved.</span>
+      <nav class="foot-links" aria-label="Footer"><a href="/blog">Blog</a><a href="/about">About</a><a href="/privacy-policy">Privacy</a><a href="/terms-of-service">Terms</a></nav>
+    </div>
+  </div>
+</footer>
+
+<button class="fav-fab" id="favFab">⭐ Favorites (<span id="favCount">0</span>)</button>
+<div class="scrim" id="scrim"></div>
+<aside class="drawer" id="favDrawer" aria-label="Favorite names">
+  <div class="drawer-head"><h3>⭐ My Favorite Blends</h3><button class="icon-btn" id="favClose">✕</button></div>
+  <div class="drawer-body" id="favBody"></div>
+  <div class="drawer-foot"><button class="btn ghost" id="favDownload" style="flex:1">Download</button><button class="btn ghost" id="favClear" style="flex:1">Clear all</button></div>
+</aside>
+
+<script src="/assets/js/main.js"></script>
+</body>
+</html>

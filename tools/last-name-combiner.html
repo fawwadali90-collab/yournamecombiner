@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Last Name Combiner — Blend &amp; Hyphenate Surnames</title>
+<meta name="description" content="Free last name combiner: blend or hyphenate two surnames into one. Perfect for newlyweds and modern families. Instant results, no signup, unlimited tries.">
+<link rel="canonical" href="https://yournamecombiner.com/tools/last-name-combiner">
+<meta property="og:title" content="Last Name Combiner — Blend &amp; Hyphenate Surnames">
+<meta property="og:description" content="Blend or hyphenate two surnames into one. Free, instant, no signup.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://yournamecombiner.com/tools/last-name-combiner">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💒</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/style.css">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebApplication","name":"Last Name Combiner","url":"https://yournamecombiner.com/tools/last-name-combiner","applicationCategory":"LifestyleApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+{"@type":"Question","name":"Should we hyphenate or blend our last names?","acceptedAnswer":{"@type":"Answer","text":"Hyphenating keeps both names intact and recognizable, while blending creates one brand-new surname. Hyphens are more traditional; blends are shorter and feel like a fresh start. Try both styles in the combiner above."}},
+{"@type":"Question","name":"How do blended last names work?","acceptedAnswer":{"@type":"Answer","text":"A blended surname fuses parts of two last names into one new name — for example, Harper + Bennett can become Harnett. Enter both surnames above to see blend and hyphenation options side by side."}},
+{"@type":"Question","name":"Is it legal to blend last names after marriage?","acceptedAnswer":{"@type":"Answer","text":"Name-change rules vary widely by country and region, and some places make it easier than others. Use the combiner for inspiration, then check your local marriage-license and name-change rules before making anything official."}},
+{"@type":"Question","name":"What last name do the kids get?","acceptedAnswer":{"@type":"Answer","text":"Many blended-name families give children the new shared surname, while others hyphenate or alternate. There is no single right answer — pick the option that feels fair and practical for paperwork."}},
+{"@type":"Question","name":"Can same-sex couples blend last names?","acceptedAnswer":{"@type":"Answer","text":"Absolutely. Blended surnames are popular with all couples who want a shared family name without either partner giving theirs up entirely."}},
+{"@type":"Question","name":"Is the last name combiner free?","acceptedAnswer":{"@type":"Answer","text":"Yes, completely free with no signup and unlimited generations."}}
+]}
+</script>
+</head>
+<body>
+<header class="site">
+  <div class="wrap nav">
+    <a class="logo" href="/">💜 Your<b>Name</b>Combiner</a>
+    <nav class="nav-links">
+      <a href="/tools/couple-name-combiner">Couples</a>
+      <a href="/tools/baby-name-combiner">Baby</a>
+      <a href="/tools/brand-name-combiner">Brand</a>
+      <a href="/blog">Blog</a>
+      <a class="cta" href="#combiner">Combine Names</a>
+    </nav>
+  </div>
+</header>
+
+<div class="hero">
+  <div class="float-hearts"></div>
+  <div class="wrap">
+    <p class="breadcrumb"><a href="/" style="color:#e9d5ff">Home</a> · <span style="color:#c4b5fd">Last Name Combiner</span></p>
+    <h1>💒 Last Name Combiner</h1>
+    <p class="sub">Blend and hyphenate surnames into one shared family name — for newlyweds, modern families and fresh starts.</p>
+  </div>
+</div>
+
+<main class="wrap" id="combiner">
+  <div class="tool-card" id="combinerCard" data-mode="lastname">
+    <button class="sound-toggle" data-sound-toggle title="Toggle sound">🔊</button>
+    <h2>Combine two last names</h2>
+    <p class="hint">Enter both surnames — compare blends and hyphenations side by side.</p>
+    <div class="alert" id="ncAlert"></div>
+    <div class="name-inputs">
+      <div class="field"><label for="n1">First last name</label><input class="nc-name" id="n1" maxlength="24" placeholder="e.g. Harper" autocomplete="off"></div>
+      <div class="field"><label for="n2">Second last name</label><input class="nc-name" id="n2" maxlength="24" placeholder="e.g. Bennett" autocomplete="off"></div>
+    </div>
+    <div class="tool-opts">
+      <button class="chip-opt" data-len="short">Short &amp; sweet</button>
+      <button class="chip-opt" data-len="long">Long &amp; dramatic</button>
+    </div>
+    <button class="btn" id="ncGo">💒 Combine Last Names</button>
+    <div class="results" id="ncResults">
+      <div class="top-pick" id="topPick"></div>
+      <div class="results-head"><h3>Last name ideas <span style="color:var(--mut);font-weight:400" id="ncCount"></span></h3></div>
+      <div class="name-grid" id="ncGrid"></div>
+      <div class="share-row">
+        <input id="shareLink" readonly style="flex:1;min-width:200px;padding:12px 14px;border:2px solid var(--line);border-radius:12px;font-size:.85rem" aria-label="Shareable link">
+        <button class="btn ghost" id="ncShare">Copy share link</button>
+      </div>
+    </div>
+  </div>
+
+  <section class="block">
+    <h2>Blend vs <span class="u">hyphenate</span></h2>
+    <div class="steps">
+      <div class="step"><div><h4>Try the blend</h4><p>Fusing both surnames creates one brand-new family name — shorter on forms, and it feels like a true fresh start.</p></div></div>
+      <div class="step"><div><h4>Try the hyphen</h4><p>Hyphenation keeps both names fully recognizable — the classic choice when heritage matters most.</p></div></div>
+      <div class="step"><div><h4>Check the practicalities</h4><p>Say it, spell it, and imagine it on every form. Then check your local name-change rules before making it official.</p></div></div>
+    </div>
+  </section>
+
+  <section class="block">
+    <h2>Blended surname <span class="u">examples</span></h2>
+    <p>Each pair below shows both options — the fusion and the hyphenation:</p>
+    <table class="example-table">
+      <tr><th>Surnames</th><th>Blend</th><th>Hyphenation</th></tr>
+      <tr><td>Harper + Bennett</td><td><b>Harnett</b></td><td>Harper-Bennett</td></tr>
+      <tr><td>Cole + Avery</td><td><b>Colvery</b></td><td>Cole-Avery</td></tr>
+      <tr><td>Morgan + Riley</td><td><b>Morley</b></td><td>Morgan-Riley</td></tr>
+      <tr><td>Ellis + Carter</td><td><b>Ellister</b></td><td>Ellis-Carter</td></tr>
+    </table>
+    <p>Planning the wedding too? Generate your <a href="/tools/wedding-hashtag-generator">wedding hashtag</a> next.</p>
+  </section>
+
+  <section class="block">
+    <h2>More ways to <span class="u">celebrate</span></h2>
+    <div class="rel-grid">
+      <a class="rel-card" href="/tools/couple-name-combiner"><span class="k">Romance</span><h4>💑 Couple Name Combiner</h4><p>Blend your first names too.</p></a>
+      <a class="rel-card" href="/tools/baby-name-combiner"><span class="k">Family</span><h4>👶 Baby Name Combiner</h4><p>First names for the next generation.</p></a>
+      <a class="rel-card" href="/tools/wedding-hashtag-generator"><span class="k">Wedding</span><h4>💍 Wedding Hashtag Generator</h4><p>Hashtag the big day.</p></a>
+      <a class="rel-card" href="/blog/how-to-combine-two-names"><span class="k">Blog</span><h4>How to Combine Two Names</h4><p>Blending techniques explained.</p></a>
+    </div>
+  </section>
+
+  <section class="block">
+    <h2>Frequently asked <span class="u">questions</span></h2>
+    <div class="faq">
+      <details class="faq-item"><summary>Should we hyphenate or blend our last names?</summary><div class="a">Hyphenating keeps both names intact and recognizable, while blending creates one brand-new surname. Hyphens are more traditional; blends are shorter and feel like a fresh start. Try both styles in the combiner above.</div></details>
+      <details class="faq-item"><summary>How do blended last names work?</summary><div class="a">A blended surname fuses parts of two last names into one new name — for example, Harper + Bennett can become Harnett. Enter both surnames above to see blend and hyphenation options side by side.</div></details>
+      <details class="faq-item"><summary>Is it legal to blend last names after marriage?</summary><div class="a">Name-change rules vary widely by country and region, and some places make it easier than others. Use the combiner for inspiration, then check your local marriage-license and name-change rules before making anything official.</div></details>
+      <details class="faq-item"><summary>What last name do the kids get?</summary><div class="a">Many blended-name families give children the new shared surname, while others hyphenate or alternate. There is no single right answer — pick the option that feels fair and practical for paperwork.</div></details>
+      <details class="faq-item"><summary>Can same-sex couples blend last names?</summary><div class="a">Absolutely. Blended surnames are popular with all couples who want a shared family name without either partner giving theirs up entirely.</div></details>
+      <details class="faq-item"><summary>Is the last name combiner free?</summary><div class="a">Yes, completely free with no signup and unlimited generations.</div></details>
+    </div>
+  </section>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <div class="foot-brand">💜 Your<b>Name</b>Combiner</div>
+        <p style="font-size:.9rem">Free name-blending tools for couples, babies, brands and beyond. Made with 💜 for name lovers everywhere.</p>
+      </div>
+      <div>
+        <h4>Popular tools</h4>
+        <a href="/tools/couple-name-combiner">Couple Name Combiner</a>
+        <a href="/tools/baby-name-combiner">Baby Name Combiner</a>
+        <a href="/tools/ship-name-generator">Ship Name Generator</a>
+        <a href="/tools/brand-name-combiner">Brand Name Combiner</a>
+      </div>
+      <div>
+        <h4>More tools</h4>
+        <a href="/tools/nickname-generator">Nickname Generator</a>
+        <a href="/tools/wedding-hashtag-generator">Wedding Hashtag Generator</a>
+        <a href="/tools/pet-name-combiner">Pet Name Combiner</a>
+        <a href="/tools/username-generator">Username Generator</a>
+      </div>
+      <div>
+        <h4>From the blog</h4>
+        <a href="/blog/what-is-a-ship-name">What Is a Ship Name?</a>
+        <a href="/blog/how-to-combine-two-names">How to Combine Two Names</a>
+        <a href="/blog/celebrity-couple-names">Celebrity Couple Names</a>
+        <a href="/blog">All Posts</a>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© <span data-year>2026</span> YourNameCombiner.com — All rights reserved.</span>
+      <nav class="foot-links" aria-label="Footer"><a href="/blog">Blog</a><a href="/about">About</a><a href="/privacy-policy">Privacy</a><a href="/terms-of-service">Terms</a></nav>
+    </div>
+  </div>
+</footer>
+
+<button class="fav-fab" id="favFab">⭐ Favorites (<span id="favCount">0</span>)</button>
+<div class="scrim" id="scrim"></div>
+<aside class="drawer" id="favDrawer" aria-label="Favorite names">
+  <div class="drawer-head"><h3>⭐ My Favorite Blends</h3><button class="icon-btn" id="favClose">✕</button></div>
+  <div class="drawer-body" id="favBody"></div>
+  <div class="drawer-foot"><button class="btn ghost" id="favDownload" style="flex:1">Download</button><button class="btn ghost" id="favClear" style="flex:1">Clear all</button></div>
+</aside>
+
+<script src="/assets/js/main.js"></script>
+</body>
+</html>
