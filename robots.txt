@@ -2,3 +2,5 @@ User-agent: *
 Allow: /
 
 Sitemap: https://yournamecombiner.com/sitemap.xml
+
+# deploy trigger
