@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Name Combiner — Mix Two Names into One (Baby, Couple, Brand & More)</title>
+<meta name="description" content="Free name combiner: blend two names into creative new ones. Couple names, baby names, brand names & nicknames — instant, with pronunciation & share links.">
+<link rel="canonical" href="https://yournamecombiner.com/">
+<meta property="og:title" content="Name Combiner — Mix Two Names into One">
+<meta property="og:description" content="Blend names for babies, couples, brands & more. Free, instant, no signup.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://yournamecombiner.com/">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💜</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/style.css">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebSite","name":"YourNameCombiner","url":"https://yournamecombiner.com/","description":"Free tools that blend two names into creative new ones."}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+{"@type":"Question","name":"How does the name combiner work?","acceptedAnswer":{"@type":"Answer","text":"Enter two or more names and the combiner blends them using methods like half-blends, syllable mixing, overlap merging and letter swaps, then scores each result for pronounceability and shows the best ones first."}},
+{"@type":"Question","name":"Is the name combiner free?","acceptedAnswer":{"@type":"Answer","text":"Yes — every tool on YourNameCombiner is 100% free with no signup and no limits."}},
+{"@type":"Question","name":"Can I combine more than two names?","acceptedAnswer":{"@type":"Answer","text":"Yes. The flagship combiner accepts up to four names at once and blends across all of them."}},
+{"@type":"Question","name":"What is a ship name?","acceptedAnswer":{"@type":"Answer","text":"A ship name is a blended nickname for a couple, fandom pairing or friendship — like Brangelina (Brad + Angelina). Our ship name generator creates them automatically."}},
+{"@type":"Question","name":"Can I hear how a combined name sounds?","acceptedAnswer":{"@type":"Answer","text":"Yes — tap the speaker icon on any result to hear it pronounced aloud."}},
+{"@type":"Question","name":"Can I save my favorite name blends?","acceptedAnswer":{"@type":"Answer","text":"Yes. Tap the star on any result to save it to your favorites list, which is kept in your browser. You can download the list as a text file."}},
+{"@type":"Question","name":"Can I share my results with someone?","acceptedAnswer":{"@type":"Answer","text":"Yes — every generation creates a shareable link that recreates the exact same results for anyone who opens it."}},
+{"@type":"Question","name":"Are my names stored or sent anywhere?","acceptedAnswer":{"@type":"Answer","text":"No. All combining happens in your browser — your names never leave your device."}}
+]}
+</script>
+</head>
+<body>
+<header class="site">
+  <div class="wrap nav">
+    <a class="logo" href="/">💜 Your<b>Name</b>Combiner</a>
+    <nav class="nav-links">
+      <a href="/tools/couple-name-combiner">Couples</a>
+      <a href="/tools/baby-name-combiner">Baby</a>
+      <a href="/tools/brand-name-combiner">Brand</a>
+      <a href="/blog">Blog</a>
+      <a class="cta" href="#combiner">Combine Names</a>
+    </nav>
+  </div>
+</header>
+
+<div class="hero">
+  <div class="float-hearts"></div>
+  <div class="wrap">
+    <h1>Combine Two Names into <span class="hl">One Perfect Name</span></h1>
+    <p class="sub">The free name combiner for couple names, baby names, brand names, nicknames &amp; more. Type two names, get dozens of beautiful blends — instantly, in your browser.</p>
+    <div class="hero-badges">
+      <span class="hbadge">✨ 100% free</span>
+      <span class="hbadge">🔒 Private — runs in your browser</span>
+      <span class="hbadge">🔊 Hear pronunciations</span>
+      <span class="hbadge">🔗 Shareable results</span>
+    </div>
+  </div>
+</div>
+
+<main class="wrap" id="combiner">
+  <div class="tool-card" id="combinerCard" data-mode="mix">
+    <button class="sound-toggle" data-sound-toggle title="Toggle sound">🔊</button>
+    <h2>💜 Name Combiner</h2>
+    <p class="hint">Enter two names (add a third or fourth for wilder blends), then hit combine.</p>
+    <div class="alert" id="ncAlert"></div>
+    <div class="name-inputs">
+      <div class="field"><label for="n1">First name</label><input class="nc-name" id="n1" maxlength="24" placeholder="e.g. Emma" autocomplete="off"></div>
+      <div class="field"><label for="n2">Second name</label><input class="nc-name" id="n2" maxlength="24" placeholder="e.g. Liam" autocomplete="off"></div>
+      <div class="field"><label for="n3">Third name <span style="color:var(--mut);font-weight:400">(optional)</span></label><input class="nc-name" id="n3" maxlength="24" placeholder="Optional" autocomplete="off"></div>
+      <div class="field"><label for="n4">Fourth name <span style="color:var(--mut);font-weight:400">(optional)</span></label><input class="nc-name" id="n4" maxlength="24" placeholder="Optional" autocomplete="off"></div>
+    </div>
+    <div class="tool-opts">
+      <button class="chip-opt" data-len="short">Short</button>
+      <button class="chip-opt" data-len="long">Long</button>
+    </div>
+    <button class="btn" id="ncGo">💜 Combine Names</button>
+
+    <div class="results" id="ncResults">
+      <div class="top-pick" id="topPick"></div>
+      <div class="results-head"><h3>All blends <span style="color:var(--mut);font-weight:400" id="ncCount"></span></h3></div>
+      <div class="name-grid" id="ncGrid"></div>
+      <div class="share-row">
+        <input id="shareLink" readonly style="flex:1;min-width:200px;padding:12px 14px;border:2px solid var(--line);border-radius:12px;font-size:.85rem" aria-label="Shareable link">
+        <button class="btn ghost" id="ncShare">Copy share link</button>
+      </div>
+    </div>
+  </div>
+
+  <section class="block">
+    <h2>One combiner, <span class="u">endless occasions</span></h2>
+    <p>From the nursery to the boardroom to your Instagram bio — pick the tool made for your moment. Every tool blends intelligently, scores results for pronounceability, and lets you hear, save and share your favorites.</p>
+    <div class="cols">
+      <a class="rel-card" href="/tools/couple-name-combiner"><span class="k">Romance</span><h4>💑 Couple Name Combiner</h4><p>Your Brangelina awaits — blend two first names into the perfect couple name.</p></a>
+      <a class="rel-card" href="/tools/ship-name-generator"><span class="k">Fandom</span><h4>🚢 Ship Name Generator</h4><p>Name your favorite pairing, OTP or friendship with a catchy ship name.</p></a>
+      <a class="rel-card" href="/tools/baby-name-combiner"><span class="k">Family</span><h4>👶 Baby Name Combiner</h4><p>Blend mom and dad's names into a one-of-a-kind baby name (gender-aware).</p></a>
+      <a class="rel-card" href="/tools/brand-name-combiner"><span class="k">Business</span><h4>🚀 Brand Name Combiner</h4><p>Fuse founder names or keywords into a startup-worthy brand name.</p></a>
+      <a class="rel-card" href="/tools/nickname-generator"><span class="k">Fun</span><h4>😎 Nickname Generator</h4><p>Turn any name into a nickname with real personality.</p></a>
+      <a class="rel-card" href="/tools/pet-name-combiner"><span class="k">Pets</span><h4>🐾 Pet Name Combiner</h4><p>Adorable blended names for dogs, cats and every furry friend.</p></a>
+      <a class="rel-card" href="/tools/wedding-hashtag-generator"><span class="k">Wedding</span><h4>💍 Wedding Hashtag Generator</h4><p>Hashtag-ready name blends for the big day — punny ones included.</p></a>
+      <a class="rel-card" href="/tools/username-generator"><span class="k">Social</span><h4>📱 Username Generator</h4><p>Available-style handles and gamertags from any name.</p></a>
+      <a class="rel-card" href="/tools/word-combiner"><span class="k">Words</span><h4>🔤 Word Combiner</h4><p>Portmanteaus of any two words — brunch, smog, and your inventions.</p></a>
+      <a class="rel-card" href="/tools/last-name-combiner"><span class="k">Family</span><h4>👪 Last Name Combiner</h4><p>Hyphenated and blended surnames for newlyweds and new families.</p></a>
+      <a class="rel-card" href="/tools/fantasy-name-combiner"><span class="k">Stories</span><h4>🐉 Fantasy Name Combiner</h4><p>Elven, epic character names for novels, D&amp;D and games.</p></a>
+    </div>
+  </section>
+
+  <section class="block">
+    <h2>How name combining <span class="u">actually works</span></h2>
+    <p>Great blends aren't random — they follow patterns your ear already loves. Our engine tries every promising split point, then keeps only the blends that sound natural.</p>
+    <div class="steps">
+      <div class="step"><div><h4>Split at every point</h4><p>Emma + Liam becomes Em+iam, Emm+am, E+liam… every split of both names is tried, in both orders.</p></div></div>
+      <div class="step"><div><h4>Merge the overlaps</h4><p>When names share sounds (like the "an" in Ryan and Anna), the engine fuses them at the seam for silky results.</p></div></div>
+      <div class="step"><div><h4>Score the sound</h4><p>Blends earn points for vowel-consonant rhythm and the 4–9 letter sweet spot, and lose points for awkward consonant pile-ups.</p></div></div>
+      <div class="step"><div><h4>You pick the winner</h4><p>Star your favorites, hear them spoken aloud, download your list or share a link with your partner.</p></div></div>
+    </div>
+    <table class="example-table">
+      <tr><th>Name 1</th><th>Name 2</th><th>Blend</th><th>Method</th></tr>
+      <tr><td>Sophia</td><td>Jackson</td><td><b>Sophson</b></td><td>Half-blend</td></tr>
+      <tr><td>Ryan</td><td>Anna</td><td><b>Ryanna</b></td><td>Overlap merge</td></tr>
+      <tr><td>Oliver</td><td>Ava</td><td><b>Oliva</b></td><td>Syllable mix</td></tr>
+      <tr><td>Mason</td><td>Ella</td><td><b>Mella</b></td><td>Head-tail</td></tr>
+    </table>
+  </section>
+
+  <section class="block">
+    <h2>From the <span class="u">blog</span></h2>
+    <p>Guides, ideas and the stories behind the names — from ship-name history to wedding hashtag formulas.</p>
+    <div class="rel-grid">
+      <a class="rel-card" href="/blog/what-is-a-ship-name"><span class="k">Guide</span><h4>What Is a Ship Name? The Complete Guide</h4><p>From fandom tags to Brangelina — how ship names took over the internet.</p></a>
+      <a class="rel-card" href="/blog/how-to-combine-two-names"><span class="k">How-to</span><h4>How to Combine Two Names into One (5 Methods)</h4><p>The five blending techniques, with worked examples you can do by hand.</p></a>
+      <a class="rel-card" href="/blog/celebrity-couple-names"><span class="k">Listicle</span><h4>50 Most Iconic Celebrity Couple Names Ever</h4><p>Brangelina to Kravis — the blends that made headlines.</p></a>
+    </div>
+    <p style="margin-top:16px"><a href="/blog" style="font-weight:800">Read all articles →</a></p>
+  </section>
+
+  <section class="block">
+    <h2>Frequently asked <span class="u">questions</span></h2>
+    <div class="faq">
+      <details class="faq-item"><summary>How does the name combiner work?</summary><div class="a">Enter two or more names and the combiner blends them using methods like half-blends, syllable mixing, overlap merging and letter swaps, then scores each result for pronounceability and shows the best ones first.</div></details>
+      <details class="faq-item"><summary>Is the name combiner free?</summary><div class="a">Yes — every tool on YourNameCombiner is 100% free with no signup and no limits on how many names you generate.</div></details>
+      <details class="faq-item"><summary>Can I combine more than two names?</summary><div class="a">Yes. The flagship combiner accepts up to four names at once and blends across all of them — great for family names or group nicknames.</div></details>
+      <details class="faq-item"><summary>What is a ship name?</summary><div class="a">A ship name is a blended nickname for a couple, fandom pairing or friendship — like Brangelina (Brad + Angelina) or Bennifer. Try our <a href="/tools/ship-name-generator">ship name generator</a> to make your own.</div></details>
+      <details class="faq-item"><summary>Can I hear how a combined name sounds?</summary><div class="a">Yes — tap the 🔊 speaker icon on any result to hear it pronounced aloud. Super helpful when choosing a baby name.</div></details>
+      <details class="faq-item"><summary>Can I save my favorite name blends?</summary><div class="a">Yes. Tap the ⭐ star on any result to save it to your favorites list, kept privately in your browser. Download the whole list as a text file anytime.</div></details>
+      <details class="faq-item"><summary>Can I share my results with someone?</summary><div class="a">Yes — every generation creates a shareable link. Send it to your partner and they'll see the exact same results.</div></details>
+      <details class="faq-item"><summary>Are my names stored or sent anywhere?</summary><div class="a">No. All combining happens entirely in your browser with JavaScript — your names never leave your device. See our <a href="/privacy-policy">privacy policy</a>.</div></details>
+    </div>
+  </section>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <div class="foot-brand">💜 Your<b>Name</b>Combiner</div>
+        <p style="font-size:.9rem">Free name-blending tools for couples, babies, brands and beyond. Made with 💜 for name lovers everywhere.</p>
+      </div>
+      <div>
+        <h4>Popular tools</h4>
+        <a href="/tools/couple-name-combiner">Couple Name Combiner</a>
+        <a href="/tools/baby-name-combiner">Baby Name Combiner</a>
+        <a href="/tools/ship-name-generator">Ship Name Generator</a>
+        <a href="/tools/brand-name-combiner">Brand Name Combiner</a>
+      </div>
+      <div>
+        <h4>More tools</h4>
+        <a href="/tools/nickname-generator">Nickname Generator</a>
+        <a href="/tools/wedding-hashtag-generator">Wedding Hashtag Generator</a>
+        <a href="/tools/pet-name-combiner">Pet Name Combiner</a>
+        <a href="/tools/username-generator">Username Generator</a>
+      </div>
+      <div>
+        <h4>From the blog</h4>
+        <a href="/blog/what-is-a-ship-name">What Is a Ship Name?</a>
+        <a href="/blog/how-to-combine-two-names">How to Combine Two Names</a>
+        <a href="/blog/celebrity-couple-names">Celebrity Couple Names</a>
+        <a href="/blog">All Posts</a>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© <span data-year>2026</span> YourNameCombiner.com — All rights reserved.</span>
+      <nav class="foot-links" aria-label="Footer"><a href="/blog">Blog</a><a href="/about">About</a><a href="/privacy-policy">Privacy</a><a href="/terms-of-service">Terms</a></nav>
+    </div>
+  </div>
+</footer>
+
+<button class="fav-fab" id="favFab">⭐ Favorites (<span id="favCount">0</span>)</button>
+<div class="scrim" id="scrim"></div>
+<aside class="drawer" id="favDrawer" aria-label="Favorite names">
+  <div class="drawer-head"><h3>⭐ My Favorite Blends</h3><button class="icon-btn" id="favClose">✕</button></div>
+  <div class="drawer-body" id="favBody"></div>
+  <div class="drawer-foot"><button class="btn ghost" id="favDownload" style="flex:1">Download</button><button class="btn ghost" id="favClear" style="flex:1">Clear all</button></div>
+</aside>
+
+<script src="/assets/js/main.js"></script>
+</body>
+</html>
