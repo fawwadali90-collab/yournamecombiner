@@ -164,3 +164,9 @@ footer.site a:hover{color:#fff}
   section.block{padding:38px 0}
   .top-pick .name{font-size:1.9rem}
 }
+
+/* ---------- blog images ---------- */
+.rel-card{overflow:hidden}
+.rel-card .card-img{width:calc(100% + 40px);aspect-ratio:16/9;object-fit:cover;display:block;margin:-20px -20px 14px;border-bottom:1px solid var(--line)}
+.post-hero{margin:0 0 28px;border-radius:var(--r);overflow:hidden;box-shadow:var(--sh)}
+.post-hero img{width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;display:block}
