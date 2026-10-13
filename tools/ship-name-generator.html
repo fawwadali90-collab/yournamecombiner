@@ -12,7 +12,7 @@
 <meta property="og:url" content="https://yournamecombiner.com/tools/ship-name-generator">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚢</text></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800;900&amp;display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/assets/css/style.css?v=4">
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"WebApplication","name":"Ship Name Generator","url":"https://yournamecombiner.com/tools/ship-name-generator","applicationCategory":"LifestyleApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}
@@ -62,12 +62,12 @@
   <div class="wrap nav">
     <a class="logo" href="/">💜 Your<b>Name</b>Combiner</a>
     <nav class="nav-links">
-      <a data-i18n href="/">Home</a>
-      <a data-i18n href="/tools/couple-name-combiner">Couples</a>
-      <a data-i18n href="/tools/baby-name-combiner">Baby</a>
-      <a data-i18n href="/tools/brand-name-combiner">Brand</a>
-      <a data-i18n href="/blog">Blog</a>
-      <a data-i18n class="cta" href="#combiner">Combine Names</a>
+      <a data-i18n="" href="/">Home</a>
+      <a data-i18n="" href="/tools/couple-name-combiner">Couples</a>
+      <a data-i18n="" href="/tools/baby-name-combiner">Baby</a>
+      <a data-i18n="" href="/tools/brand-name-combiner">Brand</a>
+      <a data-i18n="" href="/blog">Blog</a>
+      <a data-i18n="" class="cta" href="#combiner">Combine Names</a>
     </nav>
   </div>
 </header>
@@ -75,79 +75,79 @@
 <div class="hero">
   <div class="float-hearts"></div>
   <div class="wrap">
-    <p class="breadcrumb"><a href="/" style="color:#e9d5ff">Home</a> · <span style="color:#c4b5fd">Ship Name Generator</span></p>
-    <h1>🚢 Ship Name Generator</h1>
-    <p class="sub">Name your OTP. Create the perfect ship name for any pairing, characters, celebrities, best friends, or you and your crush.</p>
+    <p class="breadcrumb"><a href="/" style="color:#e9d5ff" data-i18n="">Home</a> · <span style="color:#c4b5fd" data-i18n="">Ship Name Generator</span></p>
+    <h1 data-i18n="">🚢 Ship Name Generator</h1>
+    <p class="sub" data-i18n="">Name your OTP. Create the perfect ship name for any pairing, characters, celebrities, best friends, or you and your crush.</p>
   </div>
 </div>
 
 <main class="wrap" id="combiner">
   <div class="tool-card" id="combinerCard" data-mode="ship">
-    <button class="sound-toggle" data-sound-toggle title="Toggle sound">🔊</button>
-    <h2>Create your ship name</h2>
-    <p class="hint">Enter two names, swap the order to explore every pairing.</p>
+    <button class="sound-toggle" data-sound-toggle="" title="Toggle sound" data-i18n-title="Toggle sound">🔊</button>
+    <h2 data-i18n="">Create your ship name</h2>
+    <p class="hint" data-i18n="">Enter two names, swap the order to explore every pairing.</p>
     <div class="alert" id="ncAlert"></div>
     <div class="name-inputs">
-      <div class="field"><label for="n1">First name</label><input class="nc-name" id="n1" maxlength="24" placeholder="e.g. Aria" autocomplete="off"></div>
-      <div class="field"><label for="n2">Second name</label><input class="nc-name" id="n2" maxlength="24" placeholder="e.g. Kai" autocomplete="off"></div>
+      <div class="field"><label for="n1" data-i18n="">First name</label><input class="nc-name" id="n1" maxlength="24" placeholder="e.g. Aria" autocomplete="off" data-i18n-ph="e.g. Aria"></div>
+      <div class="field"><label for="n2" data-i18n="">Second name</label><input class="nc-name" id="n2" maxlength="24" placeholder="e.g. Kai" autocomplete="off" data-i18n-ph="e.g. Kai"></div>
     </div>
     <div class="tool-opts">
-      <button class="chip-opt" data-len="short">Short &amp; sweet</button>
-      <button class="chip-opt" data-len="long">Long &amp; dramatic</button>
+      <button class="chip-opt" data-len="short" data-i18n="">Short  sweet</button>
+      <button class="chip-opt" data-len="long" data-i18n="">Long  dramatic</button>
     </div>
-    <button class="btn" id="ncGo">🚢 Generate Ship Names</button>
+    <button class="btn" id="ncGo" data-i18n="">🚢 Generate Ship Names</button>
     <div class="results" id="ncResults">
       <div class="top-pick" id="topPick"></div>
-      <div class="results-head"><h3>Ship name ideas <span style="color:var(--mut);font-weight:400" id="ncCount"></span></h3></div>
+      <div class="results-head"><h3><span data-i18n="">Ship name ideas</span> <span style="color:var(--mut);font-weight:400" id="ncCount"></span></h3></div>
       <div class="name-grid" id="ncGrid"></div>
       <div class="share-row">
-        <input id="shareLink" readonly style="flex:1;min-width:200px;padding:12px 14px;border:2px solid var(--line);border-radius:12px;font-size:.85rem" aria-label="Shareable link">
-        <button class="btn ghost" id="ncShare">Copy share link</button>
+        <input id="shareLink" data-i18n-aria="Shareable link" readonly="" style="flex:1;min-width:200px;padding:12px 14px;border:2px solid var(--line);border-radius:12px;font-size:.85rem" aria-label="Shareable link">
+        <button class="btn ghost" id="ncShare" data-i18n="">Copy share link</button>
       </div>
     </div>
   </div>
 
   <section class="block">
-    <h2>How to make a <span class="u">ship name</span></h2>
+    <h2 data-i18n-html="auto_shipnamegenerator_1">How to make a <span class="u" data-i18n="">ship name</span></h2>
     <div class="steps">
-      <div class="step"><div><h4>Pick your pairing</h4><p>Type the two names you want to ship, characters from your favorite show, two celebrities, best friends, anyone.</p></div></div>
-      <div class="step"><div><h4>Generate the blends</h4><p>Hit generate and browse dozens of ship-name options, ranked from silkiest to silliest.</p></div></div>
-      <div class="step"><div><h4>Say it out loud</h4><p>The best ship names roll off the tongue. Tap 🔊 to hear each one, ⭐ your favorites, then share the link.</p></div></div>
+      <div class="step"><div><h4 data-i18n="">Pick your pairing</h4><p data-i18n="">Type the two names you want to ship, characters from your favorite show, two celebrities, best friends, anyone.</p></div></div>
+      <div class="step"><div><h4 data-i18n="">Generate the blends</h4><p data-i18n="">Hit generate and browse dozens of ship-name options, ranked from silkiest to silliest.</p></div></div>
+      <div class="step"><div><h4 data-i18n="">Say it out loud</h4><p data-i18n="">The best ship names roll off the tongue. Tap 🔊 to hear each one, ⭐ your favorites, then share the link.</p></div></div>
     </div>
   </section>
 
   <section class="block">
-    <h2>Ship name <span class="u">examples</span></h2>
-    <p>Great ship names keep the catchiest syllable of each name. Here is how the classic blending patterns work:</p>
+    <h2 data-i18n-html="auto_shipnamegenerator_2">Ship name <span class="u" data-i18n="">examples</span></h2>
+    <p data-i18n="">Great ship names keep the catchiest syllable of each name. Here is how the classic blending patterns work:</p>
     <table class="example-table">
-      <tr><th>Pairing</th><th>Ship name</th><th>Pattern</th></tr>
-      <tr><td>Aria + Kai</td><td><b>Kaia</b></td><td>Front-half fusion, takes the start of each name</td></tr>
-      <tr><td>Luna + Rex</td><td><b>Lurex</b></td><td>Syllable splice, first syllable + last syllable</td></tr>
-      <tr><td>Milo + Ivy</td><td><b>Mivy</b></td><td>Overlap merge, names share a middle sound</td></tr>
-      <tr><td>Nova + Finn</td><td><b>Novinn</b></td><td>Double-letter blend, smooths the join with a repeated sound</td></tr>
+      <tr><th data-i18n="">Pairing</th><th data-i18n="">Ship name</th><th data-i18n="">Pattern</th></tr>
+      <tr><td data-i18n="">Aria + Kai</td><td><b>Kaia</b></td><td data-i18n="">Front-half fusion, takes the start of each name</td></tr>
+      <tr><td data-i18n="">Luna + Rex</td><td><b>Lurex</b></td><td data-i18n="">Syllable splice, first syllable + last syllable</td></tr>
+      <tr><td data-i18n="">Milo + Ivy</td><td><b>Mivy</b></td><td data-i18n="">Overlap merge, names share a middle sound</td></tr>
+      <tr><td data-i18n="">Nova + Finn</td><td><b>Novinn</b></td><td data-i18n="">Double-letter blend, smooths the join with a repeated sound</td></tr>
     </table>
-    <p>Curious where ship culture came from? Read <a href="/blog/what-is-a-ship-name">what is a ship name</a> for the full story.</p>
+    <p data-i18n-html="auto_shipnamegenerator_3">Curious where ship culture came from? Read <a href="/blog/what-is-a-ship-name" data-i18n="">what is a ship name</a> for the full story.</p>
   </section>
 
   <section class="block">
-    <h2>More ways to <span class="u">play</span></h2>
+    <h2 data-i18n-html="auto_shipnamegenerator_4">More ways to <span class="u" data-i18n="">play</span></h2>
     <div class="rel-grid">
-      <a class="rel-card" href="/tools/couple-name-combiner"><span class="k">Romance</span><h4>💑 Couple Name Combiner</h4><p>Brangelina-style blends for real-life partners.</p></a>
-      <a class="rel-card" href="/tools/nickname-generator"><span class="k">Fun</span><h4>😎 Nickname Generator</h4><p>Turn any name into the perfect nickname.</p></a>
-      <a class="rel-card" href="/tools/username-generator"><span class="k">Social</span><h4>🎮 Username Generator</h4><p>Make your ship name a handle.</p></a>
-      <a class="rel-card" href="/blog/celebrity-couple-names"><span class="k">Blog</span><h4>Celebrity Couple Names</h4><p>The most iconic ship names ever.</p></a>
+      <a class="rel-card" href="/tools/couple-name-combiner"><span class="k" data-i18n="">Romance</span><h4 data-i18n="">💑 Couple Name Combiner</h4><p data-i18n="">Brangelina-style blends for real-life partners.</p></a>
+      <a class="rel-card" href="/tools/nickname-generator"><span class="k" data-i18n="">Fun</span><h4 data-i18n="">😎 Nickname Generator</h4><p data-i18n="">Turn any name into the perfect nickname.</p></a>
+      <a class="rel-card" href="/tools/username-generator"><span class="k" data-i18n="">Social</span><h4 data-i18n="">🎮 Username Generator</h4><p data-i18n="">Make your ship name a handle.</p></a>
+      <a class="rel-card" href="/blog/celebrity-couple-names"><span class="k" data-i18n="">Blog</span><h4 data-i18n="">Celebrity Couple Names</h4><p data-i18n="">The most iconic ship names ever.</p></a>
     </div>
   </section>
 
   <section class="block">
-    <h2>Frequently asked <span class="u">questions</span></h2>
+    <h2 data-i18n-html="auto_shipnamegenerator_5">Frequently asked <span class="u" data-i18n="">questions</span></h2>
     <div class="faq">
-      <details class="faq-item"><summary>What is a ship name?</summary><div class="a">A ship name is a blended name for a romantic pairing, real or fictional, created by fusing the two people's names. Fans use ship names for favorite TV couples, book characters, celebrities and even their best friends.</div></details>
-      <details class="faq-item"><summary>How do you make a ship name?</summary><div class="a">Take the catchiest syllable from each name and fuse them together. Enter both names in the generator above and it will try every split point, front-half fusions, syllable splices and overlap merges, then rank the results.</div></details>
-      <details class="faq-item"><summary>What are good ship name ideas for best friends?</summary><div class="a">Friendship ship names work the same way as romantic ones. Try blending first syllables (Maya + Zoe = Mazo) or using a shared inside joke as one of the inputs for a personal touch.</div></details>
-      <details class="faq-item"><summary>Can I make a ship name for real people?</summary><div class="a">Yes, people ship real celebrities and couples all the time, from Brangelina to Bennifer. For private individuals, keep it lighthearted and make sure everyone involved is comfortable with it.</div></details>
-      <details class="faq-item"><summary>What is the difference between a ship name and a couple name?</summary><div class="a">They use the same blending technique. Ship name comes from fandom culture and usually refers to fictional or celebrity pairings, while couple name is more often used for real-life partners.</div></details>
-      <details class="faq-item"><summary>Is the ship name generator free?</summary><div class="a">Yes, completely free with no signup and unlimited generations.</div></details>
+      <details class="faq-item"><summary data-i18n="">What is a ship name?</summary><div class="a" data-i18n="">A ship name is a blended name for a romantic pairing, real or fictional, created by fusing the two people's names. Fans use ship names for favorite TV couples, book characters, celebrities and even their best friends.</div></details>
+      <details class="faq-item"><summary data-i18n="">How do you make a ship name?</summary><div class="a" data-i18n="">Take the catchiest syllable from each name and fuse them together. Enter both names in the generator above and it will try every split point, front-half fusions, syllable splices and overlap merges, then rank the results.</div></details>
+      <details class="faq-item"><summary data-i18n="">What are good ship name ideas for best friends?</summary><div class="a" data-i18n="">Friendship ship names work the same way as romantic ones. Try blending first syllables (Maya + Zoe = Mazo) or using a shared inside joke as one of the inputs for a personal touch.</div></details>
+      <details class="faq-item"><summary data-i18n="">Can I make a ship name for real people?</summary><div class="a" data-i18n="">Yes, people ship real celebrities and couples all the time, from Brangelina to Bennifer. For private individuals, keep it lighthearted and make sure everyone involved is comfortable with it.</div></details>
+      <details class="faq-item"><summary data-i18n="">What is the difference between a ship name and a couple name?</summary><div class="a" data-i18n="">They use the same blending technique. Ship name comes from fandom culture and usually refers to fictional or celebrity pairings, while couple name is more often used for real-life partners.</div></details>
+      <details class="faq-item"><summary data-i18n="">Is the ship name generator free?</summary><div class="a" data-i18n="">Yes, completely free with no signup and unlimited generations.</div></details>
     </div>
   </section>
 </main>
@@ -157,46 +157,51 @@
     <div class="foot-grid">
       <div>
         <div class="foot-brand">💜 Your<b>Name</b>Combiner</div>
-        <p data-i18n style="font-size:.9rem">Free name-blending tools for couples, babies, brands and beyond. Made with 💜 for name lovers everywhere.</p>
+        <p data-i18n="" style="font-size:.9rem">Free name-blending tools for couples, babies, brands and beyond. Made with 💜 for name lovers everywhere.</p>
       </div>
       <div>
-        <h4 data-i18n>Popular tools</h4>
-        <a data-i18n href="/tools/couple-name-combiner">Couple Name Combiner</a>
-        <a data-i18n href="/tools/baby-name-combiner">Baby Name Combiner</a>
-        <a data-i18n href="/tools/ship-name-generator">Ship Name Generator</a>
-        <a data-i18n href="/tools/brand-name-combiner">Brand Name Combiner</a>
+        <h4 data-i18n="">Popular tools</h4>
+        <a data-i18n="" href="/tools/couple-name-combiner">Couple Name Combiner</a>
+        <a data-i18n="" href="/tools/baby-name-combiner">Baby Name Combiner</a>
+        <a data-i18n="" href="/tools/ship-name-generator">Ship Name Generator</a>
+        <a data-i18n="" href="/tools/brand-name-combiner">Brand Name Combiner</a>
       </div>
       <div>
-        <h4 data-i18n>More tools</h4>
-        <a data-i18n href="/tools/nickname-generator">Nickname Generator</a>
-        <a data-i18n href="/tools/wedding-hashtag-generator">Wedding Hashtag Generator</a>
-        <a data-i18n href="/tools/pet-name-combiner">Pet Name Combiner</a>
-        <a data-i18n href="/tools/username-generator">Username Generator</a>
+        <h4 data-i18n="">More tools</h4>
+        <a data-i18n="" href="/tools/nickname-generator">Nickname Generator</a>
+        <a data-i18n="" href="/tools/wedding-hashtag-generator">Wedding Hashtag Generator</a>
+        <a data-i18n="" href="/tools/pet-name-combiner">Pet Name Combiner</a>
+        <a data-i18n="" href="/tools/username-generator">Username Generator</a>
       </div>
       <div>
-        <h4 data-i18n>From the blog</h4>
-        <a data-i18n href="/blog/what-is-a-ship-name">What Is a Ship Name?</a>
-        <a data-i18n href="/blog/how-to-combine-two-names">How to Combine Two Names</a>
-        <a data-i18n href="/blog/celebrity-couple-names">Celebrity Couple Names</a>
-        <a data-i18n href="/blog">All Posts</a>
+        <h4 data-i18n="">From the blog</h4>
+        <a data-i18n="" href="/blog/what-is-a-ship-name">What Is a Ship Name?</a>
+        <a data-i18n="" href="/blog/how-to-combine-two-names">How to Combine Two Names</a>
+        <a data-i18n="" href="/blog/celebrity-couple-names">Celebrity Couple Names</a>
+        <a data-i18n="" href="/blog">All Posts</a>
       </div>
     </div>
     <div class="foot-bottom">
-      <span>© <span data-year>2026</span> YourNameCombiner.com, <span data-i18n>All rights reserved.</span></span>
-      <nav class="foot-links" aria-label="Footer"><a data-i18n href="/blog">Blog</a><a data-i18n href="/about">About</a><a data-i18n href="/privacy-policy">Privacy</a><a data-i18n href="/terms-of-service">Terms</a></nav>
+      <span>© <span data-year="">2026</span> YourNameCombiner.com, <span data-i18n="">All rights reserved.</span></span>
+      <nav class="foot-links" aria-label="Footer"><a data-i18n="" href="/blog">Blog</a><a data-i18n="" href="/about">About</a><a data-i18n="" href="/privacy-policy">Privacy</a><a data-i18n="" href="/terms-of-service">Terms</a></nav>
     </div>
   </div>
 </footer>
 
-<button class="fav-fab" id="favFab">⭐ Favorites (<span id="favCount">0</span>)</button>
+<button class="fav-fab" id="favFab" data-i18n-html="ync_favfab">⭐ Favorites (<span id="favCount">0</span>)</button>
 <div class="scrim" id="scrim"></div>
-<aside class="drawer" id="favDrawer" aria-label="Favorite names">
-  <div class="drawer-head"><h3>⭐ My Favorite Blends</h3><button class="icon-btn" id="favClose">✕</button></div>
+<aside class="drawer" id="favDrawer" aria-label="Favorite names" data-i18n-aria="Favorite names">
+  <div class="drawer-head"><h3 data-i18n="">⭐ My Favorite Blends</h3><button class="icon-btn" id="favClose">✕</button></div>
   <div class="drawer-body" id="favBody"></div>
-  <div class="drawer-foot"><button class="btn ghost" id="favDownload" style="flex:1">Download</button><button class="btn ghost" id="favClear" style="flex:1">Clear all</button></div>
+  <div class="drawer-foot"><button class="btn ghost" id="favDownload" style="flex:1" data-i18n="">Download</button><button class="btn ghost" id="favClear" style="flex:1" data-i18n="">Clear all</button></div>
 </aside>
 
 <script src="/assets/js/i18n.js"></script>
+<script src="/assets/js/i18n-d1.js"></script>
+<script src="/assets/js/i18n-d2.js"></script>
+<script src="/assets/js/i18n-d3.js"></script>
+<script src="/assets/js/i18n-d4.js"></script>
+<script src="/assets/js/i18n-d5.js"></script>
 <script src="/assets/js/main.js"></script>
 </body>
 </html>

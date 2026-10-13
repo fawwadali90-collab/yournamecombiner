@@ -12,7 +12,7 @@
 <meta property="og:url" content="https://yournamecombiner.com/tools/nickname-generator">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>😎</text></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800;900&amp;display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/assets/css/style.css?v=4">
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"WebApplication","name":"Nickname Generator","url":"https://yournamecombiner.com/tools/nickname-generator","applicationCategory":"LifestyleApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}
@@ -62,12 +62,12 @@
   <div class="wrap nav">
     <a class="logo" href="/">💜 Your<b>Name</b>Combiner</a>
     <nav class="nav-links">
-      <a data-i18n href="/">Home</a>
-      <a data-i18n href="/tools/couple-name-combiner">Couples</a>
-      <a data-i18n href="/tools/baby-name-combiner">Baby</a>
-      <a data-i18n href="/tools/brand-name-combiner">Brand</a>
-      <a data-i18n href="/blog">Blog</a>
-      <a data-i18n class="cta" href="#combiner">Combine Names</a>
+      <a data-i18n="" href="/">Home</a>
+      <a data-i18n="" href="/tools/couple-name-combiner">Couples</a>
+      <a data-i18n="" href="/tools/baby-name-combiner">Baby</a>
+      <a data-i18n="" href="/tools/brand-name-combiner">Brand</a>
+      <a data-i18n="" href="/blog">Blog</a>
+      <a data-i18n="" class="cta" href="#combiner">Combine Names</a>
     </nav>
   </div>
 </header>
@@ -75,122 +75,122 @@
 <div class="hero">
   <div class="float-hearts"></div>
   <div class="wrap">
-    <p class="breadcrumb"><a href="/" style="color:#e9d5ff">Home</a> · <span style="color:#c4b5fd">Nickname Generator</span></p>
-    <h1>😎 Nickname Generator</h1>
-    <p class="sub">Turn any name into the perfect nickname, cute, funny or cool. Add a vibe word for results with personality.</p>
+    <p class="breadcrumb"><a href="/" style="color:#e9d5ff" data-i18n="">Home</a> · <span style="color:#c4b5fd" data-i18n="">Nickname Generator</span></p>
+    <h1 data-i18n="">😎 Nickname Generator</h1>
+    <p class="sub" data-i18n="">Turn any name into the perfect nickname, cute, funny or cool. Add a vibe word for results with personality.</p>
   </div>
 </div>
 
 <main class="wrap" id="combiner">
   <div class="tool-card" id="combinerCard" data-mode="nickname" data-min="1">
-    <button class="sound-toggle" data-sound-toggle title="Toggle sound">🔊</button>
-    <h2>Find your nickname</h2>
-    <p class="hint">Enter a name, the vibe word is optional but makes results way more personal.</p>
+    <button class="sound-toggle" data-sound-toggle="" title="Toggle sound" data-i18n-title="Toggle sound">🔊</button>
+    <h2 data-i18n="">Find your nickname</h2>
+    <p class="hint" data-i18n="">Enter a name, the vibe word is optional but makes results way more personal.</p>
     <div class="alert" id="ncAlert"></div>
     <div class="name-inputs">
-      <div class="field"><label for="n1">Name</label><input class="nc-name" id="n1" maxlength="24" placeholder="e.g. Samantha" autocomplete="off"></div>
-      <div class="field"><label for="n2">Vibe word (optional)</label><input class="nc-name" id="n2" maxlength="24" placeholder="e.g. bear, star…" autocomplete="off"></div>
+      <div class="field"><label for="n1" data-i18n="">Name</label><input class="nc-name" id="n1" maxlength="24" placeholder="e.g. Samantha" autocomplete="off" data-i18n-ph="e.g. Samantha"></div>
+      <div class="field"><label for="n2" data-i18n="">Vibe word (optional)</label><input class="nc-name" id="n2" maxlength="24" placeholder="e.g. bear, star…" autocomplete="off" data-i18n-ph="e.g. bear, star…"></div>
     </div>
     <div class="tool-opts">
-      <button class="chip-opt" data-len="short">Short &amp; sweet</button>
-      <button class="chip-opt" data-len="long">Long &amp; dramatic</button>
+      <button class="chip-opt" data-len="short" data-i18n="">Short  sweet</button>
+      <button class="chip-opt" data-len="long" data-i18n="">Long  dramatic</button>
     </div>
-    <button class="btn" id="ncGo">😎 Generate Nicknames</button>
+    <button class="btn" id="ncGo" data-i18n="">😎 Generate Nicknames</button>
     <div class="results" id="ncResults">
       <div class="top-pick" id="topPick"></div>
-      <div class="results-head"><h3>Nickname ideas <span style="color:var(--mut);font-weight:400" id="ncCount"></span></h3></div>
+      <div class="results-head"><h3><span data-i18n="">Nickname ideas</span> <span style="color:var(--mut);font-weight:400" id="ncCount"></span></h3></div>
       <div class="name-grid" id="ncGrid"></div>
       <div class="share-row">
-        <input id="shareLink" readonly style="flex:1;min-width:200px;padding:12px 14px;border:2px solid var(--line);border-radius:12px;font-size:.85rem" aria-label="Shareable link">
-        <button class="btn ghost" id="ncShare">Copy share link</button>
+        <input id="shareLink" data-i18n-aria="Shareable link" readonly="" style="flex:1;min-width:200px;padding:12px 14px;border:2px solid var(--line);border-radius:12px;font-size:.85rem" aria-label="Shareable link">
+        <button class="btn ghost" id="ncShare" data-i18n="">Copy share link</button>
       </div>
     </div>
   </div>
 
   <section class="block">
-    <h2>Classic nickname <span class="u">patterns</span></h2>
+    <h2 data-i18n-html="auto_nicknamegenerator_1">Classic nickname <span class="u" data-i18n="">patterns</span></h2>
     <div class="steps">
-      <div class="step"><div><h4>Shorten it</h4><p>Cut the name down to its punchiest syllable: Samantha becomes Sam, Alexander becomes Alex.</p></div></div>
-      <div class="step"><div><h4>Add a soft ending</h4><p>Tack on -y, -ie or -o for instant warmth: Sammy, Ellie, Coco.</p></div></div>
-      <div class="step"><div><h4>Fuse a vibe word</h4><p>Blend the name with a personality word, Robert + star becomes Robstar. Try it above.</p></div></div>
+      <div class="step"><div><h4 data-i18n="">Shorten it</h4><p data-i18n="">Cut the name down to its punchiest syllable: Samantha becomes Sam, Alexander becomes Alex.</p></div></div>
+      <div class="step"><div><h4 data-i18n="">Add a soft ending</h4><p data-i18n="">Tack on -y, -ie or -o for instant warmth: Sammy, Ellie, Coco.</p></div></div>
+      <div class="step"><div><h4 data-i18n="">Fuse a vibe word</h4><p data-i18n="">Blend the name with a personality word, Robert + star becomes Robstar. Try it above.</p></div></div>
     </div>
   </section>
 
   <section class="block">
-    <h2>Nickname <span class="u">examples</span></h2>
-    <p>Every great nickname follows a pattern. Here are the most popular ones in action:</p>
+    <h2 data-i18n-html="auto_nicknamegenerator_2">Nickname <span class="u" data-i18n="">examples</span></h2>
+    <p data-i18n="">Every great nickname follows a pattern. Here are the most popular ones in action:</p>
     <table class="example-table">
-      <tr><th>Name + vibe</th><th>Nickname</th><th>Pattern</th></tr>
-      <tr><td>Samantha</td><td><b>Sammy</b></td><td>Shorten + add -y</td></tr>
-      <tr><td>Robert + star</td><td><b>Robstar</b></td><td>Name + vibe word fusion</td></tr>
-      <tr><td>Jennifer</td><td><b>Jen-Jen</b></td><td>Doubled first syllable</td></tr>
-      <tr><td>Marcus + chief</td><td><b>Chief Marc</b></td><td>Title-style nickname</td></tr>
+      <tr><th data-i18n="">Name + vibe</th><th data-i18n="">Nickname</th><th data-i18n="">Pattern</th></tr>
+      <tr><td data-i18n="">Samantha</td><td><b>Sammy</b></td><td data-i18n="">Shorten + add -y</td></tr>
+      <tr><td data-i18n="">Robert + star</td><td><b>Robstar</b></td><td data-i18n="">Name + vibe word fusion</td></tr>
+      <tr><td data-i18n="">Jennifer</td><td><b>Jen-Jen</b></td><td data-i18n="">Doubled first syllable</td></tr>
+      <tr><td data-i18n="">Marcus + chief</td><td><b>Chief Marc</b></td><td data-i18n="">Title-style nickname</td></tr>
     </table>
-    <p>Looking for couple nicknames too? Try our <a href="/tools/couple-name-combiner">couple name combiner</a>.</p>
+    <p data-i18n-html="auto_nicknamegenerator_3">Looking for couple nicknames too? Try our <a href="/tools/couple-name-combiner" data-i18n="">couple name combiner</a>.</p>
   </section>
 
   <section class="block">
-    <h2>More ways to <span class="u">play</span></h2>
+    <h2 data-i18n-html="auto_nicknamegenerator_4">More ways to <span class="u" data-i18n="">play</span></h2>
     <div class="rel-grid">
-      <a class="rel-card" href="/tools/username-generator"><span class="k">Social</span><h4>🎮 Username Generator</h4><p>Turn your nickname into a handle.</p></a>
-      <a class="rel-card" href="/tools/pet-name-combiner"><span class="k">Pets</span><h4>🐾 Pet Name Combiner</h4><p>Cute names for furry friends.</p></a>
-      <a class="rel-card" href="/tools/fantasy-name-combiner"><span class="k">Fantasy</span><h4>🐉 Fantasy Name Combiner</h4><p>Epic names for characters.</p></a>
-      <a class="rel-card" href="/blog/cute-nicknames-guide"><span class="k">Blog</span><h4>Cute Nicknames Guide</h4><p>Nicknames for every personality.</p></a>
+      <a class="rel-card" href="/tools/username-generator"><span class="k" data-i18n="">Social</span><h4 data-i18n="">🎮 Username Generator</h4><p data-i18n="">Turn your nickname into a handle.</p></a>
+      <a class="rel-card" href="/tools/pet-name-combiner"><span class="k" data-i18n="">Pets</span><h4 data-i18n="">🐾 Pet Name Combiner</h4><p data-i18n="">Cute names for furry friends.</p></a>
+      <a class="rel-card" href="/tools/fantasy-name-combiner"><span class="k" data-i18n="">Fantasy</span><h4 data-i18n="">🐉 Fantasy Name Combiner</h4><p data-i18n="">Epic names for characters.</p></a>
+      <a class="rel-card" href="/blog/cute-nicknames-guide"><span class="k" data-i18n="">Blog</span><h4 data-i18n="">Cute Nicknames Guide</h4><p data-i18n="">Nicknames for every personality.</p></a>
     </div>
   </section>
 
   <section class="block">
-    <h2>The anatomy of a <span class="u">great nickname</span></h2>
-    <p>Almost every nickname that ever stuck belongs to one of three families. First come the <b>diminutives</b>, shortened, softened versions of a real name: Sammy, Lizzie, Tommy, Jojo. They are the most common nicknames on earth for a simple reason: they signal affection. Parents, partners and old friends reach for them because making a name smaller makes the person feel closer.</p>
-    <p>Then come the <b>descriptors</b>, which name something true about the person. Dwayne Johnson became "The Rock" because of his build and his wrestling persona, the name is basically a highlight reel in two words. LeBron James picked up "King James" as a teenager because his game already looked royal. Descriptor nicknames work when the trait is obvious enough that strangers nod along.</p>
-    <p>The third family is <b>irony</b>: calling the tallest guy in the room "Tiny," or the quietest friend "Hollywood." Ironic nicknames are inside jokes wearing a name tag, which is exactly why they bond groups together. You have to be in on the story to get it. Whatever family yours comes from, the generator above builds from the same raw materials: shorten, soften, fuse and exaggerate. For a deeper dive into the sweetest options, browse our <a href="/blog/cute-nicknames-guide">cute nicknames guide</a>.</p>
-    <p>One more thing the greats have in common: nicknames <b>evolve</b>. Few people keep just one for life. The childhood diminutive (Tommy) becomes the friend-group descriptor (T-Bone, after an incident nobody will explain), which becomes the partner's private pet name. Each one marks an era and a circle. If a nickname feels inevitable in hindsight, like it was always hiding inside the name, that is the sign it will last.</p>
+    <h2 data-i18n-html="auto_nicknamegenerator_5">The anatomy of a <span class="u" data-i18n="">great nickname</span></h2>
+    <p data-i18n-html="auto_nicknamegenerator_6">Almost every nickname that ever stuck belongs to one of three families. First come the <b>diminutives</b>, shortened, softened versions of a real name: Sammy, Lizzie, Tommy, Jojo. They are the most common nicknames on earth for a simple reason: they signal affection. Parents, partners and old friends reach for them because making a name smaller makes the person feel closer.</p>
+    <p data-i18n-html="auto_nicknamegenerator_7">Then come the <b>descriptors</b>, which name something true about the person. Dwayne Johnson became "The Rock" because of his build and his wrestling persona, the name is basically a highlight reel in two words. LeBron James picked up "King James" as a teenager because his game already looked royal. Descriptor nicknames work when the trait is obvious enough that strangers nod along.</p>
+    <p data-i18n-html="auto_nicknamegenerator_8">The third family is <b>irony</b>: calling the tallest guy in the room "Tiny," or the quietest friend "Hollywood." Ironic nicknames are inside jokes wearing a name tag, which is exactly why they bond groups together. You have to be in on the story to get it. Whatever family yours comes from, the generator above builds from the same raw materials: shorten, soften, fuse and exaggerate. For a deeper dive into the sweetest options, browse our <a href="/blog/cute-nicknames-guide" data-i18n="">cute nicknames guide</a>.</p>
+    <p data-i18n-html="auto_nicknamegenerator_9">One more thing the greats have in common: nicknames <b>evolve</b>. Few people keep just one for life. The childhood diminutive (Tommy) becomes the friend-group descriptor (T-Bone, after an incident nobody will explain), which becomes the partner's private pet name. Each one marks an era and a circle. If a nickname feels inevitable in hindsight, like it was always hiding inside the name, that is the sign it will last.</p>
   </section>
 
   <section class="block">
-    <h2>Nickname ideas by <span class="u">vibe</span></h2>
-    <p>The right nickname depends entirely on the energy you want. Pick your lane first, then let the generator riff on it, or steal one of these proven patterns:</p>
+    <h2 data-i18n-html="auto_nicknamegenerator_10">Nickname ideas by <span class="u" data-i18n="">vibe</span></h2>
+    <p data-i18n="">The right nickname depends entirely on the energy you want. Pick your lane first, then let the generator riff on it, or steal one of these proven patterns:</p>
     <table class="example-table">
-      <tr><th>Vibe</th><th>Examples</th><th>Best for</th></tr>
-      <tr><td>🥰 Cute</td><td><b>Peanut, Bubbles, Honeybear, Snugglebug</b></td><td>Partners, kids, best friends</td></tr>
-      <tr><td>😎 Cool</td><td><b>Ace, Rex, Jax, Neo, Viper</b></td><td>Gaming tags, sports teams</td></tr>
-      <tr><td>🤣 Funny</td><td><b>Noodle, Pickles, Captain Chaos, Sir Snores-a-lot</b></td><td>Inside jokes, group chats</td></tr>
-      <tr><td>💪 Tough</td><td><b>Tank, Bruiser, Diesel, Hammer</b></td><td>Gym buddies, teammates</td></tr>
+      <tr><th data-i18n="">Vibe</th><th data-i18n="">Examples</th><th data-i18n="">Best for</th></tr>
+      <tr><td data-i18n="">🥰 Cute</td><td><b>Peanut, Bubbles, Honeybear, Snugglebug</b></td><td data-i18n="">Partners, kids, best friends</td></tr>
+      <tr><td data-i18n="">😎 Cool</td><td><b>Ace, Rex, Jax, Neo, Viper</b></td><td data-i18n="">Gaming tags, sports teams</td></tr>
+      <tr><td data-i18n="">🤣 Funny</td><td><b>Noodle, Pickles, Captain Chaos, Sir Snores-a-lot</b></td><td data-i18n="">Inside jokes, group chats</td></tr>
+      <tr><td data-i18n="">💪 Tough</td><td><b>Tank, Bruiser, Diesel, Hammer</b></td><td data-i18n="">Gym buddies, teammates</td></tr>
     </table>
-    <p>Notice the pattern: cute nicknames use soft sounds and food words, cool ones stay short and punchy, funny ones exaggerate, and tough ones borrow from machinery. Feed the generator a vibe word that matches your lane, "bear" for cute, "blade" for cool, "pickle" for funny, and the results instantly get more personal. Found one you love? <a href="/tools/username-generator">Turn it into a matching username</a> so your handle matches everywhere.</p>
-    <p>And don't feel locked into one vibe. Most people collect different nicknames for different circles, the tough one for the team, the soft one for home. Generate a few rounds in each lane, shortlist three favorites per vibe, and say them out loud. The one that makes you grin when you hear it is the keeper.</p>
+    <p data-i18n-html="auto_nicknamegenerator_11">Notice the pattern: cute nicknames use soft sounds and food words, cool ones stay short and punchy, funny ones exaggerate, and tough ones borrow from machinery. Feed the generator a vibe word that matches your lane, "bear" for cute, "blade" for cool, "pickle" for funny, and the results instantly get more personal. Found one you love? <a href="/tools/username-generator" data-i18n="">Turn it into a matching username</a> so your handle matches everywhere.</p>
+    <p data-i18n="">And don't feel locked into one vibe. Most people collect different nicknames for different circles, the tough one for the team, the soft one for home. Generate a few rounds in each lane, shortlist three favorites per vibe, and say them out loud. The one that makes you grin when you hear it is the keeper.</p>
   </section>
 
   <section class="block">
-    <h2>Nickname <span class="u">etiquette</span></h2>
-    <p>Here is the golden rule of nicknames: a nickname is a gift, not a label. If the person lights up when they hear it, you nailed it. If they wince, force a smile, or quietly stop responding to it. It failed, no matter how clever you think it is. The person's reaction is the entire grading rubric.</p>
-    <p>The nicknames that stick hardest are usually <b>earned, not assigned</b>. They come from a story: the time someone fell asleep on the bus and became "Captain Naps," or a cooking disaster that crowned someone "Chef Smoke." That shared history is the glue. Assigned nicknames can still work beautifully, but they land best when they are affectionate and the person gets veto power.</p>
-    <p>Also, read the room. The nickname your college friends scream across a bar might not belong in a work meeting or a family group chat, some nicknames don't travel. When in doubt, just ask: "Do you mind if I call you that?" People almost always say yes when asked, and the asking itself shows respect. Naming a duo? Our <a href="/tools/couple-name-combiner">couple name combiner</a> is built for exactly that.</p>
-    <p>One modern twist: online, the etiquette flips. Usernames and gamertags are nicknames you choose for yourself, so go as bold as you like, nobody needs to approve "ViperQueen92." The old rules still apply the moment a nickname is aimed at someone else, though. Self-chosen means self-expression; other-chosen means you owe them the veto.</p>
+    <h2 data-i18n-html="auto_nicknamegenerator_12">Nickname <span class="u" data-i18n="">etiquette</span></h2>
+    <p data-i18n="">Here is the golden rule of nicknames: a nickname is a gift, not a label. If the person lights up when they hear it, you nailed it. If they wince, force a smile, or quietly stop responding to it. It failed, no matter how clever you think it is. The person's reaction is the entire grading rubric.</p>
+    <p data-i18n-html="auto_nicknamegenerator_13">The nicknames that stick hardest are usually <b>earned, not assigned</b>. They come from a story: the time someone fell asleep on the bus and became "Captain Naps," or a cooking disaster that crowned someone "Chef Smoke." That shared history is the glue. Assigned nicknames can still work beautifully, but they land best when they are affectionate and the person gets veto power.</p>
+    <p data-i18n-html="auto_nicknamegenerator_14">Also, read the room. The nickname your college friends scream across a bar might not belong in a work meeting or a family group chat, some nicknames don't travel. When in doubt, just ask: "Do you mind if I call you that?" People almost always say yes when asked, and the asking itself shows respect. Naming a duo? Our <a href="/tools/couple-name-combiner" data-i18n="">couple name combiner</a> is built for exactly that.</p>
+    <p data-i18n="">One modern twist: online, the etiquette flips. Usernames and gamertags are nicknames you choose for yourself, so go as bold as you like, nobody needs to approve "ViperQueen92." The old rules still apply the moment a nickname is aimed at someone else, though. Self-chosen means self-expression; other-chosen means you owe them the veto.</p>
   </section>
 
   <section class="block">
-    <h2>From name to nickname: the <span class="u">techniques</span></h2>
-    <p>You don't need a generator to invent nicknames by hand, but it helps to know the moves professionals (and clever friend groups) use. Master these five and you can nickname anyone:</p>
+    <h2 data-i18n-html="auto_nicknamegenerator_15">From name to nickname: the <span class="u" data-i18n="">techniques</span></h2>
+    <p data-i18n="">You don't need a generator to invent nicknames by hand, but it helps to know the moves professionals (and clever friend groups) use. Master these five and you can nickname anyone:</p>
     <div class="steps">
-      <div class="step"><div><h4>Shorten ruthlessly</h4><p>Cut to the strongest syllable: Benjamin → Ben, Alexandra → Alex, Christopher → Chris. One syllable is the sweet spot. It is faster to say and hits harder.</p></div></div>
-      <div class="step"><div><h4>Soften the ending</h4><p>Add -y, -ie or -o to anything: Tom → Tommy, Jen → Jennie, Marc → Marco. This is the diminutive trick from above, and it instantly makes a name feel warm.</p></div></div>
-      <div class="step"><div><h4>Rhyme or double it</h4><p>Rhyming pairs (Jenny → Penny) and doubled syllables (Lulu, Mimi, Jojo) are playground classics because repetition is catchy. They work at any age.</p></div></div>
-      <div class="step"><div><h4>Use initials</h4><p>First-plus-middle initials make sharp, modern nicknames: Michael Jordan → MJ, Alexander James → AJ. Great when the full name is a mouthful.</p></div></div>
-      <div class="step"><div><h4>Mash two words together</h4><p>Fuse the name with a trait or vibe word, the portmanteau move: Robert + star → Robstar. See more blending magic in our <a href="/blog/portmanteau-examples">portmanteau examples</a>, and remember <a href="/tools/pet-name-combiner">pets deserve nicknames</a> too.</p></div></div>
+      <div class="step"><div><h4 data-i18n="">Shorten ruthlessly</h4><p data-i18n="">Cut to the strongest syllable: Benjamin → Ben, Alexandra → Alex, Christopher → Chris. One syllable is the sweet spot. It is faster to say and hits harder.</p></div></div>
+      <div class="step"><div><h4 data-i18n="">Soften the ending</h4><p data-i18n="">Add -y, -ie or -o to anything: Tom → Tommy, Jen → Jennie, Marc → Marco. This is the diminutive trick from above, and it instantly makes a name feel warm.</p></div></div>
+      <div class="step"><div><h4 data-i18n="">Rhyme or double it</h4><p data-i18n="">Rhyming pairs (Jenny → Penny) and doubled syllables (Lulu, Mimi, Jojo) are playground classics because repetition is catchy. They work at any age.</p></div></div>
+      <div class="step"><div><h4 data-i18n="">Use initials</h4><p data-i18n="">First-plus-middle initials make sharp, modern nicknames: Michael Jordan → MJ, Alexander James → AJ. Great when the full name is a mouthful.</p></div></div>
+      <div class="step"><div><h4 data-i18n="">Mash two words together</h4><p data-i18n-html="auto_nicknamegenerator_16">Fuse the name with a trait or vibe word, the portmanteau move: Robert + star → Robstar. See more blending magic in our <a href="/blog/portmanteau-examples" data-i18n="">portmanteau examples</a>, and remember <a href="/tools/pet-name-combiner" data-i18n="">pets deserve nicknames</a> too.</p></div></div>
     </div>
-    <p>The real pros <b>layer</b> these moves: Alexandra → Alex (shorten) → Allie (soften) → Allie-bear (mash). Each layer adds personality, so a nickname built from two or three techniques almost always beats one built from a single trick. Run the generator a few times and watch for results that combine patterns. Those are usually the keepers.</p>
+    <p data-i18n-html="auto_nicknamegenerator_17">The real pros <b>layer</b> these moves: Alexandra → Alex (shorten) → Allie (soften) → Allie-bear (mash). Each layer adds personality, so a nickname built from two or three techniques almost always beats one built from a single trick. Run the generator a few times and watch for results that combine patterns. Those are usually the keepers.</p>
   </section>
 
   <section class="block">
-    <h2>Frequently asked <span class="u">questions</span></h2>
+    <h2 data-i18n-html="auto_nicknamegenerator_18">Frequently asked <span class="u" data-i18n="">questions</span></h2>
     <div class="faq">
-      <details class="faq-item"><summary>How does a nickname generator work?</summary><div class="a">Enter a name and the generator applies classic nickname patterns, shortening, adding -y or -ie endings, doubling the first syllable, or fusing the name with your vibe word. Add a vibe word like bear or star for more personal results.</div></details>
-      <details class="faq-item"><summary>What are some cute nickname ideas?</summary><div class="a">Cute nicknames usually shorten the name and add soft endings: Sammy, Ellie, Coco, Milo. Try the generator with a sweet vibe word like honey or bunny for adorable options.</div></details>
-      <details class="faq-item"><summary>What are some funny nicknames?</summary><div class="a">Funny nicknames exaggerate a trait or rhyme with the name. Enter your name plus a silly vibe word, like noodle or pickle, and browse the playful results.</div></details>
-      <details class="faq-item"><summary>What are some cool nicknames?</summary><div class="a">Cool nicknames are short and punchy: Ace, Rex, Jax, Neo. The generator creates sharp one and two-syllable options that sound confident.</div></details>
-      <details class="faq-item"><summary>How do I pick a nickname that sticks?</summary><div class="a">The best nicknames are easy to say, suit the person's personality, and feel natural after a few uses. Shortlist three favorites, try them out loud with friends, and see which one gets adopted.</div></details>
-      <details class="faq-item"><summary>Is the nickname generator free?</summary><div class="a">Yes, completely free with no signup and unlimited generations.</div></details>
+      <details class="faq-item"><summary data-i18n="">How does a nickname generator work?</summary><div class="a" data-i18n="">Enter a name and the generator applies classic nickname patterns, shortening, adding -y or -ie endings, doubling the first syllable, or fusing the name with your vibe word. Add a vibe word like bear or star for more personal results.</div></details>
+      <details class="faq-item"><summary data-i18n="">What are some cute nickname ideas?</summary><div class="a" data-i18n="">Cute nicknames usually shorten the name and add soft endings: Sammy, Ellie, Coco, Milo. Try the generator with a sweet vibe word like honey or bunny for adorable options.</div></details>
+      <details class="faq-item"><summary data-i18n="">What are some funny nicknames?</summary><div class="a" data-i18n="">Funny nicknames exaggerate a trait or rhyme with the name. Enter your name plus a silly vibe word, like noodle or pickle, and browse the playful results.</div></details>
+      <details class="faq-item"><summary data-i18n="">What are some cool nicknames?</summary><div class="a" data-i18n="">Cool nicknames are short and punchy: Ace, Rex, Jax, Neo. The generator creates sharp one and two-syllable options that sound confident.</div></details>
+      <details class="faq-item"><summary data-i18n="">How do I pick a nickname that sticks?</summary><div class="a" data-i18n="">The best nicknames are easy to say, suit the person's personality, and feel natural after a few uses. Shortlist three favorites, try them out loud with friends, and see which one gets adopted.</div></details>
+      <details class="faq-item"><summary data-i18n="">Is the nickname generator free?</summary><div class="a" data-i18n="">Yes, completely free with no signup and unlimited generations.</div></details>
     </div>
   </section>
 </main>
@@ -200,46 +200,51 @@
     <div class="foot-grid">
       <div>
         <div class="foot-brand">💜 Your<b>Name</b>Combiner</div>
-        <p data-i18n style="font-size:.9rem">Free name-blending tools for couples, babies, brands and beyond. Made with 💜 for name lovers everywhere.</p>
+        <p data-i18n="" style="font-size:.9rem">Free name-blending tools for couples, babies, brands and beyond. Made with 💜 for name lovers everywhere.</p>
       </div>
       <div>
-        <h4 data-i18n>Popular tools</h4>
-        <a data-i18n href="/tools/couple-name-combiner">Couple Name Combiner</a>
-        <a data-i18n href="/tools/baby-name-combiner">Baby Name Combiner</a>
-        <a data-i18n href="/tools/ship-name-generator">Ship Name Generator</a>
-        <a data-i18n href="/tools/brand-name-combiner">Brand Name Combiner</a>
+        <h4 data-i18n="">Popular tools</h4>
+        <a data-i18n="" href="/tools/couple-name-combiner">Couple Name Combiner</a>
+        <a data-i18n="" href="/tools/baby-name-combiner">Baby Name Combiner</a>
+        <a data-i18n="" href="/tools/ship-name-generator">Ship Name Generator</a>
+        <a data-i18n="" href="/tools/brand-name-combiner">Brand Name Combiner</a>
       </div>
       <div>
-        <h4 data-i18n>More tools</h4>
-        <a data-i18n href="/tools/nickname-generator">Nickname Generator</a>
-        <a data-i18n href="/tools/wedding-hashtag-generator">Wedding Hashtag Generator</a>
-        <a data-i18n href="/tools/pet-name-combiner">Pet Name Combiner</a>
-        <a data-i18n href="/tools/username-generator">Username Generator</a>
+        <h4 data-i18n="">More tools</h4>
+        <a data-i18n="" href="/tools/nickname-generator">Nickname Generator</a>
+        <a data-i18n="" href="/tools/wedding-hashtag-generator">Wedding Hashtag Generator</a>
+        <a data-i18n="" href="/tools/pet-name-combiner">Pet Name Combiner</a>
+        <a data-i18n="" href="/tools/username-generator">Username Generator</a>
       </div>
       <div>
-        <h4 data-i18n>From the blog</h4>
-        <a data-i18n href="/blog/what-is-a-ship-name">What Is a Ship Name?</a>
-        <a data-i18n href="/blog/how-to-combine-two-names">How to Combine Two Names</a>
-        <a data-i18n href="/blog/celebrity-couple-names">Celebrity Couple Names</a>
-        <a data-i18n href="/blog">All Posts</a>
+        <h4 data-i18n="">From the blog</h4>
+        <a data-i18n="" href="/blog/what-is-a-ship-name">What Is a Ship Name?</a>
+        <a data-i18n="" href="/blog/how-to-combine-two-names">How to Combine Two Names</a>
+        <a data-i18n="" href="/blog/celebrity-couple-names">Celebrity Couple Names</a>
+        <a data-i18n="" href="/blog">All Posts</a>
       </div>
     </div>
     <div class="foot-bottom">
-      <span>© <span data-year>2026</span> YourNameCombiner.com, <span data-i18n>All rights reserved.</span></span>
-      <nav class="foot-links" aria-label="Footer"><a data-i18n href="/blog">Blog</a><a data-i18n href="/about">About</a><a data-i18n href="/privacy-policy">Privacy</a><a data-i18n href="/terms-of-service">Terms</a></nav>
+      <span>© <span data-year="">2026</span> YourNameCombiner.com, <span data-i18n="">All rights reserved.</span></span>
+      <nav class="foot-links" aria-label="Footer"><a data-i18n="" href="/blog">Blog</a><a data-i18n="" href="/about">About</a><a data-i18n="" href="/privacy-policy">Privacy</a><a data-i18n="" href="/terms-of-service">Terms</a></nav>
     </div>
   </div>
 </footer>
 
-<button class="fav-fab" id="favFab">⭐ Favorites (<span id="favCount">0</span>)</button>
+<button class="fav-fab" id="favFab" data-i18n-html="ync_favfab">⭐ Favorites (<span id="favCount">0</span>)</button>
 <div class="scrim" id="scrim"></div>
-<aside class="drawer" id="favDrawer" aria-label="Favorite names">
-  <div class="drawer-head"><h3>⭐ My Favorite Blends</h3><button class="icon-btn" id="favClose">✕</button></div>
+<aside class="drawer" id="favDrawer" aria-label="Favorite names" data-i18n-aria="Favorite names">
+  <div class="drawer-head"><h3 data-i18n="">⭐ My Favorite Blends</h3><button class="icon-btn" id="favClose">✕</button></div>
   <div class="drawer-body" id="favBody"></div>
-  <div class="drawer-foot"><button class="btn ghost" id="favDownload" style="flex:1">Download</button><button class="btn ghost" id="favClear" style="flex:1">Clear all</button></div>
+  <div class="drawer-foot"><button class="btn ghost" id="favDownload" style="flex:1" data-i18n="">Download</button><button class="btn ghost" id="favClear" style="flex:1" data-i18n="">Clear all</button></div>
 </aside>
 
 <script src="/assets/js/i18n.js"></script>
+<script src="/assets/js/i18n-d1.js"></script>
+<script src="/assets/js/i18n-d2.js"></script>
+<script src="/assets/js/i18n-d3.js"></script>
+<script src="/assets/js/i18n-d4.js"></script>
+<script src="/assets/js/i18n-d5.js"></script>
 <script src="/assets/js/main.js"></script>
 </body>
 </html>
