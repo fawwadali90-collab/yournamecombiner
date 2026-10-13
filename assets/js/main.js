@@ -45,7 +45,7 @@ function blends(a,b){
   const ha=Math.ceil(a.length/2),hb=Math.floor(b.length/2);
   push(a.slice(0,ha)+b.slice(hb),'half-blend');
   push(b.slice(0,Math.ceil(b.length/2))+a.slice(Math.floor(a.length/2)),'half-blend');
-  // split sweep (bounded) — require at least 2 letters from each name
+  // split sweep (bounded) - require at least 2 letters from each name
   for(let i=2;i<a.length;i++){for(let j=1;j<b.length-1;j++){
     if(out.length>90)break;
     push(a.slice(0,i)+b.slice(j),'syllable-mix');
@@ -170,7 +170,7 @@ function renderFavs(){
   const l=Favs.list(),fab=$('#favFab'),body=$('#favBody'),cnt=$('#favCount');
   if(fab){fab.classList.toggle('show',l.length>0);if(cnt)cnt.textContent=l.length;}
   if(body){
-    body.innerHTML=l.length?l.map(n=>'<div class="fav-item"><span>'+escapeHtml(n)+'</span><span><button class="icon-btn" data-copy="'+escapeHtml(n)+'" title="Copy">📋</button> <button class="icon-btn" data-speak="'+escapeHtml(n)+'" title="Hear it">🔊</button> <button class="icon-btn" data-unfav="'+escapeHtml(n)+'" title="Remove">✕</button></span></div>').join(''):'<p style="color:var(--mut)">No favorites yet — tap the ⭐ on any result you love.</p>';
+    body.innerHTML=l.length?l.map(n=>'<div class="fav-item"><span>'+escapeHtml(n)+'</span><span><button class="icon-btn" data-copy="'+escapeHtml(n)+'" title="'+((typeof __==="function")?__("Copy"):"Copy")+'">📋</button> <button class="icon-btn" data-speak="'+escapeHtml(n)+'" title="'+((typeof __==="function")?__("Hear it"):"Hear it")+'">🔊</button> <button class="icon-btn" data-unfav="'+escapeHtml(n)+'" title="'+((typeof __==="function")?__("Remove"):"Remove")+'">✕</button></span></div>').join(''):'<p style="color:var(--mut)">'+((typeof __==='function')?__('No favorites yet - tap the ⭐ on any result you love.'):'No favorites yet - tap the ⭐ on any result you love.')+'</p>';
   }
   $$('[data-fav]').forEach(b=>b.classList.toggle('starred',Favs.has(b.getAttribute('data-fav'))));
 }
@@ -215,12 +215,12 @@ function wireTool(){
     const names=inputs.map(i=>i.value);
     const minN=parseInt(card.getAttribute('data-min')||'2',10);
     if(names.filter(n=>n.trim()).length<minN){
-      if(alert){alert.textContent=minN===1?'Please enter a name to remix.':'Please enter at least two names to combine.';alert.classList.add('show');}
+      if(alert){alert.textContent=(typeof __==='function')?__(minN===1?'Please enter a name to remix.':'Please enter at least two names to combine.'):(minN===1?'Please enter a name to remix.':'Please enter at least two names to combine.');alert.classList.add('show');}
       return;
     }
     if(alert)alert.classList.remove('show');
     const res=NC.generate(names,mode,currentOpts());
-    if(!res.length){if(alert){alert.textContent='Hmm, those inputs did not blend well — try different spellings.';alert.classList.add('show');}return;}
+    if(!res.length){if(alert){alert.textContent=(typeof __==='function')?__('Hmm, those inputs did not blend well. Try different spellings.'):'Hmm, those inputs did not blend well. Try different spellings.';alert.classList.add('show');}return;}
     grid.innerHTML=res.map((r,i)=>'<div class="name-card" style="animation-delay:'+Math.min(i*30,600)+'ms"><div class="nm">'+escapeHtml(r.name)+'</div><div class="tag">'+escapeHtml(r.method.replace(/-/g,' '))+'</div><div class="acts"><button class="icon-btn" data-copy="'+escapeHtml(r.name)+'" title="Copy">📋</button><button class="icon-btn" data-speak="'+escapeHtml(r.name)+'" title="Hear it">🔊</button><button class="icon-btn" data-fav="'+escapeHtml(r.name)+'" title="Save">⭐</button></div></div>').join('');
     if(topPick){topPick.innerHTML='<div class="lbl">✨ Top pick</div><div class="name">'+escapeHtml(res[0].name)+'</div><div class="acts" style="display:flex;gap:8px;justify-content:center"><button class="icon-btn" data-copy="'+escapeHtml(res[0].name)+'" title="Copy">📋</button><button class="icon-btn" data-speak="'+escapeHtml(res[0].name)+'" title="Hear it">🔊</button><button class="icon-btn" data-fav="'+escapeHtml(res[0].name)+'" title="Save">⭐</button></div>';}
     results.classList.add('show');
@@ -242,7 +242,7 @@ function wireTool(){
     const ta=$('#shareLink');ta.select();
     try{document.execCommand('copy');}catch(e){}
     if(navigator.clipboard)navigator.clipboard.writeText(ta.value).catch(()=>{});
-    sh.textContent='Copied! ✓';Sfx.chime();setTimeout(()=>sh.textContent='Copy share link',1800);
+    sh.textContent=(typeof __==='function')?__('Copied! ✓'):'Copied! ✓';Sfx.chime();setTimeout(()=>sh.textContent=(typeof __==='function')?__('Copy share link'):'Copy share link',1800);
   });
   if(restored)doGenerate();
 }
@@ -280,7 +280,7 @@ document.addEventListener('DOMContentLoaded',()=>{
   const dl=$('#favDownload');
   if(dl)dl.addEventListener('click',()=>{
     const l=Favs.list();if(!l.length)return;
-    const blob=new Blob(['My favorite name blends — via YourNameCombiner\n\n'+l.join('\n')],{type:'text/plain'});
+    const blob=new Blob([(typeof __==='function'?__('My favorite name blends - via YourNameCombiner'):'My favorite name blends - via YourNameCombiner')+'\n\n'+l.join('\n')],{type:'text/plain'});
     const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='name-blends.txt';a.click();Sfx.chime();
   });
   const ca=$('#favClear');if(ca)ca.addEventListener('click',()=>{if(confirm('Remove all favorites?'))Favs.clear();});
