@@ -194,6 +194,10 @@ function speak(t){
   }catch(e){}
 }
 
+/* method labels, translated */
+const METHOD_LBL={'half-blend':'half blend','syllable-mix':'syllable mix','overlap-merge':'overlap merge','letter-swap':'letter swap','head-tail':'head tail','brand-twist':'brand twist','diminutive':'diminutive','pet-cute':'pet cute','handle':'handle','hashtag':'hashtag','fantasy':'fantasy','blended-surname':'blended surname','double-barrel':'double barrel'};
+function methodLabel(m){var k=METHOD_LBL[m]||m;return (typeof __==='function')?__(k):k;}
+
 /* ---------- tool wiring ---------- */
 function wireTool(){
   const card=$('#combinerCard');if(!card)return;
@@ -211,26 +215,32 @@ function wireTool(){
     const y=$('#ncYear');if(y&&y.value)o.year=y.value;
     return o;
   }
+  var lastPaint=null;
+  function paintResults(res,names){
+    grid.innerHTML=res.map((r,i)=>'<div class="name-card" style="animation-delay:'+Math.min(i*30,600)+'ms"><div class="nm">'+escapeHtml(r.name)+'</div><div class="tag">'+escapeHtml(methodLabel(r.method))+'</div><div class="acts"><button class="icon-btn" data-copy="'+escapeHtml(r.name)+'" title="'+((typeof __==="function")?__("Copy"):"Copy")+'">📋</button><button class="icon-btn" data-speak="'+escapeHtml(r.name)+'" title="'+((typeof __==="function")?__("Hear it"):"Hear it")+'">🔊</button><button class="icon-btn" data-fav="'+escapeHtml(r.name)+'" title="'+((typeof __==="function")?__("Save"):"Save")+'">⭐</button></div></div>').join('');
+    if(topPick){topPick.innerHTML='<div class="lbl">'+((typeof __==="function")?__("✨ Top pick"):"✨ Top pick")+'</div><div class="name">'+escapeHtml(res[0].name)+'</div><div class="acts" style="display:flex;gap:8px;justify-content:center"><button class="icon-btn" data-copy="'+escapeHtml(res[0].name)+'" title="'+((typeof __==="function")?__("Copy"):"Copy")+'">📋</button><button class="icon-btn" data-speak="'+escapeHtml(res[0].name)+'" title="'+((typeof __==="function")?__("Hear it"):"Hear it")+'">🔊</button><button class="icon-btn" data-fav="'+escapeHtml(res[0].name)+'" title="'+((typeof __==="function")?__("Save"):"Save")+'">⭐</button></div>';}
+    results.classList.add('show');
+    var cnt=res.length;
+    $('#ncCount').textContent=cnt+' '+((typeof __==='function')?(cnt===1?__('blend'):__('blends')):(cnt===1?'blend':'blends'));
+    $('#shareLink').value=shareURL(names.filter(function(n){return n.trim();}),mode);
+    renderFavs();
+  }
   function doGenerate(){
-    const names=inputs.map(i=>i.value);
-    const minN=parseInt(card.getAttribute('data-min')||'2',10);
-    if(names.filter(n=>n.trim()).length<minN){
+    var names=inputs.map(function(i){return i.value;});
+    var minN=parseInt(card.getAttribute('data-min')||'2',10);
+    if(names.filter(function(n){return n.trim();}).length<minN){
       if(alert){alert.textContent=(typeof __==='function')?__(minN===1?'Please enter a name to remix.':'Please enter at least two names to combine.'):(minN===1?'Please enter a name to remix.':'Please enter at least two names to combine.');alert.classList.add('show');}
       return;
     }
     if(alert)alert.classList.remove('show');
-    const res=NC.generate(names,mode,currentOpts());
+    var res=NC.generate(names,mode,currentOpts());
     if(!res.length){if(alert){alert.textContent=(typeof __==='function')?__('Hmm, those inputs did not blend well. Try different spellings.'):'Hmm, those inputs did not blend well. Try different spellings.';alert.classList.add('show');}return;}
-    grid.innerHTML=res.map((r,i)=>'<div class="name-card" style="animation-delay:'+Math.min(i*30,600)+'ms"><div class="nm">'+escapeHtml(r.name)+'</div><div class="tag">'+escapeHtml(r.method.replace(/-/g,' '))+'</div><div class="acts"><button class="icon-btn" data-copy="'+escapeHtml(r.name)+'" title="Copy">📋</button><button class="icon-btn" data-speak="'+escapeHtml(r.name)+'" title="Hear it">🔊</button><button class="icon-btn" data-fav="'+escapeHtml(r.name)+'" title="Save">⭐</button></div></div>').join('');
-    if(topPick){topPick.innerHTML='<div class="lbl">✨ Top pick</div><div class="name">'+escapeHtml(res[0].name)+'</div><div class="acts" style="display:flex;gap:8px;justify-content:center"><button class="icon-btn" data-copy="'+escapeHtml(res[0].name)+'" title="Copy">📋</button><button class="icon-btn" data-speak="'+escapeHtml(res[0].name)+'" title="Hear it">🔊</button><button class="icon-btn" data-fav="'+escapeHtml(res[0].name)+'" title="Save">⭐</button></div>';}
-    results.classList.add('show');
-    const cnt=res.length;
-    $('#ncCount').textContent=cnt+' blend'+(cnt===1?'':'s');
-    $('#shareLink').value=shareURL(names.filter(n=>n.trim()),mode);
+    lastPaint={res:res,names:names};
+    paintResults(res,names);
     Sfx.fanfare();
-    renderFavs();
     results.scrollIntoView({behavior:'smooth',block:'nearest'});
   }
+  card._yncRepaint=function(){ if(lastPaint) paintResults(lastPaint.res,lastPaint.names); };
   $('#ncGo').addEventListener('click',doGenerate);
   inputs.forEach(i=>i.addEventListener('keydown',e=>{if(e.key==='Enter')doGenerate();}));
   $$('.chip-opt[data-gender],.chip-opt[data-len],.chip-opt[data-cat]',card).forEach(c=>c.addEventListener('click',()=>{
@@ -246,6 +256,13 @@ function wireTool(){
   });
   if(restored)doGenerate();
 }
+
+/* repaint generated results when language changes */
+document.addEventListener('i18n:change',function(){
+  var card=document.getElementById('combinerCard');
+  if(card&&card._yncRepaint) card._yncRepaint();
+  renderFavs();
+});
 
 /* ---------- global clicks ---------- */
 document.addEventListener('click',e=>{
@@ -283,6 +300,6 @@ document.addEventListener('DOMContentLoaded',()=>{
     const blob=new Blob([(typeof __==='function'?__('My favorite name blends - via YourNameCombiner'):'My favorite name blends - via YourNameCombiner')+'\n\n'+l.join('\n')],{type:'text/plain'});
     const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='name-blends.txt';a.click();Sfx.chime();
   });
-  const ca=$('#favClear');if(ca)ca.addEventListener('click',()=>{if(confirm('Remove all favorites?'))Favs.clear();});
+  const ca=$('#favClear');if(ca)ca.addEventListener('click',()=>{if(confirm((typeof __==='function')?__('Remove all favorites?'):'Remove all favorites?'))Favs.clear();});
 });
 })();
