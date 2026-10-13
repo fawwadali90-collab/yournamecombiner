@@ -14,7 +14,7 @@
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💑</text></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800;900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/assets/css/style.css?v=2">
+<link rel="stylesheet" href="/assets/css/style.css?v=3">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -118,11 +118,12 @@
   <div class="wrap nav">
     <a class="logo" href="/">💜 Your<b>Name</b>Combiner</a>
     <nav class="nav-links">
-      <a href="/tools/couple-name-combiner">Couples</a>
-      <a href="/tools/baby-name-combiner">Baby</a>
-      <a href="/tools/brand-name-combiner">Brand</a>
-      <a href="/blog">Blog</a>
-      <a class="cta" href="#combiner">Combine Names</a>
+      <a data-i18n href="/">Home</a>
+      <a data-i18n href="/tools/couple-name-combiner">Couples</a>
+      <a data-i18n href="/tools/baby-name-combiner">Baby</a>
+      <a data-i18n href="/tools/brand-name-combiner">Brand</a>
+      <a data-i18n href="/blog">Blog</a>
+      <a data-i18n class="cta" href="#combiner">Combine Names</a>
     </nav>
   </div>
 </header>
@@ -224,33 +225,33 @@
     <div class="foot-grid">
       <div>
         <div class="foot-brand">💜 Your<b>Name</b>Combiner</div>
-        <p style="font-size:.9rem">Free name-blending tools for couples, babies, brands and beyond. Made with 💜 for name lovers everywhere.</p>
+        <p data-i18n style="font-size:.9rem">Free name-blending tools for couples, babies, brands and beyond. Made with 💜 for name lovers everywhere.</p>
       </div>
       <div>
-        <h4>Popular tools</h4>
-        <a href="/tools/couple-name-combiner">Couple Name Combiner</a>
-        <a href="/tools/baby-name-combiner">Baby Name Combiner</a>
-        <a href="/tools/ship-name-generator">Ship Name Generator</a>
-        <a href="/tools/brand-name-combiner">Brand Name Combiner</a>
+        <h4 data-i18n>Popular tools</h4>
+        <a data-i18n href="/tools/couple-name-combiner">Couple Name Combiner</a>
+        <a data-i18n href="/tools/baby-name-combiner">Baby Name Combiner</a>
+        <a data-i18n href="/tools/ship-name-generator">Ship Name Generator</a>
+        <a data-i18n href="/tools/brand-name-combiner">Brand Name Combiner</a>
       </div>
       <div>
-        <h4>More tools</h4>
-        <a href="/tools/nickname-generator">Nickname Generator</a>
-        <a href="/tools/wedding-hashtag-generator">Wedding Hashtag Generator</a>
-        <a href="/tools/pet-name-combiner">Pet Name Combiner</a>
-        <a href="/tools/username-generator">Username Generator</a>
+        <h4 data-i18n>More tools</h4>
+        <a data-i18n href="/tools/nickname-generator">Nickname Generator</a>
+        <a data-i18n href="/tools/wedding-hashtag-generator">Wedding Hashtag Generator</a>
+        <a data-i18n href="/tools/pet-name-combiner">Pet Name Combiner</a>
+        <a data-i18n href="/tools/username-generator">Username Generator</a>
       </div>
       <div>
-        <h4>From the blog</h4>
-        <a href="/blog/what-is-a-ship-name">What Is a Ship Name?</a>
-        <a href="/blog/how-to-combine-two-names">How to Combine Two Names</a>
-        <a href="/blog/celebrity-couple-names">Celebrity Couple Names</a>
-        <a href="/blog">All Posts</a>
+        <h4 data-i18n>From the blog</h4>
+        <a data-i18n href="/blog/what-is-a-ship-name">What Is a Ship Name?</a>
+        <a data-i18n href="/blog/how-to-combine-two-names">How to Combine Two Names</a>
+        <a data-i18n href="/blog/celebrity-couple-names">Celebrity Couple Names</a>
+        <a data-i18n href="/blog">All Posts</a>
       </div>
     </div>
     <div class="foot-bottom">
-      <span>© <span data-year>2026</span> YourNameCombiner.com, All rights reserved.</span>
-      <nav class="foot-links" aria-label="Footer"><a href="/blog">Blog</a><a href="/about">About</a><a href="/privacy-policy">Privacy</a><a href="/terms-of-service">Terms</a></nav>
+      <span>© <span data-year>2026</span> YourNameCombiner.com, <span data-i18n>All rights reserved.</span></span>
+      <nav class="foot-links" aria-label="Footer"><a data-i18n href="/blog">Blog</a><a data-i18n href="/about">About</a><a data-i18n href="/privacy-policy">Privacy</a><a data-i18n href="/terms-of-service">Terms</a></nav>
     </div>
   </div>
 </footer>
@@ -263,6 +264,7 @@
   <div class="drawer-foot"><button class="btn ghost" id="favDownload" style="flex:1">Download</button><button class="btn ghost" id="favClear" style="flex:1">Clear all</button></div>
 </aside>
 
+<script src="/assets/js/i18n.js"></script>
 <script src="/assets/js/main.js"></script>
 </body>
 </html>
