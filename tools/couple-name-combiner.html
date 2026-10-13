@@ -12,7 +12,7 @@
 <meta property="og:url" content="https://yournamecombiner.com/tools/couple-name-combiner">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💑</text></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800;900&amp;display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/assets/css/style.css?v=4">
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"WebApplication","name":"Couple Name Combiner","url":"https://yournamecombiner.com/tools/couple-name-combiner","applicationCategory":"LifestyleApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}
@@ -62,12 +62,12 @@
   <div class="wrap nav">
     <a class="logo" href="/">💜 Your<b>Name</b>Combiner</a>
     <nav class="nav-links">
-      <a data-i18n href="/">Home</a>
-      <a data-i18n href="/tools/couple-name-combiner">Couples</a>
-      <a data-i18n href="/tools/baby-name-combiner">Baby</a>
-      <a data-i18n href="/tools/brand-name-combiner">Brand</a>
-      <a data-i18n href="/blog">Blog</a>
-      <a data-i18n class="cta" href="#combiner">Combine Names</a>
+      <a data-i18n="" href="/">Home</a>
+      <a data-i18n="" href="/tools/couple-name-combiner">Couples</a>
+      <a data-i18n="" href="/tools/baby-name-combiner">Baby</a>
+      <a data-i18n="" href="/tools/brand-name-combiner">Brand</a>
+      <a data-i18n="" href="/blog">Blog</a>
+      <a data-i18n="" class="cta" href="#combiner">Combine Names</a>
     </nav>
   </div>
 </header>
@@ -75,123 +75,123 @@
 <div class="hero">
   <div class="float-hearts"></div>
   <div class="wrap">
-    <p class="breadcrumb"><a href="/" style="color:#e9d5ff">Home</a> · <span style="color:#c4b5fd">Couple Name Combiner</span></p>
-    <h1>💑 Couple Name Combiner</h1>
-    <p class="sub">What's your Brangelina? Blend two first names into a cute couple name, perfect for Instagram bios, wedding hashtags and anniversary surprises.</p>
+    <p class="breadcrumb"><a href="/" style="color:#e9d5ff" data-i18n="">Home</a> · <span style="color:#c4b5fd" data-i18n="">Couple Name Combiner</span></p>
+    <h1 data-i18n="">💑 Couple Name Combiner</h1>
+    <p class="sub" data-i18n="">What's your Brangelina? Blend two first names into a cute couple name, perfect for Instagram bios, wedding hashtags and anniversary surprises.</p>
   </div>
 </div>
 
 <main class="wrap" id="combiner">
   <div class="tool-card" id="combinerCard" data-mode="couple">
-    <button class="sound-toggle" data-sound-toggle title="Toggle sound">🔊</button>
-    <h2>Find your couple name</h2>
-    <p class="hint">Enter both first names, try each order for totally different vibes.</p>
+    <button class="sound-toggle" data-sound-toggle="" title="Toggle sound" data-i18n-title="Toggle sound">🔊</button>
+    <h2 data-i18n="">Find your couple name</h2>
+    <p class="hint" data-i18n="">Enter both first names, try each order for totally different vibes.</p>
     <div class="alert" id="ncAlert"></div>
     <div class="name-inputs">
-      <div class="field"><label for="n1">Your name</label><input class="nc-name" id="n1" maxlength="24" placeholder="e.g. Emma" autocomplete="off"></div>
-      <div class="field"><label for="n2">Partner's name</label><input class="nc-name" id="n2" maxlength="24" placeholder="e.g. Liam" autocomplete="off"></div>
+      <div class="field"><label for="n1" data-i18n="">Your name</label><input class="nc-name" id="n1" maxlength="24" placeholder="e.g. Emma" autocomplete="off" data-i18n-ph="e.g. Emma"></div>
+      <div class="field"><label for="n2" data-i18n="">Partner's name</label><input class="nc-name" id="n2" maxlength="24" placeholder="e.g. Liam" autocomplete="off" data-i18n-ph="e.g. Liam"></div>
     </div>
     <div class="tool-opts">
-      <button class="chip-opt" data-len="short">Short &amp; sweet</button>
-      <button class="chip-opt" data-len="long">Long &amp; dramatic</button>
+      <button class="chip-opt" data-len="short" data-i18n="">Short  sweet</button>
+      <button class="chip-opt" data-len="long" data-i18n="">Long  dramatic</button>
     </div>
-    <button class="btn" id="ncGo">💑 Combine Our Names</button>
+    <button class="btn" id="ncGo" data-i18n="">💑 Combine Our Names</button>
     <div class="results" id="ncResults">
       <div class="top-pick" id="topPick"></div>
-      <div class="results-head"><h3>Couple name ideas <span style="color:var(--mut);font-weight:400" id="ncCount"></span></h3></div>
+      <div class="results-head"><h3><span data-i18n="">Couple name ideas</span> <span style="color:var(--mut);font-weight:400" id="ncCount"></span></h3></div>
       <div class="name-grid" id="ncGrid"></div>
       <div class="share-row">
-        <input id="shareLink" readonly style="flex:1;min-width:200px;padding:12px 14px;border:2px solid var(--line);border-radius:12px;font-size:.85rem" aria-label="Shareable link">
-        <button class="btn ghost" id="ncShare">Copy share link</button>
+        <input id="shareLink" data-i18n-aria="Shareable link" readonly="" style="flex:1;min-width:200px;padding:12px 14px;border:2px solid var(--line);border-radius:12px;font-size:.85rem" aria-label="Shareable link">
+        <button class="btn ghost" id="ncShare" data-i18n="">Copy share link</button>
       </div>
     </div>
   </div>
 
   <section class="block">
-    <h2>How to make a <span class="u">couple name</span></h2>
+    <h2 data-i18n-html="auto_couplenamecombiner_1">How to make a <span class="u" data-i18n="">couple name</span></h2>
     <div class="steps">
-      <div class="step"><div><h4>Enter both first names</h4><p>Type your name and your partner's name above. Nicknames work great too, try "Sam" instead of "Samantha" for different blends.</p></div></div>
-      <div class="step"><div><h4>Generate the blends</h4><p>Hit combine and browse dozens of Brangelina-style options, ranked from silkiest to silliest.</p></div></div>
-      <div class="step"><div><h4>Star, hear &amp; share</h4><p>Tap 🔊 to hear each name aloud, ⭐ to save favorites, then copy the share link to vote on a winner together.</p></div></div>
+      <div class="step"><div><h4 data-i18n="">Enter both first names</h4><p data-i18n="">Type your name and your partner's name above. Nicknames work great too, try "Sam" instead of "Samantha" for different blends.</p></div></div>
+      <div class="step"><div><h4 data-i18n="">Generate the blends</h4><p data-i18n="">Hit combine and browse dozens of Brangelina-style options, ranked from silkiest to silliest.</p></div></div>
+      <div class="step"><div><h4 data-i18n="">Star, hear  share</h4><p data-i18n="">Tap 🔊 to hear each name aloud, ⭐ to save favorites, then copy the share link to vote on a winner together.</p></div></div>
     </div>
   </section>
 
   <section class="block">
-    <h2>Famous couple names, <span class="u">decoded</span></h2>
-    <p>The best celebrity couple names follow the same blending patterns our combiner uses. Notice how each one keeps the catchiest syllable of each name:</p>
+    <h2 data-i18n-html="auto_couplenamecombiner_2">Famous couple names, <span class="u" data-i18n="">decoded</span></h2>
+    <p data-i18n="">The best celebrity couple names follow the same blending patterns our combiner uses. Notice how each one keeps the catchiest syllable of each name:</p>
     <table class="example-table">
-      <tr><th>Couple</th><th>Blend</th><th>Why it works</th></tr>
-      <tr><td>Brad + Angelina</td><td><b>Brangelina</b></td><td>Strong "Br" start + flowing "gelina" ending</td></tr>
-      <tr><td>Ben + Jennifer</td><td><b>Bennifer</b></td><td>Punchy first syllables fused at the "n"</td></tr>
-      <tr><td>Tom + Katie</td><td><b>TomKat</b></td><td>Short, snappy, unforgettable</td></tr>
-      <tr><td>Kim + Kanye</td><td><b>Kimye</b></td><td>Alliteration makes it stick</td></tr>
-      <tr><td>Kourtney + Travis</td><td><b>Kravis</b></td><td>Unexpected middle-slice blend</td></tr>
+      <tr><th data-i18n="">Couple</th><th data-i18n="">Blend</th><th data-i18n="">Why it works</th></tr>
+      <tr><td data-i18n="">Brad + Angelina</td><td><b>Brangelina</b></td><td data-i18n="">Strong "Br" start + flowing "gelina" ending</td></tr>
+      <tr><td data-i18n="">Ben + Jennifer</td><td><b>Bennifer</b></td><td data-i18n="">Punchy first syllables fused at the "n"</td></tr>
+      <tr><td data-i18n="">Tom + Katie</td><td><b>TomKat</b></td><td data-i18n="">Short, snappy, unforgettable</td></tr>
+      <tr><td data-i18n="">Kim + Kanye</td><td><b>Kimye</b></td><td data-i18n="">Alliteration makes it stick</td></tr>
+      <tr><td data-i18n="">Kourtney + Travis</td><td><b>Kravis</b></td><td data-i18n="">Unexpected middle-slice blend</td></tr>
     </table>
-    <p>Want the full story? Read our <a href="/blog/celebrity-couple-names">50 most iconic celebrity couple names</a> roundup.</p>
+    <p data-i18n-html="auto_couplenamecombiner_3">Want the full story? Read our <a href="/blog/celebrity-couple-names" data-i18n="">50 most iconic celebrity couple names</a> roundup.</p>
   </section>
 
   <section class="block">
-    <h2>More ways to <span class="u">play</span></h2>
+    <h2 data-i18n-html="auto_couplenamecombiner_4">More ways to <span class="u" data-i18n="">play</span></h2>
     <div class="rel-grid">
-      <a class="rel-card" href="/tools/ship-name-generator"><span class="k">Fandom</span><h4>🚢 Ship Name Generator</h4><p>For OTPs, besties and fictional pairings.</p></a>
-      <a class="rel-card" href="/tools/wedding-hashtag-generator"><span class="k">Wedding</span><h4>💍 Wedding Hashtag Generator</h4><p>Turn your couple name into a hashtag.</p></a>
-      <a class="rel-card" href="/tools/baby-name-combiner"><span class="k">Family</span><h4>👶 Baby Name Combiner</h4><p>Blend your names into a baby name.</p></a>
-      <a class="rel-card" href="/blog/what-is-a-ship-name"><span class="k">Blog</span><h4>What Is a Ship Name?</h4><p>The complete guide to ship-name culture.</p></a>
+      <a class="rel-card" href="/tools/ship-name-generator"><span class="k" data-i18n="">Fandom</span><h4 data-i18n="">🚢 Ship Name Generator</h4><p data-i18n="">For OTPs, besties and fictional pairings.</p></a>
+      <a class="rel-card" href="/tools/wedding-hashtag-generator"><span class="k" data-i18n="">Wedding</span><h4 data-i18n="">💍 Wedding Hashtag Generator</h4><p data-i18n="">Turn your couple name into a hashtag.</p></a>
+      <a class="rel-card" href="/tools/baby-name-combiner"><span class="k" data-i18n="">Family</span><h4 data-i18n="">👶 Baby Name Combiner</h4><p data-i18n="">Blend your names into a baby name.</p></a>
+      <a class="rel-card" href="/blog/what-is-a-ship-name"><span class="k" data-i18n="">Blog</span><h4 data-i18n="">What Is a Ship Name?</h4><p data-i18n="">The complete guide to ship-name culture.</p></a>
     
-      <a class="rel-card" href="/blog/couple-instagram-names"><span class="k">Blog</span><h4>📸 Couple Names for Instagram</h4><p>Turn your couple name into a handle.</p></a>
+      <a class="rel-card" href="/blog/couple-instagram-names"><span class="k" data-i18n="">Blog</span><h4 data-i18n="">📸 Couple Names for Instagram</h4><p data-i18n="">Turn your couple name into a handle.</p></a>
     </div>
   </section>
 
   <section class="block">
-    <h2>How couple name <span class="u">blending works</span></h2>
-    <p>A couple name, also called a ship name, is a <b>portmanteau</b>: two words fused into one. The trick is finding the split point where both names still sound like themselves. Our combiner doesn't guess just one option; it tries dozens of split points for every pair and ranks the results by how natural they sound rolling off the tongue.</p>
-    <p>Most great blends use one of three techniques. The <b>half-blend</b> takes the front of one name and the back of the other, "Brad" + "Angelina" gives you <b>Brangelina</b>, keeping Brad's punchy start and Angelina's flowing finish. The <b>syllable mix</b> slides the cut point through both names looking for the sweetest join, so "Emma" + "Liam" can become "Emliam", "Emmam" or "Liemma" depending on where you slice. And the <b>overlap merge</b> is the elegant one: when the end of one name matches the start of the other, they fuse seamlessly, "Anna" + "Nathan" melting into <b>Annathan</b> is a textbook case.</p>
-    <p>Then comes scoring. The engine favors names with a natural vowel-consonant rhythm, penalizes awkward consonant pileups (four consonants in a row is almost never cute), and prefers blends in the 4 to 9 letter sweet spot, long enough to carry both names, short enough to say in one breath. Want the full breakdown? Our <a href="/blog/how-to-combine-two-names">guide to combining two names</a> walks through every technique with worked examples.</p>
-    <p>Some pairs blend effortlessly and others fight back, and it comes down to shared sounds. Names with overlapping letters or matching rhythms ("Anna" + "Hannah", "Leo" + "Theo") fuse almost automatically, while pairs with clashing consonant clusters take many more tries. If your names resist blending, that's your cue to experiment with nicknames or middle names rather than forcing a combination that will always sound strained.</p>
-    <p>Two input tricks multiply your options. First, <b>swap the order</b>, "Emma + Liam" and "Liam + Emma" produce completely different blends, and the winner often comes from the order you tried second. Second, <b>try nicknames and short forms</b>: "Sam" blends very differently from "Samantha", and a middle name or surname can unlock blends the first names alone never reach (especially handy when brainstorming wedding hashtags, where surnames do the heavy lifting).</p>
+    <h2 data-i18n-html="auto_couplenamecombiner_5">How couple name <span class="u" data-i18n="">blending works</span></h2>
+    <p data-i18n-html="auto_couplenamecombiner_6">A couple name, also called a ship name, is a <b>portmanteau</b>: two words fused into one. The trick is finding the split point where both names still sound like themselves. Our combiner doesn't guess just one option; it tries dozens of split points for every pair and ranks the results by how natural they sound rolling off the tongue.</p>
+    <p data-i18n-html="auto_couplenamecombiner_7">Most great blends use one of three techniques. The <b>half-blend</b> takes the front of one name and the back of the other, "Brad" + "Angelina" gives you <b>Brangelina</b>, keeping Brad's punchy start and Angelina's flowing finish. The <b>syllable mix</b> slides the cut point through both names looking for the sweetest join, so "Emma" + "Liam" can become "Emliam", "Emmam" or "Liemma" depending on where you slice. And the <b>overlap merge</b> is the elegant one: when the end of one name matches the start of the other, they fuse seamlessly, "Anna" + "Nathan" melting into <b>Annathan</b> is a textbook case.</p>
+    <p data-i18n-html="auto_couplenamecombiner_8">Then comes scoring. The engine favors names with a natural vowel-consonant rhythm, penalizes awkward consonant pileups (four consonants in a row is almost never cute), and prefers blends in the 4 to 9 letter sweet spot, long enough to carry both names, short enough to say in one breath. Want the full breakdown? Our <a href="/blog/how-to-combine-two-names" data-i18n="">guide to combining two names</a> walks through every technique with worked examples.</p>
+    <p data-i18n="">Some pairs blend effortlessly and others fight back, and it comes down to shared sounds. Names with overlapping letters or matching rhythms ("Anna" + "Hannah", "Leo" + "Theo") fuse almost automatically, while pairs with clashing consonant clusters take many more tries. If your names resist blending, that's your cue to experiment with nicknames or middle names rather than forcing a combination that will always sound strained.</p>
+    <p data-i18n-html="auto_couplenamecombiner_9">Two input tricks multiply your options. First, <b>swap the order</b>, "Emma + Liam" and "Liam + Emma" produce completely different blends, and the winner often comes from the order you tried second. Second, <b>try nicknames and short forms</b>: "Sam" blends very differently from "Samantha", and a middle name or surname can unlock blends the first names alone never reach (especially handy when brainstorming wedding hashtags, where surnames do the heavy lifting).</p>
   </section>
 
   <section class="block">
-    <h2>Tips for a ship name <span class="u">that sticks</span></h2>
+    <h2 data-i18n-html="auto_couplenamecombiner_10">Tips for a ship name <span class="u" data-i18n="">that sticks</span></h2>
     <div class="steps">
-      <div class="step"><div><h4>Say it out loud</h4><p>The radio test never lies. If you have to spell it twice for someone to get it, keep blending. Tap the 🔊 button on any result to hear it spoken, your ears catch awkwardness your eyes miss.</p></div></div>
-      <div class="step"><div><h4>Shorter is stronger</h4><p>Two syllables is the sweet spot, "TomKat", "Kimye", "Kravis". Long blends feel like sentences; short ones feel like names. Try the "Short &amp; sweet" filter above if your results run long.</p></div></div>
-      <div class="step"><div><h4>Check it's actually yours</h4><p>Before you print it on a mug, search the name and check social handles. The most romantic couple name in the world loses some magic if it's already a plumbing company. Studying <a href="/blog/portmanteau-examples">classic portmanteau examples</a> also trains your eye for what makes a blend memorable.</p></div></div>
-      <div class="step"><div><h4>Match your vibe</h4><p>A joke blend like "Banana" (Ben + Anna) is perfect for a funny couple and terrible on a wedding invitation. Decide whether you want sweet, funny or aesthetic first, then pick the blend that fits the energy.</p></div></div>
-      <div class="step"><div><h4>Vote together</h4><p>Generate separately, then compare favorite lists. The overlap is usually the winner. Copy your share link and text it to your partner; nothing settles a debate like seeing which blend you both starred.</p></div></div>
+      <div class="step"><div><h4 data-i18n="">Say it out loud</h4><p data-i18n="">The radio test never lies. If you have to spell it twice for someone to get it, keep blending. Tap the 🔊 button on any result to hear it spoken, your ears catch awkwardness your eyes miss.</p></div></div>
+      <div class="step"><div><h4 data-i18n="">Shorter is stronger</h4><p data-i18n="">Two syllables is the sweet spot, "TomKat", "Kimye", "Kravis". Long blends feel like sentences; short ones feel like names. Try the "Short  sweet" filter above if your results run long.</p></div></div>
+      <div class="step"><div><h4 data-i18n="">Check it's actually yours</h4><p data-i18n-html="auto_couplenamecombiner_11">Before you print it on a mug, search the name and check social handles. The most romantic couple name in the world loses some magic if it's already a plumbing company. Studying <a href="/blog/portmanteau-examples" data-i18n="">classic portmanteau examples</a> also trains your eye for what makes a blend memorable.</p></div></div>
+      <div class="step"><div><h4 data-i18n="">Match your vibe</h4><p data-i18n="">A joke blend like "Banana" (Ben + Anna) is perfect for a funny couple and terrible on a wedding invitation. Decide whether you want sweet, funny or aesthetic first, then pick the blend that fits the energy.</p></div></div>
+      <div class="step"><div><h4 data-i18n="">Vote together</h4><p data-i18n="">Generate separately, then compare favorite lists. The overlap is usually the winner. Copy your share link and text it to your partner; nothing settles a debate like seeing which blend you both starred.</p></div></div>
     </div>
   </section>
 
   <section class="block">
-    <h2>Couple name ideas <span class="u">by vibe</span></h2>
-    <p>Not every blend suits every couple. Here are combiner-style outputs grouped by the mood they carry, use them as inspiration, then generate your own above:</p>
+    <h2 data-i18n-html="auto_couplenamecombiner_12">Couple name ideas <span class="u" data-i18n="">by vibe</span></h2>
+    <p data-i18n="">Not every blend suits every couple. Here are combiner-style outputs grouped by the mood they carry, use them as inspiration, then generate your own above:</p>
     <table class="example-table">
-      <tr><th>Vibe</th><th>Example blends</th><th>Best for</th></tr>
-      <tr><td>💕 Sweet &amp; romantic</td><td><b>Emliam</b> (Emma + Liam), <b>Sonoah</b> (Sofia + Noah)</td><td>Anniversary cards, Instagram bios, wedding hashtags</td></tr>
-      <tr><td>😂 Funny &amp; playful</td><td><b>Milky</b> (Mike + Lily), <b>Banana</b> (Ben + Anna)</td><td>Group chats, gaming duos, inside jokes</td></tr>
-      <tr><td>✨ Aesthetic &amp; dreamy</td><td><b>Lukai</b> (Luna + Kai), <b>Avilo</b> (Ava + Milo)</td><td>Couple accounts, photo watermarks, playlists</td></tr>
-      <tr><td>⚡ Short &amp; punchy</td><td><b>Mazoe</b> (Max + Zoe), <b>Leomi</b> (Leo + Mia)</td><td>Usernames, phone contacts, quick nicknames</td></tr>
+      <tr><th data-i18n="">Vibe</th><th data-i18n="">Example blends</th><th data-i18n="">Best for</th></tr>
+      <tr><td data-i18n="">💕 Sweet  romantic</td><td data-i18n-html="auto_couplenamecombiner_13"><b>Emliam</b> (Emma + Liam), <b>Sonoah</b> (Sofia + Noah)</td><td data-i18n="">Anniversary cards, Instagram bios, wedding hashtags</td></tr>
+      <tr><td data-i18n="">😂 Funny  playful</td><td data-i18n-html="auto_couplenamecombiner_14"><b>Milky</b> (Mike + Lily), <b>Banana</b> (Ben + Anna)</td><td data-i18n="">Group chats, gaming duos, inside jokes</td></tr>
+      <tr><td data-i18n="">✨ Aesthetic  dreamy</td><td data-i18n-html="auto_couplenamecombiner_15"><b>Lukai</b> (Luna + Kai), <b>Avilo</b> (Ava + Milo)</td><td data-i18n="">Couple accounts, photo watermarks, playlists</td></tr>
+      <tr><td data-i18n="">⚡ Short  punchy</td><td data-i18n-html="auto_couplenamecombiner_16"><b>Mazoe</b> (Max + Zoe), <b>Leomi</b> (Leo + Mia)</td><td data-i18n="">Usernames, phone contacts, quick nicknames</td></tr>
     </table>
-    <p>Fell in love with one? Star it with the ⭐ button and it stays saved in your browser for later.</p>
+    <p data-i18n="">Fell in love with one? Star it with the ⭐ button and it stays saved in your browser for later.</p>
   </section>
 
   <section class="block">
-    <h2>Where to use <span class="u">your couple name</span></h2>
-    <p>A great couple name deserves more than one outing. The most popular move is the <b>Instagram bio</b>, either as a joint-account handle or tucked into both partners' bios with a 💑. Our <a href="/blog/couple-instagram-names">couple Instagram names guide</a> shows how to style it, and the <a href="/tools/username-generator">username generator</a> can twist your blend into a handle-ready version.</p>
-    <p>Getting married? Your couple name is the raw material for a <b>wedding hashtag</b>, "Emliam" becomes #EmliamEverAfter in seconds. Feed your favorite blend into the <a href="/tools/wedding-hashtag-generator">wedding hashtag generator</a> for pun-ready variations.</p>
-    <p>Beyond the big moments, couple names sneak into everyday life: saved as each other's phone contacts, used as a duo name in games, whispered as a private pet name. The best one is the one that makes you both grin every time you hear it, so generate a big list, star your favorites, and let the winner emerge.</p>
-    <p>And don't underestimate the <b>keepsake factor</b>. Couple names end up on anniversary gifts, custom phone wallpapers, shared playlist titles, even as the name of the dog you adopt together. A blend that works as a hashtag, a handle and a term of endearment is a blend worth keeping, which is exactly why it's worth generating a big list instead of settling for the first cute option.</p>
+    <h2 data-i18n-html="auto_couplenamecombiner_17">Where to use <span class="u" data-i18n="">your couple name</span></h2>
+    <p data-i18n-html="auto_couplenamecombiner_18">A great couple name deserves more than one outing. The most popular move is the <b>Instagram bio</b>, either as a joint-account handle or tucked into both partners' bios with a 💑. Our <a href="/blog/couple-instagram-names" data-i18n="">couple Instagram names guide</a> shows how to style it, and the <a href="/tools/username-generator" data-i18n="">username generator</a> can twist your blend into a handle-ready version.</p>
+    <p data-i18n-html="auto_couplenamecombiner_19">Getting married? Your couple name is the raw material for a <b>wedding hashtag</b>, "Emliam" becomes #EmliamEverAfter in seconds. Feed your favorite blend into the <a href="/tools/wedding-hashtag-generator" data-i18n="">wedding hashtag generator</a> for pun-ready variations.</p>
+    <p data-i18n="">Beyond the big moments, couple names sneak into everyday life: saved as each other's phone contacts, used as a duo name in games, whispered as a private pet name. The best one is the one that makes you both grin every time you hear it, so generate a big list, star your favorites, and let the winner emerge.</p>
+    <p data-i18n-html="auto_couplenamecombiner_20">And don't underestimate the <b>keepsake factor</b>. Couple names end up on anniversary gifts, custom phone wallpapers, shared playlist titles, even as the name of the dog you adopt together. A blend that works as a hashtag, a handle and a term of endearment is a blend worth keeping, which is exactly why it's worth generating a big list instead of settling for the first cute option.</p>
   </section>
 
   <section class="block">
-    <h2>Frequently asked <span class="u">questions</span></h2>
+    <h2 data-i18n-html="auto_couplenamecombiner_21">Frequently asked <span class="u" data-i18n="">questions</span></h2>
     <div class="faq">
-      <details class="faq-item"><summary>What is a couple name?</summary><div class="a">A couple name is a playful blend of two partners' names, like Brangelina (Brad + Angelina) or Bennifer (Ben + Jennifer). It's a fun way to celebrate a relationship.</div></details>
-      <details class="faq-item"><summary>How do you combine two names for a couple?</summary><div class="a">Enter both first names in the combiner above. It tries every split point, half-blends, syllable mixes, overlap merges, and ranks the results by how natural they sound.</div></details>
-      <details class="faq-item"><summary>What are some famous couple name examples?</summary><div class="a">Brangelina (Brad Pitt + Angelina Jolie), Bennifer (Ben Affleck + Jennifer Lopez), TomKat (Tom Cruise + Katie Holmes), Kimye (Kim Kardashian + Kanye West) and Kravis (Kourtney Kardashian + Travis Barker).</div></details>
-      <details class="faq-item"><summary>Can I use our couple name on Instagram?</summary><div class="a">Absolutely, couple names make great joint-account handles. Generate a few favorites, then check our <a href="/tools/username-generator">username generator</a> for handle-ready versions.</div></details>
-      <details class="faq-item"><summary>Is the couple name combiner free?</summary><div class="a">Yes, completely free with no signup and unlimited generations.</div></details>
-      <details class="faq-item"><summary>Can I save and share our couple name?</summary><div class="a">Yes, star your favorites to save them in your browser, download the list, or copy the share link to send the exact results to your partner.</div></details>
+      <details class="faq-item"><summary data-i18n="">What is a couple name?</summary><div class="a" data-i18n="">A couple name is a playful blend of two partners' names, like Brangelina (Brad + Angelina) or Bennifer (Ben + Jennifer). It's a fun way to celebrate a relationship.</div></details>
+      <details class="faq-item"><summary data-i18n="">How do you combine two names for a couple?</summary><div class="a" data-i18n="">Enter both first names in the combiner above. It tries every split point, half-blends, syllable mixes, overlap merges, and ranks the results by how natural they sound.</div></details>
+      <details class="faq-item"><summary data-i18n="">What are some famous couple name examples?</summary><div class="a" data-i18n="">Brangelina (Brad Pitt + Angelina Jolie), Bennifer (Ben Affleck + Jennifer Lopez), TomKat (Tom Cruise + Katie Holmes), Kimye (Kim Kardashian + Kanye West) and Kravis (Kourtney Kardashian + Travis Barker).</div></details>
+      <details class="faq-item"><summary data-i18n="">Can I use our couple name on Instagram?</summary><div class="a" data-i18n-html="auto_couplenamecombiner_22">Absolutely, couple names make great joint-account handles. Generate a few favorites, then check our <a href="/tools/username-generator" data-i18n="">username generator</a> for handle-ready versions.</div></details>
+      <details class="faq-item"><summary data-i18n="">Is the couple name combiner free?</summary><div class="a" data-i18n="">Yes, completely free with no signup and unlimited generations.</div></details>
+      <details class="faq-item"><summary data-i18n="">Can I save and share our couple name?</summary><div class="a" data-i18n="">Yes, star your favorites to save them in your browser, download the list, or copy the share link to send the exact results to your partner.</div></details>
     </div>
   </section>
 </main>
@@ -201,46 +201,51 @@
     <div class="foot-grid">
       <div>
         <div class="foot-brand">💜 Your<b>Name</b>Combiner</div>
-        <p data-i18n style="font-size:.9rem">Free name-blending tools for couples, babies, brands and beyond. Made with 💜 for name lovers everywhere.</p>
+        <p data-i18n="" style="font-size:.9rem">Free name-blending tools for couples, babies, brands and beyond. Made with 💜 for name lovers everywhere.</p>
       </div>
       <div>
-        <h4 data-i18n>Popular tools</h4>
-        <a data-i18n href="/tools/couple-name-combiner">Couple Name Combiner</a>
-        <a data-i18n href="/tools/baby-name-combiner">Baby Name Combiner</a>
-        <a data-i18n href="/tools/ship-name-generator">Ship Name Generator</a>
-        <a data-i18n href="/tools/brand-name-combiner">Brand Name Combiner</a>
+        <h4 data-i18n="">Popular tools</h4>
+        <a data-i18n="" href="/tools/couple-name-combiner">Couple Name Combiner</a>
+        <a data-i18n="" href="/tools/baby-name-combiner">Baby Name Combiner</a>
+        <a data-i18n="" href="/tools/ship-name-generator">Ship Name Generator</a>
+        <a data-i18n="" href="/tools/brand-name-combiner">Brand Name Combiner</a>
       </div>
       <div>
-        <h4 data-i18n>More tools</h4>
-        <a data-i18n href="/tools/nickname-generator">Nickname Generator</a>
-        <a data-i18n href="/tools/wedding-hashtag-generator">Wedding Hashtag Generator</a>
-        <a data-i18n href="/tools/pet-name-combiner">Pet Name Combiner</a>
-        <a data-i18n href="/tools/username-generator">Username Generator</a>
+        <h4 data-i18n="">More tools</h4>
+        <a data-i18n="" href="/tools/nickname-generator">Nickname Generator</a>
+        <a data-i18n="" href="/tools/wedding-hashtag-generator">Wedding Hashtag Generator</a>
+        <a data-i18n="" href="/tools/pet-name-combiner">Pet Name Combiner</a>
+        <a data-i18n="" href="/tools/username-generator">Username Generator</a>
       </div>
       <div>
-        <h4 data-i18n>From the blog</h4>
-        <a data-i18n href="/blog/what-is-a-ship-name">What Is a Ship Name?</a>
-        <a data-i18n href="/blog/how-to-combine-two-names">How to Combine Two Names</a>
-        <a data-i18n href="/blog/celebrity-couple-names">Celebrity Couple Names</a>
-        <a data-i18n href="/blog">All Posts</a>
+        <h4 data-i18n="">From the blog</h4>
+        <a data-i18n="" href="/blog/what-is-a-ship-name">What Is a Ship Name?</a>
+        <a data-i18n="" href="/blog/how-to-combine-two-names">How to Combine Two Names</a>
+        <a data-i18n="" href="/blog/celebrity-couple-names">Celebrity Couple Names</a>
+        <a data-i18n="" href="/blog">All Posts</a>
       </div>
     </div>
     <div class="foot-bottom">
-      <span>© <span data-year>2026</span> YourNameCombiner.com, <span data-i18n>All rights reserved.</span></span>
-      <nav class="foot-links" aria-label="Footer"><a data-i18n href="/blog">Blog</a><a data-i18n href="/about">About</a><a data-i18n href="/privacy-policy">Privacy</a><a data-i18n href="/terms-of-service">Terms</a></nav>
+      <span>© <span data-year="">2026</span> YourNameCombiner.com, <span data-i18n="">All rights reserved.</span></span>
+      <nav class="foot-links" aria-label="Footer"><a data-i18n="" href="/blog">Blog</a><a data-i18n="" href="/about">About</a><a data-i18n="" href="/privacy-policy">Privacy</a><a data-i18n="" href="/terms-of-service">Terms</a></nav>
     </div>
   </div>
 </footer>
 
-<button class="fav-fab" id="favFab">⭐ Favorites (<span id="favCount">0</span>)</button>
+<button class="fav-fab" id="favFab" data-i18n-html="ync_favfab">⭐ Favorites (<span id="favCount">0</span>)</button>
 <div class="scrim" id="scrim"></div>
-<aside class="drawer" id="favDrawer" aria-label="Favorite names">
-  <div class="drawer-head"><h3>⭐ My Favorite Blends</h3><button class="icon-btn" id="favClose">✕</button></div>
+<aside class="drawer" id="favDrawer" aria-label="Favorite names" data-i18n-aria="Favorite names">
+  <div class="drawer-head"><h3 data-i18n="">⭐ My Favorite Blends</h3><button class="icon-btn" id="favClose">✕</button></div>
   <div class="drawer-body" id="favBody"></div>
-  <div class="drawer-foot"><button class="btn ghost" id="favDownload" style="flex:1">Download</button><button class="btn ghost" id="favClear" style="flex:1">Clear all</button></div>
+  <div class="drawer-foot"><button class="btn ghost" id="favDownload" style="flex:1" data-i18n="">Download</button><button class="btn ghost" id="favClear" style="flex:1" data-i18n="">Clear all</button></div>
 </aside>
 
 <script src="/assets/js/i18n.js"></script>
+<script src="/assets/js/i18n-d1.js"></script>
+<script src="/assets/js/i18n-d2.js"></script>
+<script src="/assets/js/i18n-d3.js"></script>
+<script src="/assets/js/i18n-d4.js"></script>
+<script src="/assets/js/i18n-d5.js"></script>
 <script src="/assets/js/main.js"></script>
 </body>
 </html>
