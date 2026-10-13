@@ -12,7 +12,7 @@
 <meta property="og:url" content="https://yournamecombiner.com/tools/word-combiner">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔤</text></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800;900&amp;display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/assets/css/style.css?v=4">
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"WebApplication","name":"Word Combiner","url":"https://yournamecombiner.com/tools/word-combiner","applicationCategory":"UtilitiesApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}
@@ -62,12 +62,12 @@
   <div class="wrap nav">
     <a class="logo" href="/">💜 Your<b>Name</b>Combiner</a>
     <nav class="nav-links">
-      <a data-i18n href="/">Home</a>
-      <a data-i18n href="/tools/couple-name-combiner">Couples</a>
-      <a data-i18n href="/tools/baby-name-combiner">Baby</a>
-      <a data-i18n href="/tools/brand-name-combiner">Brand</a>
-      <a data-i18n href="/blog">Blog</a>
-      <a data-i18n class="cta" href="#combiner">Combine Names</a>
+      <a data-i18n="" href="/">Home</a>
+      <a data-i18n="" href="/tools/couple-name-combiner">Couples</a>
+      <a data-i18n="" href="/tools/baby-name-combiner">Baby</a>
+      <a data-i18n="" href="/tools/brand-name-combiner">Brand</a>
+      <a data-i18n="" href="/blog">Blog</a>
+      <a data-i18n="" class="cta" href="#combiner">Combine Names</a>
     </nav>
   </div>
 </header>
@@ -75,79 +75,79 @@
 <div class="hero">
   <div class="float-hearts"></div>
   <div class="wrap">
-    <p class="breadcrumb"><a href="/" style="color:#e9d5ff">Home</a> · <span style="color:#c4b5fd">Word Combiner</span></p>
-    <h1>🔤 Word Combiner</h1>
-    <p class="sub">Invent portmanteaus from any two words. The next brunch, smog or spork is hiding in your vocabulary.</p>
+    <p class="breadcrumb"><a href="/" style="color:#e9d5ff" data-i18n="">Home</a> · <span style="color:#c4b5fd" data-i18n="">Word Combiner</span></p>
+    <h1 data-i18n="">🔤 Word Combiner</h1>
+    <p class="sub" data-i18n="">Invent portmanteaus from any two words. The next brunch, smog or spork is hiding in your vocabulary.</p>
   </div>
 </div>
 
 <main class="wrap" id="combiner">
   <div class="tool-card" id="combinerCard" data-mode="word">
-    <button class="sound-toggle" data-sound-toggle title="Toggle sound">🔊</button>
-    <h2>Combine two words</h2>
-    <p class="hint">Enter any two words, nouns, adjectives, verbs, anything.</p>
+    <button class="sound-toggle" data-sound-toggle="" title="Toggle sound" data-i18n-title="Toggle sound">🔊</button>
+    <h2 data-i18n="">Combine two words</h2>
+    <p class="hint" data-i18n="">Enter any two words, nouns, adjectives, verbs, anything.</p>
     <div class="alert" id="ncAlert"></div>
     <div class="name-inputs">
-      <div class="field"><label for="n1">First word</label><input class="nc-name" id="n1" maxlength="24" placeholder="e.g. coffee" autocomplete="off"></div>
-      <div class="field"><label for="n2">Second word</label><input class="nc-name" id="n2" maxlength="24" placeholder="e.g. nap" autocomplete="off"></div>
+      <div class="field"><label for="n1" data-i18n="">First word</label><input class="nc-name" id="n1" maxlength="24" placeholder="e.g. coffee" autocomplete="off" data-i18n-ph="e.g. coffee"></div>
+      <div class="field"><label for="n2" data-i18n="">Second word</label><input class="nc-name" id="n2" maxlength="24" placeholder="e.g. nap" autocomplete="off" data-i18n-ph="e.g. nap"></div>
     </div>
     <div class="tool-opts">
-      <button class="chip-opt" data-len="short">Short &amp; sweet</button>
-      <button class="chip-opt" data-len="long">Long &amp; dramatic</button>
+      <button class="chip-opt" data-len="short" data-i18n="">Short  sweet</button>
+      <button class="chip-opt" data-len="long" data-i18n="">Long  dramatic</button>
     </div>
-    <button class="btn" id="ncGo">🔤 Combine Words</button>
+    <button class="btn" id="ncGo" data-i18n="">🔤 Combine Words</button>
     <div class="results" id="ncResults">
       <div class="top-pick" id="topPick"></div>
-      <div class="results-head"><h3>Word blend ideas <span style="color:var(--mut);font-weight:400" id="ncCount"></span></h3></div>
+      <div class="results-head"><h3><span data-i18n="">Word blend ideas</span> <span style="color:var(--mut);font-weight:400" id="ncCount"></span></h3></div>
       <div class="name-grid" id="ncGrid"></div>
       <div class="share-row">
-        <input id="shareLink" readonly style="flex:1;min-width:200px;padding:12px 14px;border:2px solid var(--line);border-radius:12px;font-size:.85rem" aria-label="Shareable link">
-        <button class="btn ghost" id="ncShare">Copy share link</button>
+        <input id="shareLink" data-i18n-aria="Shareable link" readonly="" style="flex:1;min-width:200px;padding:12px 14px;border:2px solid var(--line);border-radius:12px;font-size:.85rem" aria-label="Shareable link">
+        <button class="btn ghost" id="ncShare" data-i18n="">Copy share link</button>
       </div>
     </div>
   </div>
 
   <section class="block">
-    <h2>How to invent a <span class="u">portmanteau</span></h2>
+    <h2 data-i18n-html="auto_wordcombiner_1">How to invent a <span class="u" data-i18n="">portmanteau</span></h2>
     <div class="steps">
-      <div class="step"><div><h4>Find the overlap</h4><p>Look for shared sounds between the two words, that is where the magic seam will be.</p></div></div>
-      <div class="step"><div><h4>Slice and fuse</h4><p>Take the start of one word and the end of the other. Breakfast + lunch = brunch.</p></div></div>
-      <div class="step"><div><h4>Test it aloud</h4><p>A great portmanteau is instantly understandable. If you have to explain it, keep blending.</p></div></div>
+      <div class="step"><div><h4 data-i18n="">Find the overlap</h4><p data-i18n="">Look for shared sounds between the two words, that is where the magic seam will be.</p></div></div>
+      <div class="step"><div><h4 data-i18n="">Slice and fuse</h4><p data-i18n="">Take the start of one word and the end of the other. Breakfast + lunch = brunch.</p></div></div>
+      <div class="step"><div><h4 data-i18n="">Test it aloud</h4><p data-i18n="">A great portmanteau is instantly understandable. If you have to explain it, keep blending.</p></div></div>
     </div>
   </section>
 
   <section class="block">
-    <h2>Fresh portmanteau <span class="u">examples</span></h2>
-    <p>Here are brand-new blends to show the technique. Now make your own:</p>
+    <h2 data-i18n-html="auto_wordcombiner_2">Fresh portmanteau <span class="u" data-i18n="">examples</span></h2>
+    <p data-i18n="">Here are brand-new blends to show the technique. Now make your own:</p>
     <table class="example-table">
-      <tr><th>Words</th><th>Portmanteau</th><th>Meaning</th></tr>
-      <tr><td>Coffee + nap</td><td><b>Coffnap</b></td><td>A dangerously short afternoon rest</td></tr>
-      <tr><td>Blanket + fort</td><td><b>Blankfort</b></td><td>A couch-cushion castle</td></tr>
-      <tr><td>Thunder + purr</td><td><b>Thurr</b></td><td>A cat's rumble on a stormy night</td></tr>
-      <tr><td>Mango + tango</td><td><b>Mantango</b></td><td>A tropical dance party</td></tr>
+      <tr><th data-i18n="">Words</th><th data-i18n="">Portmanteau</th><th data-i18n="">Meaning</th></tr>
+      <tr><td data-i18n="">Coffee + nap</td><td><b>Coffnap</b></td><td data-i18n="">A dangerously short afternoon rest</td></tr>
+      <tr><td data-i18n="">Blanket + fort</td><td><b>Blankfort</b></td><td data-i18n="">A couch-cushion castle</td></tr>
+      <tr><td data-i18n="">Thunder + purr</td><td><b>Thurr</b></td><td data-i18n="">A cat's rumble on a stormy night</td></tr>
+      <tr><td data-i18n="">Mango + tango</td><td><b>Mantango</b></td><td data-i18n="">A tropical dance party</td></tr>
     </table>
-    <p>Love wordplay? Read our <a href="/blog/portmanteau-examples">portmanteau examples</a> roundup.</p>
+    <p data-i18n-html="auto_wordcombiner_3">Love wordplay? Read our <a href="/blog/portmanteau-examples" data-i18n="">portmanteau examples</a> roundup.</p>
   </section>
 
   <section class="block">
-    <h2>More ways to <span class="u">play</span></h2>
+    <h2 data-i18n-html="auto_wordcombiner_4">More ways to <span class="u" data-i18n="">play</span></h2>
     <div class="rel-grid">
-      <a class="rel-card" href="/tools/brand-name-combiner"><span class="k">Business</span><h4>💼 Brand Name Combiner</h4><p>Portmanteaus for your startup.</p></a>
-      <a class="rel-card" href="/tools/fantasy-name-combiner"><span class="k">Fantasy</span><h4>🐉 Fantasy Name Combiner</h4><p>Epic names for characters.</p></a>
-      <a class="rel-card" href="/tools/nickname-generator"><span class="k">Fun</span><h4>😎 Nickname Generator</h4><p>Short blends for people.</p></a>
-      <a class="rel-card" href="/blog/how-to-combine-two-names"><span class="k">Blog</span><h4>How to Combine Two Names</h4><p>Blending techniques explained.</p></a>
+      <a class="rel-card" href="/tools/brand-name-combiner"><span class="k" data-i18n="">Business</span><h4 data-i18n="">💼 Brand Name Combiner</h4><p data-i18n="">Portmanteaus for your startup.</p></a>
+      <a class="rel-card" href="/tools/fantasy-name-combiner"><span class="k" data-i18n="">Fantasy</span><h4 data-i18n="">🐉 Fantasy Name Combiner</h4><p data-i18n="">Epic names for characters.</p></a>
+      <a class="rel-card" href="/tools/nickname-generator"><span class="k" data-i18n="">Fun</span><h4 data-i18n="">😎 Nickname Generator</h4><p data-i18n="">Short blends for people.</p></a>
+      <a class="rel-card" href="/blog/how-to-combine-two-names"><span class="k" data-i18n="">Blog</span><h4 data-i18n="">How to Combine Two Names</h4><p data-i18n="">Blending techniques explained.</p></a>
     </div>
   </section>
 
   <section class="block">
-    <h2>Frequently asked <span class="u">questions</span></h2>
+    <h2 data-i18n-html="auto_wordcombiner_5">Frequently asked <span class="u" data-i18n="">questions</span></h2>
     <div class="faq">
-      <details class="faq-item"><summary>What is a portmanteau?</summary><div class="a">A portmanteau is a word made by blending two words together, like brunch (breakfast + lunch), smog (smoke + fog) or spork (spoon + fork). The term comes from Lewis Carroll, who coined it in Through the Looking-Glass.</div></details>
-      <details class="faq-item"><summary>What are some famous portmanteau examples?</summary><div class="a">Brunch (breakfast + lunch), smog (smoke + fog), motel (motor + hotel), spork (spoon + fork), podcast (iPod + broadcast) and webinar (web + seminar) are all portmanteaus that became everyday words.</div></details>
-      <details class="faq-item"><summary>How do I invent a portmanteau?</summary><div class="a">Take the start of one word and the end of another, and look for shared sounds where they overlap. Enter your two words in the combiner above and it will try every split point for you.</div></details>
-      <details class="faq-item"><summary>Why do writers use portmanteaus?</summary><div class="a">Writers and game designers use portmanteaus to name fictional places, creatures and concepts that feel familiar yet new. A good invented word can carry the meaning of both source words at once.</div></details>
-      <details class="faq-item"><summary>Can a made-up portmanteau become a real word?</summary><div class="a">Yes, brunch, smog and motel all started as playful blends before dictionaries adopted them. If a portmanteau fills a gap in the language and people keep using it, it can absolutely become a real word.</div></details>
-      <details class="faq-item"><summary>Is the word combiner free?</summary><div class="a">Yes, completely free with no signup and unlimited generations.</div></details>
+      <details class="faq-item"><summary data-i18n="">What is a portmanteau?</summary><div class="a" data-i18n="">A portmanteau is a word made by blending two words together, like brunch (breakfast + lunch), smog (smoke + fog) or spork (spoon + fork). The term comes from Lewis Carroll, who coined it in Through the Looking-Glass.</div></details>
+      <details class="faq-item"><summary data-i18n="">What are some famous portmanteau examples?</summary><div class="a" data-i18n="">Brunch (breakfast + lunch), smog (smoke + fog), motel (motor + hotel), spork (spoon + fork), podcast (iPod + broadcast) and webinar (web + seminar) are all portmanteaus that became everyday words.</div></details>
+      <details class="faq-item"><summary data-i18n="">How do I invent a portmanteau?</summary><div class="a" data-i18n="">Take the start of one word and the end of another, and look for shared sounds where they overlap. Enter your two words in the combiner above and it will try every split point for you.</div></details>
+      <details class="faq-item"><summary data-i18n="">Why do writers use portmanteaus?</summary><div class="a" data-i18n="">Writers and game designers use portmanteaus to name fictional places, creatures and concepts that feel familiar yet new. A good invented word can carry the meaning of both source words at once.</div></details>
+      <details class="faq-item"><summary data-i18n="">Can a made-up portmanteau become a real word?</summary><div class="a" data-i18n="">Yes, brunch, smog and motel all started as playful blends before dictionaries adopted them. If a portmanteau fills a gap in the language and people keep using it, it can absolutely become a real word.</div></details>
+      <details class="faq-item"><summary data-i18n="">Is the word combiner free?</summary><div class="a" data-i18n="">Yes, completely free with no signup and unlimited generations.</div></details>
     </div>
   </section>
 </main>
@@ -157,46 +157,51 @@
     <div class="foot-grid">
       <div>
         <div class="foot-brand">💜 Your<b>Name</b>Combiner</div>
-        <p data-i18n style="font-size:.9rem">Free name-blending tools for couples, babies, brands and beyond. Made with 💜 for name lovers everywhere.</p>
+        <p data-i18n="" style="font-size:.9rem">Free name-blending tools for couples, babies, brands and beyond. Made with 💜 for name lovers everywhere.</p>
       </div>
       <div>
-        <h4 data-i18n>Popular tools</h4>
-        <a data-i18n href="/tools/couple-name-combiner">Couple Name Combiner</a>
-        <a data-i18n href="/tools/baby-name-combiner">Baby Name Combiner</a>
-        <a data-i18n href="/tools/ship-name-generator">Ship Name Generator</a>
-        <a data-i18n href="/tools/brand-name-combiner">Brand Name Combiner</a>
+        <h4 data-i18n="">Popular tools</h4>
+        <a data-i18n="" href="/tools/couple-name-combiner">Couple Name Combiner</a>
+        <a data-i18n="" href="/tools/baby-name-combiner">Baby Name Combiner</a>
+        <a data-i18n="" href="/tools/ship-name-generator">Ship Name Generator</a>
+        <a data-i18n="" href="/tools/brand-name-combiner">Brand Name Combiner</a>
       </div>
       <div>
-        <h4 data-i18n>More tools</h4>
-        <a data-i18n href="/tools/nickname-generator">Nickname Generator</a>
-        <a data-i18n href="/tools/wedding-hashtag-generator">Wedding Hashtag Generator</a>
-        <a data-i18n href="/tools/pet-name-combiner">Pet Name Combiner</a>
-        <a data-i18n href="/tools/username-generator">Username Generator</a>
+        <h4 data-i18n="">More tools</h4>
+        <a data-i18n="" href="/tools/nickname-generator">Nickname Generator</a>
+        <a data-i18n="" href="/tools/wedding-hashtag-generator">Wedding Hashtag Generator</a>
+        <a data-i18n="" href="/tools/pet-name-combiner">Pet Name Combiner</a>
+        <a data-i18n="" href="/tools/username-generator">Username Generator</a>
       </div>
       <div>
-        <h4 data-i18n>From the blog</h4>
-        <a data-i18n href="/blog/what-is-a-ship-name">What Is a Ship Name?</a>
-        <a data-i18n href="/blog/how-to-combine-two-names">How to Combine Two Names</a>
-        <a data-i18n href="/blog/celebrity-couple-names">Celebrity Couple Names</a>
-        <a data-i18n href="/blog">All Posts</a>
+        <h4 data-i18n="">From the blog</h4>
+        <a data-i18n="" href="/blog/what-is-a-ship-name">What Is a Ship Name?</a>
+        <a data-i18n="" href="/blog/how-to-combine-two-names">How to Combine Two Names</a>
+        <a data-i18n="" href="/blog/celebrity-couple-names">Celebrity Couple Names</a>
+        <a data-i18n="" href="/blog">All Posts</a>
       </div>
     </div>
     <div class="foot-bottom">
-      <span>© <span data-year>2026</span> YourNameCombiner.com, <span data-i18n>All rights reserved.</span></span>
-      <nav class="foot-links" aria-label="Footer"><a data-i18n href="/blog">Blog</a><a data-i18n href="/about">About</a><a data-i18n href="/privacy-policy">Privacy</a><a data-i18n href="/terms-of-service">Terms</a></nav>
+      <span>© <span data-year="">2026</span> YourNameCombiner.com, <span data-i18n="">All rights reserved.</span></span>
+      <nav class="foot-links" aria-label="Footer"><a data-i18n="" href="/blog">Blog</a><a data-i18n="" href="/about">About</a><a data-i18n="" href="/privacy-policy">Privacy</a><a data-i18n="" href="/terms-of-service">Terms</a></nav>
     </div>
   </div>
 </footer>
 
-<button class="fav-fab" id="favFab">⭐ Favorites (<span id="favCount">0</span>)</button>
+<button class="fav-fab" id="favFab" data-i18n-html="ync_favfab">⭐ Favorites (<span id="favCount">0</span>)</button>
 <div class="scrim" id="scrim"></div>
-<aside class="drawer" id="favDrawer" aria-label="Favorite names">
-  <div class="drawer-head"><h3>⭐ My Favorite Blends</h3><button class="icon-btn" id="favClose">✕</button></div>
+<aside class="drawer" id="favDrawer" aria-label="Favorite names" data-i18n-aria="Favorite names">
+  <div class="drawer-head"><h3 data-i18n="">⭐ My Favorite Blends</h3><button class="icon-btn" id="favClose">✕</button></div>
   <div class="drawer-body" id="favBody"></div>
-  <div class="drawer-foot"><button class="btn ghost" id="favDownload" style="flex:1">Download</button><button class="btn ghost" id="favClear" style="flex:1">Clear all</button></div>
+  <div class="drawer-foot"><button class="btn ghost" id="favDownload" style="flex:1" data-i18n="">Download</button><button class="btn ghost" id="favClear" style="flex:1" data-i18n="">Clear all</button></div>
 </aside>
 
 <script src="/assets/js/i18n.js"></script>
+<script src="/assets/js/i18n-d1.js"></script>
+<script src="/assets/js/i18n-d2.js"></script>
+<script src="/assets/js/i18n-d3.js"></script>
+<script src="/assets/js/i18n-d4.js"></script>
+<script src="/assets/js/i18n-d5.js"></script>
 <script src="/assets/js/main.js"></script>
 </body>
 </html>
