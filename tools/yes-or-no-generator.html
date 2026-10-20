@@ -72,6 +72,7 @@
 
 <main class="wrap" id="combiner">
   <div class="tool-card" id="yesNoCard">
+    <button class="sound-toggle" data-sound-toggle="" title="Toggle sound" data-i18n-title="Toggle sound">🔊</button>
     <h2>Ask your question</h2>
     <p class="hint">Type a yes or no question, pick a mode, and let the generator decide. No take-backs unless your group agreed on a reroll.</p>
     <div class="field"><label for="ynQuestion">Your question</label><input class="yn-q" id="ynQuestion" maxlength="120" placeholder="e.g. Should we order pizza tonight?" autocomplete="off"></div>
@@ -222,6 +223,7 @@
     hist.prepend(s);
   }
   function finish(isYes){
+    if(window.yncSfx){ if(isYes) window.yncSfx.fanfare(); else window.yncSfx.pop(); }
     ans.textContent=isYes?'YES':'NO';
     ans.className='yn-answer '+(isYes?'yes':'no');
     var lines=isYes?yesLines:noLines;
@@ -236,6 +238,7 @@
     var flips=0;
     var iv=setInterval(function(){
       ans.textContent=(flips%2===0)?'YES':'NO'; flips++;
+      if(window.yncSfx) window.yncSfx.click();
       if(flips>9){
         clearInterval(iv);
         if(mode==='best3'){
