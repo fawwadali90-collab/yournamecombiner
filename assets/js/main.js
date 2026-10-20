@@ -276,6 +276,15 @@ document.addEventListener('click',e=>{
   }
   const st=e.target.closest('[data-sound-toggle]');
   if(st){const on=Sfx.toggle();st.textContent=on?'🔊':'🔇';return;}
+  const ns=e.target.closest('[data-native-share]');
+  if(ns){const u=ns.getAttribute('data-url')||location.href;const tx=ns.getAttribute('data-text')||document.title;
+    if(navigator.share){navigator.share({title:document.title,text:tx,url:u}).catch(()=>{});}
+    else if(navigator.clipboard){navigator.clipboard.writeText(u).catch(()=>{});ns.textContent='Link copied!';setTimeout(()=>ns.textContent='📤 More apps',1600);}
+    Sfx.click();return;}
+  const cu=e.target.closest('[data-copy-url]');
+  if(cu){const u2=cu.getAttribute('data-copy-url')||location.href;
+    if(navigator.clipboard)navigator.clipboard.writeText(u2).catch(()=>{});
+    cu.textContent='✓ Copied';Sfx.chime();setTimeout(()=>cu.textContent='🔗 Copy link',1600);return;}
 });
 
 /* ---------- drawer / misc ---------- */

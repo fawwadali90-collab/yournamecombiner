@@ -200,3 +200,11 @@ footer.site a:hover{color:#fff}
 .lang-menu button:hover{background:rgba(255,255,255,.1);color:#fff}
 .lang-menu button.on{color:#fff;font-weight:800}
 @media(max-width:760px){.lang-bar{margin-left:6px}.lang-btn{padding:6px 10px}}
+
+.share-bar{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:24px 0 2px}
+.share-label{font-weight:900;margin-right:2px}
+.sh-btn{display:inline-flex;align-items:center;gap:6px;color:#fff;font-weight:800;font-size:.85rem;padding:9px 14px;border-radius:999px;text-decoration:none;border:none;cursor:pointer;font-family:inherit;line-height:1}
+.sh-btn:hover{opacity:.88}
+.sh-wa{background:#25D366}.sh-fb{background:#1877F2}.sh-x{background:#111111}.sh-tg{background:#229ED9}
+.sh-pin{background:#E60023}.sh-li{background:#0A66C2}.sh-rd{background:#FF4500}.sh-em{background:#6b7280}
+.sh-copy{background:#7c3aed}.sh-native{background:var(--grad,#7c3aed)}
