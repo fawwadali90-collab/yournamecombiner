@@ -1,4 +1,4 @@
-/* YourNameCombiner — playful romantic design system (mobile-first) */
+/* YourNameCombiner, playful romantic design system (mobile-first) */
 :root{
   --plum:#2a0a4a; --grape:#4c1d95; --violet:#7c3aed; --pink:#ec4899; --rose:#fb7185;
   --amber:#fbbf24; --cream:#fff7fb; --ink:#1f1033; --mut:#6b5b7e;
@@ -118,7 +118,7 @@ section.block p{margin-bottom:14px;color:#3d2b52}
 .faq-item summary{padding:16px 20px;font-weight:800;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:10px}
 .faq-item summary::-webkit-details-marker{display:none}
 .faq-item summary::after{content:"+";font-size:1.4rem;color:var(--pink);font-weight:900;flex:0 0 auto}
-.faq-item[open] summary::after{content:"–"}
+.faq-item[open] summary::after{content:"-"}
 .faq-item .a{padding:0 20px 18px;color:var(--mut);font-size:.95rem}
 
 /* ---------- related / blog cards ---------- */

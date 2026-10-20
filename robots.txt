@@ -1,6 +1,33 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://yournamecombiner.com/sitemap.xml
+# AI search and answer engines are welcome to crawl and cite this site
+User-agent: GPTBot
+Allow: /
 
-# deploy trigger
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+Sitemap: https://yournamecombiner.com/sitemap.xml
+# AI-readable site summary: https://yournamecombiner.com/llms.txt

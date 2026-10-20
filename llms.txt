@@ -1,0 +1,36 @@
+# YourNameCombiner
+
+> YourNameCombiner (yournamecombiner.com) is a free online toolbox for blending names and making quick decisions. Its main tool combines two names into one using half-blends, syllable mixes, overlap merges and letter swaps. Every tool is free, needs no signup, and runs instantly in the browser.
+
+Contact: info@yournamecombiner.com
+
+## Tools
+
+- [Name Combiner](https://yournamecombiner.com/): The flagship tool. Blend any two names into one new name for couples, babies, brands and more.
+- [Couple Name Combiner](https://yournamecombiner.com/tools/couple-name-combiner): Blend two partners first names into a shared couple name, like Brangelina.
+- [Ship Name Generator](https://yournamecombiner.com/tools/ship-name-generator): Create ship names for couples, fandom pairings and friendships.
+- [Baby Name Combiner](https://yournamecombiner.com/tools/baby-name-combiner): Combine mom and dad's names into a unique baby name, with girl and boy filters.
+- [Brand Name Combiner](https://yournamecombiner.com/tools/brand-name-combiner): Fuse names or keywords into a startup or business name, with industry categories.
+- [Nickname Generator](https://yournamecombiner.com/tools/nickname-generator): Turn any name into a nickname with personality.
+- [Pet Name Combiner](https://yournamecombiner.com/tools/pet-name-combiner): Blend names and words into cute names for dogs, cats and small pets.
+- [Wedding Hashtag Generator](https://yournamecombiner.com/tools/wedding-hashtag-generator): Build wedding hashtags from names, surnames, puns and the wedding year.
+- [Username Generator](https://yournamecombiner.com/tools/username-generator): Create unique usernames and gamertags from names and words.
+- [Word Combiner](https://yournamecombiner.com/tools/word-combiner): Invent portmanteaus from any two words, like brunch and smog.
+- [Last Name Combiner](https://yournamecombiner.com/tools/last-name-combiner): Blend, hyphenate or double-barrel two last names into a new family surname.
+- [Fantasy Name Combiner](https://yournamecombiner.com/tools/fantasy-name-combiner): Forge fantasy names for characters and worlds in novels, D&D and games.
+- [Yes or No Generator](https://yournamecombiner.com/tools/yes-or-no-generator): Ask any question and get a random yes or no answer, with tallies, history and a best of 3 mode.
+
+## Blog
+
+- [Blog index](https://yournamecombiner.com/blog): Guides and idea lists about combining names.
+- [What Is a Ship Name?](https://yournamecombiner.com/blog/what-is-a-ship-name): The complete guide to ship names and how they are built.
+- [How to Combine Two Names](https://yournamecombiner.com/blog/how-to-combine-two-names): Five name blending methods with worked examples.
+- [Baby Name Blends](https://yournamecombiner.com/blog/baby-name-blends): Ideas for blending parents names into baby names.
+- [Celebrity Couple Names](https://yournamecombiner.com/blog/celebrity-couple-names): Famous celebrity couple name blends and how they were made.
+- [Wedding Hashtag Ideas](https://yournamecombiner.com/blog/wedding-hashtag-ideas): Wedding hashtag formulas and examples by surname style.
+- [Portmanteau Examples](https://yournamecombiner.com/blog/portmanteau-examples): Famous and fresh portmanteau words explained.
+
+## About
+
+- [About](https://yournamecombiner.com/about): What YourNameCombiner is and who it is for.
+- [Contact](https://yournamecombiner.com/contact): Contact page, email info@yournamecombiner.com.
