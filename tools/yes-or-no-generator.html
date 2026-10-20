@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Yes or No Generator: Get a Random Yes or No Answer</title>
+<meta name="description" content="Free yes or no generator: ask any question and get an instant random yes or no answer. With answer history, tallies and a best of three mode.">
+<link rel="canonical" href="https://yournamecombiner.com/tools/yes-or-no-generator">
+<meta name="robots" content="index, follow">
+<meta property="og:title" content="Yes or No Generator: Random Yes or No Picker">
+<meta property="og:description" content="Ask any question, get an instant yes or no. Free, unlimited, with history and best of three mode.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://yournamecombiner.com/tools/yes-or-no-generator">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🤔</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800;900&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/style.css?v=4">
+<style>
+.yn-display{text-align:center;padding:28px 12px 8px}
+.yn-answer{font-size:4.2rem;font-weight:900;line-height:1;letter-spacing:.02em;color:var(--mut)}
+.yn-answer.yes{color:#16a34a}
+.yn-answer.no{color:#dc2626}
+.yn-sub{min-height:1.5em;color:var(--mut);font-weight:700;margin-top:10px}
+.yn-tally{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin:14px 0 4px}
+.yn-tally span{background:#f5f3ff;border:2px solid var(--line);border-radius:999px;padding:6px 14px;font-weight:800;font-size:.9rem}
+.yn-history{display:flex;gap:8px;flex-wrap:wrap;justify-content:center;margin-top:12px}
+.yn-history span{border-radius:999px;padding:4px 12px;font-weight:900;font-size:.85rem;color:#fff}
+.yn-history .y{background:#16a34a} .yn-history .n{background:#dc2626}
+.yn-q{width:100%;padding:14px;border:2px solid var(--line);border-radius:12px;font-size:1rem;font-family:inherit}
+</style>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebApplication","name":"Yes or No Generator","url":"https://yournamecombiner.com/tools/yes-or-no-generator","applicationCategory":"UtilitiesApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Is the yes or no generator really random?","acceptedAnswer":{"@type":"Answer","text":"Yes. Every answer is generated fresh in your browser with a random 50/50 draw, like a coin flip. Past answers do not change future ones, so a run of yeses does not make a no more likely, however much it feels that way."}},{"@type":"Question","name":"What is best of three mode?","acceptedAnswer":{"@type":"Answer","text":"Instead of one answer, the tool draws three answers and the majority wins. It feels fairer for group decisions and friendly debates, and it gives a stuck decision a tiny bit more ceremony without changing the honest 50/50 heart of the tool."}},{"@type":"Question","name":"Can I ask the same question more than once?","acceptedAnswer":{"@type":"Answer","text":"You can, and the history row keeps every answer so nobody can quietly reroll a result they disliked. Groups often agree on one rule before asking: single answer, best of three, or one reroll maximum. Decide the rule first, then honor the result."}},{"@type":"Question","name":"Should I actually follow the yes or no answer?","acceptedAnswer":{"@type":"Answer","text":"For low-stakes choices, yes, that is the fun and the point. For anything involving money, health, safety, work or other people, treat the answer as a way to discover what you hoped it would say, then make the real decision yourself with real information."}},{"@type":"Question","name":"Why did the answer change my mind about my own decision?","acceptedAnswer":{"@type":"Answer","text":"That is the famous coin flip effect. When a random answer lands and you feel relieved or disappointed, that feeling reveals the choice you wanted all along. Many people use this tool less as an oracle and more as a mirror."}},{"@type":"Question","name":"Is the yes or no generator free?","acceptedAnswer":{"@type":"Answer","text":"Yes, completely free with no signup and unlimited questions."}}]}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://yournamecombiner.com/"},{"@type":"ListItem","position":2,"name":"Yes or No Generator","item":"https://yournamecombiner.com/tools/yes-or-no-generator"}]}
+</script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-7203N2LNDB"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-7203N2LNDB');
+</script>
+</head>
+<body>
+<header class="site">
+  <div class="wrap nav">
+    <a class="logo" href="/">💜 Your<b>Name</b>Combiner</a>
+    <nav class="nav-links">
+      <a data-i18n="" href="/">Home</a>
+      <a data-i18n="" href="/tools/couple-name-combiner">Couples</a>
+      <a data-i18n="" href="/tools/baby-name-combiner">Baby</a>
+      <a data-i18n="" href="/tools/brand-name-combiner">Brand</a>
+      <a data-i18n="" href="/blog">Blog</a>
+      <a data-i18n="" class="cta" href="#combiner">Combine Names</a>
+    </nav>
+  </div>
+</header>
+
+<div class="hero">
+  <div class="float-hearts"></div>
+  <div class="wrap">
+    <p class="breadcrumb"><a href="/" style="color:#e9d5ff">Home</a> · <span style="color:#c4b5fd">Yes or No Generator</span></p>
+    <h1>🤔 Yes or No Generator</h1>
+    <p class="sub">Stuck on a decision? Ask any question and get an instant, honest, random yes or no answer.</p>
+  </div>
+</div>
+
+<main class="wrap" id="combiner">
+  <div class="tool-card" id="yesNoCard">
+    <h2>Ask your question</h2>
+    <p class="hint">Type a yes or no question, pick a mode, and let the generator decide. No take-backs unless your group agreed on a reroll.</p>
+    <div class="field"><label for="ynQuestion">Your question</label><input class="yn-q" id="ynQuestion" maxlength="120" placeholder="e.g. Should we order pizza tonight?" autocomplete="off"></div>
+    <div class="tool-opts" style="margin-top:12px">
+      <button class="chip-opt yn-mode on" data-mode="single">Single answer</button>
+      <button class="chip-opt yn-mode" data-mode="best3">Best of 3</button>
+    </div>
+    <button class="btn" id="ynAsk">🤔 Get My Answer</button>
+    <div class="yn-display">
+      <div class="yn-answer" id="ynAnswer">?</div>
+      <div class="yn-sub" id="ynSub">Your answer will appear here.</div>
+      <div class="yn-tally"><span>✅ Yes: <b id="ynYes">0</b></span><span>❌ No: <b id="ynNo">0</b></span><span>🎲 Total: <b id="ynTotal">0</b></span></div>
+      <div class="share-row">
+        <input id="ynShare" readonly style="flex:1;min-width:200px;padding:12px 14px;border:2px solid var(--line);border-radius:12px;font-size:.85rem" aria-label="Shareable link">
+        <button class="btn ghost" id="ynCopy">Copy share link</button>
+        <button class="btn ghost" id="ynClear">Clear history</button>
+      </div>
+      <div class="yn-history" id="ynHistory"></div>
+    </div>
+  </div>
+
+  <section class="block">
+    <h2>How the yes or no <span class="u">generator works</span></h2>
+    <p>The yes or no generator is a modern coin flip. Type any question that can honestly be answered with yes or no, press the button, and the tool draws a completely random answer in your browser, fifty-fifty, every single time. There is no memory between answers and no thumb on the scale: ten yeses in a row do not make a no more likely, and a no never owes you a yes. That honest randomness is exactly what makes it useful, because it removes the two things that stall everyday decisions, overthinking and blame.</p>
+    <p>Single answer mode is the classic: one question, one verdict, move on with your evening. <b>Best of 3</b> mode draws three answers and lets the majority win, which groups love because it feels like a fair vote rather than a coin toss, and because watching the little race between yes and no is half the fun. The tallies and history row above keep every answer on display, so nobody can quietly reroll a verdict they disliked and pretend it never happened. Agree your mode before you ask, then honor what lands.</p>
+    <p>The deepest trick of the tool is not the answer at all. Psychologists and decision coaches call it the coin flip effect: the moment a random answer appears, your gut reacts before your brain can argue. Relief means you wanted yes. A sinking feeling means you wanted no. Half the people who use a yes or no picker discover they had already decided, and the generator simply gave them permission to admit it. Either way, you leave the page unstuck, which was the real goal.</p>
+  </section>
+
+  <section class="block">
+    <h2>When a random yes or no is the <span class="u">perfect tool</span></h2>
+    <p>Random answers shine when both options are genuinely fine and the only real cost is the time spent choosing. Two good restaurants, two good movies, a walk or a drive, pizza or tacos: these decisions feel big at 7 pm and are forgotten by morning. They are also perfect for breaking group deadlocks, settling friendly debates, choosing who goes first in a game, and making quick fun calls with kids, who treat every verdict like a tiny ceremony.</p>
+    <table class="example-table">
+      <tr><th> Situation</th><th>Example question</th><th>Best mode</th></tr>
+      <tr><td>Dinner deadlock</td><td>Should we order pizza tonight?</td><td><b>Single answer</b></td></tr>
+      <tr><td>Group movie night</td><td>Should we watch the comedy first?</td><td><b>Best of 3</b></td></tr>
+      <tr><td>Game night</td><td>Do I get to go first?</td><td><b>Single answer</b></td></tr>
+      <tr><td>Couple debate</td><td>Should we take the scenic route?</td><td><b>Best of 3</b></td></tr>
+    </table>
+    <p>Keep your questions in the sweet spot: one clear question, two honest options, low stakes, and an answer you are willing to follow before you press the button. If you keep rephrasing the question until it says yes, the tool is not broken, it is telling you what you wanted. And when the decision is actually about a name, a username or a word, we have a specialist for that too: try the <a href="/tools/word-combiner">word combiner</a> or the <a href="/tools/username-generator">username generator</a> when the tie is between two finalists.</p>
+  </section>
+
+  <section class="block">
+    <h2>When <span class="u">not</span> to use a yes or no generator</h2>
+    <p>Be honest about the boundary: never outsource a decision that involves real money, your health, your safety, your job, or somebody else's feelings to a random answer. A yes or no picker cannot read a contract, check a symptom or understand a friendship. For those decisions the tool has exactly one legitimate use, the mirror trick from the section above. Ask, notice whether the answer relieves or disappoints you, then close the tab and make the adult decision with real information, real advice and a clear head.</p>
+    <p>One more trap to skip: reroll addiction. Asking the same question six times until it agrees with you is not decision making, it is decoration on a decision you already made. Own it instead. Set the rule before you ask, one answer or best of three, honor the result, and save your rerolls for the questions that truly do not matter, like whether the cat gets a second treat. She does, by the way. The answer was always yes.</p>
+  </section>
+
+  <section class="block">
+    <h2>Fun ways to <span class="u">play</span> with yes or no</h2>
+    <p>Party hosts use the generator as a lightning game: one person asks a question about another guest, the screen answers, and the guest must defend the verdict for thirty seconds. Teachers use it for classroom votes and probability lessons, because a class set of answers makes a beautiful live chart of what fifty-fifty really looks like over fifty tries. Couples use best of three for the small eternal debates, who picks the film, who makes tea, whether the thermostat counts as a group decision.</p>
+    <p>Creators and streamers run yes or no challenges with their audiences, letting the generator direct a game run, a drawing or a build, one verdict at a time. And decision diarists keep a private streak: ask one small question every morning, follow the answer all day, and write down what happened. A week of entries teaches you more about your own risk appetite than any quiz, and the history tallies on this page make a tidy record to copy into your notes.</p>
+    <p>However you play, the rules stay the same: clear question, agreed mode, honored result. Break a tie between two names while you are at it with our <a href="/tools/nickname-generator">nickname generator</a>, or settle a pairing debate in fandom style with the <a href="/tools/ship-name-generator">ship name generator</a>.</p>
+  </section>
+
+  <section class="block">
+    <h2>More ways to <span class="u">play</span></h2>
+    <div class="rel-grid">
+      <a class="rel-card" href="/tools/word-combiner"><span class="k">Words</span><h4>🔤 Word Combiner</h4><p>Invent portmanteaus from any two words.</p></a>
+      <a class="rel-card" href="/tools/username-generator"><span class="k">Social</span><h4>📱 Username Generator</h4><p>Handles and gamertags from any name.</p></a>
+      <a class="rel-card" href="/tools/nickname-generator"><span class="k">Fun</span><h4>😎 Nickname Generator</h4><p>Nicknames with real personality.</p></a>
+      <a class="rel-card" href="/tools/ship-name-generator"><span class="k">Fandom</span><h4>🚢 Ship Name Generator</h4><p>Blend two names into a ship name.</p></a>
+    </div>
+  </section>
+
+  <section class="block">
+    <h2>Frequently asked <span class="u">questions</span></h2>
+    <div class="faq">
+      <details class="faq-item"><summary>Is the yes or no generator really random?</summary><div class="a">Yes. Every answer is generated fresh in your browser with a random 50/50 draw, like a coin flip. Past answers do not change future ones, so a run of yeses does not make a no more likely, however much it feels that way.</div></details>
+      <details class="faq-item"><summary>What is best of three mode?</summary><div class="a">Instead of one answer, the tool draws three answers and the majority wins. It feels fairer for group decisions and friendly debates, and it gives a stuck decision a tiny bit more ceremony without changing the honest 50/50 heart of the tool.</div></details>
+      <details class="faq-item"><summary>Can I ask the same question more than once?</summary><div class="a">You can, and the history row keeps every answer so nobody can quietly reroll a result they disliked. Groups often agree on one rule before asking: single answer, best of three, or one reroll maximum. Decide the rule first, then honor the result.</div></details>
+      <details class="faq-item"><summary>Should I actually follow the yes or no answer?</summary><div class="a">For low-stakes choices, yes, that is the fun and the point. For anything involving money, health, safety, work or other people, treat the answer as a way to discover what you hoped it would say, then make the real decision yourself with real information.</div></details>
+      <details class="faq-item"><summary>Why did the answer change my mind about my own decision?</summary><div class="a">That is the famous coin flip effect. When a random answer lands and you feel relieved or disappointed, that feeling reveals the choice you wanted all along. Many people use this tool less as an oracle and more as a mirror.</div></details>
+      <details class="faq-item"><summary>Is the yes or no generator free?</summary><div class="a">Yes, completely free with no signup and unlimited questions.</div></details>
+    </div>
+  </section>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <div class="foot-brand">💜 Your<b>Name</b>Combiner</div>
+        <p data-i18n="" style="font-size:.9rem">Free name-blending tools for couples, babies, brands and beyond. Made with 💜 for name lovers everywhere.</p>
+      </div>
+      <div>
+        <h4 data-i18n="">Popular tools</h4>
+        <a data-i18n="" href="/tools/couple-name-combiner">Couple Name Combiner</a>
+        <a data-i18n="" href="/tools/baby-name-combiner">Baby Name Combiner</a>
+        <a data-i18n="" href="/tools/ship-name-generator">Ship Name Generator</a>
+        <a data-i18n="" href="/tools/brand-name-combiner">Brand Name Combiner</a>
+      </div>
+      <div>
+        <h4 data-i18n="">More tools</h4>
+        <a data-i18n="" href="/tools/nickname-generator">Nickname Generator</a>
+        <a data-i18n="" href="/tools/wedding-hashtag-generator">Wedding Hashtag Generator</a>
+        <a data-i18n="" href="/tools/pet-name-combiner">Pet Name Combiner</a>
+        <a data-i18n="" href="/tools/username-generator">Username Generator</a>
+        <a data-i18n="" href="/tools/yes-or-no-generator">Yes or No Generator</a>
+      </div>
+      <div>
+        <h4 data-i18n="">From the blog</h4>
+        <a data-i18n="" href="/blog/what-is-a-ship-name">What Is a Ship Name?</a>
+        <a data-i18n="" href="/blog/how-to-combine-two-names">How to Combine Two Names</a>
+        <a data-i18n="" href="/blog/celebrity-couple-names">Celebrity Couple Names</a>
+        <a data-i18n="" href="/blog">All Posts</a>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© <span data-year="">2026</span> YourNameCombiner.com, <span data-i18n="">All rights reserved.</span></span>
+      <nav class="foot-links" aria-label="Footer"><a data-i18n="" href="/blog">Blog</a><a data-i18n="" href="/about">About</a><a data-i18n="" href="/privacy-policy">Privacy</a><a data-i18n="" href="/terms-of-service">Terms</a></nav>
+    </div>
+  </div>
+</footer>
+
+<button class="fav-fab" id="favFab" data-i18n-html="ync_favfab">⭐ Favorites (<span id="favCount">0</span>)</button>
+<div class="scrim" id="scrim"></div>
+<aside class="drawer" id="favDrawer" aria-label="Favorite names" data-i18n-aria="Favorite names">
+  <div class="drawer-head"><h3 data-i18n="">⭐ My Favorite Blends</h3><button class="icon-btn" id="favClose">✕</button></div>
+  <div class="drawer-body" id="favBody"></div>
+  <div class="drawer-foot"><button class="btn ghost" id="favDownload" style="flex:1" data-i18n="">Download</button><button class="btn ghost" id="favClear" style="flex:1" data-i18n="">Clear all</button></div>
+</aside>
+
+<script src="/assets/js/i18n.js"></script>
+<script src="/assets/js/i18n-d1.js"></script>
+<script src="/assets/js/i18n-d2.js"></script>
+<script src="/assets/js/i18n-d3.js"></script>
+<script src="/assets/js/i18n-d4.js"></script>
+<script src="/assets/js/i18n-d5.js"></script>
+<script src="/assets/js/main.js"></script>
+<script>
+(function(){
+  var mode='single', yes=0, no=0, busy=false;
+  var ans=document.getElementById('ynAnswer'), sub=document.getElementById('ynSub'),
+      q=document.getElementById('ynQuestion'), hist=document.getElementById('ynHistory'),
+      share=document.getElementById('ynShare');
+  var yesLines=['The generator has spoken. It is a yes.','Yes. No more deliberating, go do the thing.','A clean, confident yes.','Yes, and you already knew it would be.'];
+  var noLines=['The generator has spoken. It is a no.','No. Close the tab and enjoy the relief.','A firm no. Trust it and move on.','No this time. The coin has decided.'];
+  document.querySelectorAll('.yn-mode').forEach(function(b){ b.addEventListener('click',function(){
+    document.querySelectorAll('.yn-mode').forEach(function(x){x.classList.remove('on');});
+    b.classList.add('on'); mode=b.getAttribute('data-mode'); });});
+  function draw(){ return Math.random()<0.5; }
+  function record(isYes){
+    if(isYes) yes++; else no++;
+    document.getElementById('ynYes').textContent=yes;
+    document.getElementById('ynNo').textContent=no;
+    document.getElementById('ynTotal').textContent=yes+no;
+    var s=document.createElement('span'); s.className=isYes?'y':'n'; s.textContent=isYes?'YES':'NO';
+    hist.prepend(s);
+  }
+  function finish(isYes){
+    ans.textContent=isYes?'YES':'NO';
+    ans.className='yn-answer '+(isYes?'yes':'no');
+    var lines=isYes?yesLines:noLines;
+    sub.textContent=lines[Math.floor(Math.random()*lines.length)];
+    record(isYes); busy=false;
+    var u=new URL(window.location.href); if(q.value.trim()) u.searchParams.set('q', q.value.trim());
+    share.value=u.toString();
+  }
+  function ask(){
+    if(busy) return; busy=true;
+    ans.className='yn-answer'; sub.textContent='Deciding...';
+    var flips=0;
+    var iv=setInterval(function(){
+      ans.textContent=(flips%2===0)?'YES':'NO'; flips++;
+      if(flips>9){
+        clearInterval(iv);
+        if(mode==='best3'){
+          var ys=0; for(var i=0;i<3;i++) if(draw()) ys++;
+          finish(ys>=2);
+        } else { finish(draw()); }
+      }
+    },70);
+  }
+  document.getElementById('ynAsk').addEventListener('click',ask);
+  q.addEventListener('keydown',function(e){ if(e.key==='Enter') ask(); });
+  document.getElementById('ynCopy').addEventListener('click',function(){
+    if(!share.value){ var u=new URL(window.location.href); if(q.value.trim()) u.searchParams.set('q',q.value.trim()); share.value=u.toString(); }
+    share.select(); if(navigator.clipboard) navigator.clipboard.writeText(share.value);
+    this.textContent='Copied!'; var b=this; setTimeout(function(){b.textContent='Copy share link';},1500);
+  });
+  document.getElementById('ynClear').addEventListener('click',function(){
+    yes=0; no=0; hist.innerHTML='';
+    document.getElementById('ynYes').textContent='0';
+    document.getElementById('ynNo').textContent='0';
+    document.getElementById('ynTotal').textContent='0';
+    ans.textContent='?'; ans.className='yn-answer'; sub.textContent='Your answer will appear here.';
+  });
+  var pre=new URLSearchParams(window.location.search).get('q');
+  if(pre) q.value=pre;
+})();
+</script>
+</body>
+</html>
